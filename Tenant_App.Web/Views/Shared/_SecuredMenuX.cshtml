@@ -1,0 +1,127 @@
+﻿
+@using Microsoft.AspNet.Identity
+@using Tenant_App.Models.DataObjects.Icon
+@using Microsoft.AspNetCore.Http
+@using Tenant_App.Web.Filters;
+@using System.Security.Claims;
+@using Newtonsoft.Json;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+
+
+    var sidebarMenus = Tenant_App.Web.Filters.SessionExtensions.GetObjectFromJson<List<SidebarMenuViewModel>>(Context.Session, "MenuString");
+  
+    
+
+}
+
+
+<div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
+    <div class="navbar-header">
+        <ul class="nav navbar-nav flex-row">
+            <li class="nav-item mr-auto">
+                <a class="navbar-brand" href="#">
+                    @*<div class="brand-logo"><img class="logo" src="~/app-assets/images/logo/logo.png" width="70" height="50" /></div>*@
+                    <h2 class="brand-text mb-0" style="color:#ffffff">EWERS</h2>
+                </a>
+            </li>
+            <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="bx bx-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon bx bx-disc font-medium-4 d-none d-xl-block primary" data-ticon="bx-disc"></i></a></li>
+        </ul>
+    </div>
+    <div class="shadow-bottom"></div>
+    <div class="main-menu-content">
+      @if (sidebarMenus == null || User.Identity.IsAuthenticated == false)
+
+            {
+
+                <script>
+
+                    window.location.replace("account/login");
+                </script>
+            }
+            else
+            {
+
+                <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation" data-icon-style="lines">
+
+
+                    @foreach (var menu in sidebarMenus)
+                    {
+                    <li class=" nav-item">
+
+                      @{ 
+                          string[] adminUrl;
+                          adminUrl = @menu.Url.Split("/");
+                          string action = adminUrl[1];
+                          string controller = adminUrl[0];
+
+                      }
+
+  
+                        <a asp-action="@action" asp-controller="@controller">
+                           <i class="menu-livicon" data-icon="@menu.Icon"></i>
+
+
+                            @*<div class="livicon-evo" data-options=" name: settings.svg;size:20px" style="color:#ffffff"></div>*@
+
+
+                            <span class="menu-title" data-i18n="">@menu.MenuText</span>
+                        </a>
+                    
+
+                        @if (menu.SubMenus.Count > 0)
+
+                                                {
+
+                        <ul class="menu-content">
+
+                            @foreach (var subMenu in menu.SubMenus)
+                                                            {
+
+                                                                string[] breakURL = subMenu.Url.Split("/");
+
+                                    string ControllerName = "";
+                                    string ActionName = "";
+
+                                                                if (breakURL.Length == 0)
+                                                                {
+
+                                                                }
+                                                                else if (breakURL.Length == 1)
+                                                                {
+                                                                    ControllerName = breakURL[0];
+                                                                }
+                                                                else if (breakURL.Length == 2)
+                                                                {
+                                                                    ControllerName = breakURL[0];
+                                                                    ActionName = breakURL[1];
+                                                                }
+
+
+                            <li style="text-transform: capitalize">
+                                <a href="@Url.Action(ActionName,ControllerName)">
+
+                                    <i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="nav.sk_starter_kit.static_layout"> @subMenu.PermissionName</span>
+
+                                </a>
+                            </li>
+                                                            }
+
+                        </ul>
+                                                }
+
+                    </li>
+                    }
+
+
+                    <li class=" nav-item">
+                        <a href="@Url.Action("LogOff", "Account", new { area = "" })">
+                            <i class="menu-livicon" data-icon="user"></i><span class="menu-title" data-i18n="">Logout</span>
+                        </a>
+                    </li>
+
+                </ul>
+                }
+    </div>
+</div>

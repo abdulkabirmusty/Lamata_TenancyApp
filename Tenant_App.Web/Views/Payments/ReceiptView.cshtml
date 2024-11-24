@@ -1,0 +1,81 @@
+﻿@model Tenant_App.Models.DataObjects.PaymentDtos.PaymentDto
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Receipt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 14px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+         <img src="~/TenancyAsset/images/lamata.png" alt="" style="max-width: 100%; max-height: 70px;" />
+        
+        <h1>Rental Receipt</h1>
+        <p><strong>Name:</strong> @Model.FullName</p>
+        <p><strong>Expiry Date:</strong> @Model.ExpiryDate.ToString("d")</p>
+        <p><strong>RRR Number:</strong> @Model.RRR</p>
+        <p><strong>Date:</strong> @Model.PaymentDate.ToString("d")</p>
+        
+        <h2>Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hostel Name</th>
+                    <th>Property Address</th>
+                    <th>Duration</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Model.PropertyName</td>
+                    <td>@Model.PropertyAddress</td>
+                    <td>@Model.Duration</td>
+                    <td><span>&#8358;</span>@Model.Amount</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><strong>Grand Total</strong></td>
+                    <td><strong><span>&#8358;</span>@Model.Amount</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        @* <img src="~/TenancyAsset/images/paid.png" alt="paid" /> *@
+    </div>
+</body>
+</html>

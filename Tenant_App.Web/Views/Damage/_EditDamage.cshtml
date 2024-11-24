@@ -1,0 +1,88 @@
+﻿@model Tenant_App.Models.DataObjects.DamageDtos.FetchDamageDto
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+
+
+<div class="modal-content" style="height:auto; padding-bottom:4vh;">
+    <div class="modal-header" style="background-color: #d3d3d3; display: flex; justify-content: space-between; align-items: center; padding: 1rem;">
+        <div class="newdepartmentmodaltitle" id="myModalLabel33"><strong>Edit Damages Report</strong></div>
+        
+        <button type="button" class="close" onclick="CloseModal()">
+            <i class="fa-solid fa-circle-xmark" id="addDeptClose"></i>
+        </button>
+    </div>
+
+
+    <section class="input-validation">
+        <div class="card" style="border:none;">
+            <div class="card-body">
+                <form asp-controller="Damage" asp-action="Edit" enctype="multipart/form-data">
+                    <input asp-for="Id" type="hidden" />
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="nameDiv">
+                                <label class="newdepartmentmodaltitle">Full Name</label>
+                                <input type="text" asp-for="FullName" name="FullName" value="@ViewBag.FullName" placeholder="Enter full Name" class="form-control" readonly>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="nameDiv">
+                                <label class="newdepartmentmodaltitle">Property Name</label>
+                                <input type="text" asp-for="PropertyName" name="PropertyName" value="@ViewBag.PropertyName" placeholder="Enter House Number" class="form-control" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="nameDiv">
+                                <label class="newdepartmentmodaltitle">Damages Description</label>
+                                <input type="text" asp-for="Description" name="Description" placeholder="Enter Description" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="nameDiv">
+                                <label class="newdepartmentmodaltitle">Damage Type</label>
+                                <input type="text" asp-for="DamageType" name="DamageType" placeholder="Enter Damage Type" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="nameDiv">
+                                <label class="newdepartmentmodaltitle">Report Date</label>
+                                <input type="date" asp-for="ReportDate" name="ReportDate" placeholder="Enter Report date" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="nameDiv">
+                                <label class="newdepartmentmodaltitle">Priority</label>
+                                <input type="number" asp-for="Priority" name="Priority" placeholder="Enter Priority" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="nameDiv">
+                                <label class="newdepartmentmodaltitle">Damages Image</label>
+                                <input type="file" id="Passport" asp-for="DamageImagePath" name="DamageImagePath" class="form-control" accept=".jpg,.jpeg,.png" onchange="previewImage(this)" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button id="submitButton" type="submit" class="btn btn-success"><span>Submit</span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script src="~/app-assets/js/scripts/forms/form-tooltip-valid.js"></script>
+<script src="~/app-assets/vendors/js/forms/validation/jqBootstrapValidation.js"></script>
+<script src="~/app-assets/js/scripts/forms/validation/form-validation.js"></script>
+<script src="~/app-assets/js/scripts/modal/components-modal.js"></script>

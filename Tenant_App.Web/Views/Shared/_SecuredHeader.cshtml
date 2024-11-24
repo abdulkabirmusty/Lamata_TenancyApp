@@ -1,0 +1,123 @@
+﻿  <!-- BEGIN: Header-->
+@using Microsoft.AspNet.Identity
+@using Tenant_App.Models.DataObjects.Icon
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Hosting
+@using Tenant_App.Web.Filters;
+@using System.Security.Claims; 
+@using Newtonsoft.Json;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@inject Tenant_App.Models.Data.AppDbContext _context;
+
+@{
+    string fullName = ""; 
+    string roleName = "";
+    string greeting = "";
+    string email = "";
+    string userid = "";
+    string imgpath = "";
+
+    // try
+    // {
+    //     var claimsIdentity = User.Identity as ClaimsIdentity;
+    //     //email = claimsIdentity.FindFirst(ClaimTypes.Email).Value;
+    //     fullName = claimsIdentity.FindFirst(ClaimTypes.Name).Value;
+    //     userid = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+    //     imgpath = userid + ".png";
+    //     // Anonymous was used to hold the roleName
+    //     roleName = claimsIdentity.FindFirst(ClaimTypes.Anonymous).Value;
+
+    //     DateTime timeOfDayGreeting = DateTime.Now;
+
+    //     if (timeOfDayGreeting.Hour >= 5 && timeOfDayGreeting.Hour < 12)
+    //     {
+    //         greeting = "Good morning!";
+    //     }
+    //     else if (timeOfDayGreeting.Hour >= 12 && timeOfDayGreeting.Hour < 16)
+    //     {
+    //         greeting = "Good afternoon!";
+    //     }
+    //     else
+    //     {
+    //         greeting = "Good Evening!";
+    //     }
+    // }
+    // catch (Exception ex)
+    // {
+    //     <script>
+
+    //         window.location.replace("login");
+
+
+    //     </script>
+
+    // }
+}
+
+
+<div class="menu-right">
+    <div class="navbar user-panel-top">
+        <div class="search-box">
+            <form action="#search-results.html" method="get">
+                <input class="search-input" placeholder="Search Here..." type="search" id="search">
+                <button class="search-submit" value=""><span class="fa fa-search"></span></button>
+            </form>
+        </div>
+
+        <div class="profile_details">
+            <ul>
+                <li class="dropdown profile_details_drop">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3" aria-haspopup="true"
+                       aria-expanded="false">
+                        <div class="profile_img">
+                            <img src="~/assets/images/profileimg.jpg" class="rounded-circle" alt="" />
+                            <div class="user-active">
+                                <span></span>
+                            </div>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu drp-mnu" aria-labelledby="dropdownMenu3">
+                        <li class="user-info">
+                            <h5 class="user-name">@fullName</h5>
+                        </li>
+                        <li class="logout"> <a href="@Url.Action("LogOff", "CustomAccount", new { area = "" })"><i class="fa fa-power-off"></i> Logout</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Dropdown menu -->
+@* <div class="dropdownDiv">
+
+    
+        <div class="dropdown">
+            <div class="visibledropdown flex px-1 items-center justify-between w-full h-[3.1vw] border-[1px] border-[#EAAC2980] border-solid">
+
+                <img src="~/uploads/user.png" alt="" class="userImg" width="40" height="40" />
+                
+                <h1 class="userName text-[1vw] font-medium text-[#707070]">Welcome @fullName</h1>
+                <i class="dropdown-toggle fa-solid fa-caret-down border-none "></i>
+
+            </div>
+            <div class="dropdown-menu w-full">
+                
+                <div class="dropdown-item" data-value="2">
+                    <img src="~/weApproveAsset/assets/key-solid.png" alt="Image 2">
+                    <a href="@Url.Action("ChangePassword", "UserManagement", new { area = "" })" class='anchor ml-[8%]' style="color:#000;"> Change Password</a>
+                   
+                </div>
+                <hr>
+                <div class="dropdown-item" data-value="3">
+                    <img src="~/weApproveAsset/assets/logout.png" alt="Image 3">
+                    <a href="@Url.Action("LogOff", "CustomAccount", new { area = "" })" class='anchor ml-[8%]' style="color:#000;">Logout</a>
+                </div>
+            </div>
+        </div>
+   
+
+</div> *@
+

@@ -1,0 +1,113 @@
+﻿@using Microsoft.AspNet.Identity
+@using Tenant_App.Models.DataObjects.Icon
+@using Microsoft.AspNetCore.Http
+@using Tenant_App.Web.Filters;
+@using System.Security.Claims;
+@using Newtonsoft.Json;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+@inject Tenant_App.Models.Data.AppDbContext _context;
+@using Microsoft.AspNetCore.Authorization
+ @inject IAuthorizationService AuthorizationService
+ @using Tenant_App.Models.Constants
+
+
+<!-- logo start -->
+@* <div class="logo">
+    <h1><a href="@Url.Action("Index", "Dashboard", new { area = "" })">Tenancy App</a></h1>
+</div> *@
+
+<!-- if logo is image enable this -->
+<!-- image logo -->
+<div class="logo">
+  <a href="index.html">
+        <img src="~/TenancyAsset/images/lamata.png" alt="" title="Your logo" class="img-fluid" style="height:50px;" />
+    @* <img src="~/TenancyAsset/images/lamata.png" alt="" style="max-width: 100%; max-height: 70px;" /> *@
+  </a>
+</div>
+<!-- //image logo -->
+
+<div class="logo-icon text-center">
+    <a href="index.html" title="logo"><img src="~/assets/images/logo.png" alt="logo-icon"> </a>
+</div>
+<!-- //logo end -->
+
+<div class="sidebar-menu-inner">
+
+    <!-- sidebar nav start -->
+    <ul class="nav nav-pills nav-stacked custom-nav">
+        @if ((AuthorizationService.AuthorizeAsync(User, Permissions.Dashboard.View)).Result.Succeeded)
+        {
+            <li class="active">
+                <a href="@Url.Action("Index", "Dashboard", new { area = "" })"><i class="fa fa-tachometer"></i><span> Dashboard</span></a>
+            </li>
+        }
+        @if ((AuthorizationService.AuthorizeAsync(User, Permissions.Dashboard.View)).Result.Succeeded)
+        {
+            <li class="menu-list">
+                <a href="#">
+                    <i class="fa fa-users"></i>
+                    <span>Tenants <i class="lnr lnr-chevron-right"></i></span>
+                </a>
+                <ul class="sub-menu-list">
+                    <li><a href="@Url.Action("Index", "IndividualTenant", new { area = "" })">Manage Tenants</a> </li>
+                    <li><a href="@Url.Action("Index", "CooperateTenant", new { area = "" })">Manage Cooperate Tenants</a> </li>
+                    <li><a href="@Url.Action("ApprovedTenant", "IndividualTenant", new { area = "" })">Approved Tenants</a> </li>
+                    <li><a href="@Url.Action("ApprovedTenant", "CooperateTenant", new { area = "" })">Approved Cooperate Tenants</a> </li>
+                </ul>
+            </li>
+        }
+        @if ((AuthorizationService.AuthorizeAsync(User, Permissions.Dashboard.View)).Result.Succeeded)
+        {
+            <li><a href="@Url.Action("Index", "Roles", new { area = "" })"><i class="fa fa-cog"></i> <span>Manage Roles</span></a></li>
+        }
+        @if ((AuthorizationService.AuthorizeAsync(User, Permissions.Dashboard.View)).Result.Succeeded)
+        {
+            <li class="menu-list">
+                <a href="#">
+                    <i class="fa fa-th"></i>
+                    <span>Setups <i class="lnr lnr-chevron-right"></i></span>
+                </a>
+                <ul class="sub-menu-list">
+                    @* <li><a href="@Url.Action("Index", "ContractType", new { area = "" })">Manage Contract Type</a> </li> *@
+                    <li><a href="@Url.Action("Index", "Property", new { area = "" })">Manage Properties</a> </li>
+                    <li><a href="@Url.Action("Index", "Maintenance", new { area = "" })">Manage Maintenance</a> </li>
+                    <li><a href="@Url.Action("Index", "Frequency", new { area = "" })">Manage Frequency</a> </li>
+                    <li><a href="@Url.Action("Index", "ServiceCharge", new { area = "" })">Manage Service Charge</a> </li>
+                    <li><a href="@Url.Action("Index", "ServiceType", new { area = "" })">Manage Service Type</a> </li>
+                </ul>
+            </li>
+        }
+        
+        
+        <li><a href="@Url.Action("Index", "Properties", new { area = "" })"><i class="fa fa-home"></i> <span>Properties</span></a></li>
+        
+        <li><a href="@Url.Action("Index", "Damage", new { area = "" })"><i class="fa fa-wrench"></i> <span>Report Damages</span></a></li>
+
+        <li><a href="@Url.Action("ViewPrpertiesOngoing", "Properties", new { area = "" })"><i class="fa fa-table"></i> <span>View Register Property</span></a></li>
+
+        <li><a href="@Url.Action("Index", "Payments", new { area = "" })"><i class="fa fa-file-text"></i> <span>Reports</span></a></li>
+
+        <li><a href="@Url.Action("Index", "ServiceChargePayment", new { area = "" })"><i class="fa fa-file-text"></i> <span>Service Charge Payment</span></a></li>
+
+    </ul>
+    <!-- //sidebar nav end -->
+    <!-- toggle button start -->
+    <a class="toggle-btn">
+        <i class="fa fa-angle-double-left menu-collapsed__left"><span>Collapse Sidebar</span></i>
+        <i class="fa fa-angle-double-right menu-collapsed__right"></i>
+    </a>
+    <!-- //toggle button end -->
+</div>
+    
+
+
+
+@section scripts {
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#toast").show();
+           
+        });
+    </script>
+}

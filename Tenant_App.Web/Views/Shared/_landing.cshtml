@@ -1,0 +1,113 @@
+﻿@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Tenant management software designed to streamline your operations by facilitating online rent collection, advertising available rental units, and conducting thorough tenant screening processes." />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+    <!-- //Meta tag Keywords -->
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="~/TenancyAsset/css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="~/TenancyAsset/css/style.css" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="~/TenancyAsset/css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!-- /Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- //Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="~/niesv.ico" />
+    <title>Tenancy App</title>
+
+</head>
+<body class="">
+   
+    <div class="">
+       
+    </div>
+    @await Component.InvokeAsync("NToastNotify")
+    @RenderBody()
+
+    <!--footer -->
+    <footer>
+        <div class="footer_1its py-5">
+            <div class="container py-md-4">
+
+                <div class="row footer-top mb-md-5 mb-4">
+                    <div class="col-lg-4 col-md-6 footer-grid_section_1its" data-aos="fade-right">
+                        <div class="footer-title-w3pvt">
+                            <h3>Address</h3>
+                        </div>
+                        <div class="footer-text">
+                            <p>Address : 1234 lock, Charlotte, North Carolina, United States</p>
+                            <p>Phone : +12 534894364</p>
+                            <p>Email : <a href="mailto:info@example.com">info@example.com</a></p>
+                            <p>Fax : +12 534894364</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-4 footer-grid_section_1its">
+                        <div class="footer-title-w3pvt">
+                            <h3>Quick Links</h3>
+                        </div>
+                        <div class="row">
+                            <ul class="col-6 links">
+                                <li><a href="#about">Why Choose Us </a></li>
+                                <li><a href="#features">Feature </a></li>
+                                <li><a href="#services">Services</a></li>
+
+                            </ul>
+                            <ul class="col-6 links">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mt-lg-0 mt-4 col-sm-12 footer-grid_section_1its" data-aos="fade-left">
+                        <div class="footer-title-w3pvt">
+                            @* <img src="~/TenancyAsset/images/lamata.png" alt="" style="max-width: 100%; max-height: 70px; margin-top:10vh;" /> *@
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+    <!-- copyright -->
+    <div class="cpy-right text-center py-3">
+        <p class="copy-w3layouts">
+            Copyright &copy; 2023 by Data Allianze
+            @* <a href="http://w3layouts.com">W3layouts.</a> *@
+        </p>
+        <div class="move-top"><a href="#home" class="move-top"> <span class="fa fa-angle-up  mb-3" aria-hidden="true"></span></a></div>
+    </div>
+    <!-- //copyright -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script src="https://kit.fontawesome.com/bade0d0075.js" crossorigin="anonymous"></script>
+</body>
+</html>

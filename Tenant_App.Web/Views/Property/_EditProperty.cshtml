@@ -1,0 +1,123 @@
+﻿@model Tenant_App.Models.DataObjects.PropertyDtos.PropertyRegDto
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+
+
+<div class="modal-content" style="height:auto; padding-bottom:4vh;">
+    <div class="modal-header" style="background-color: #d3d3d3; display: flex; justify-content: space-between; align-items: center; padding: 1rem;">
+        <div class="newdepartmentmodaltitle" id="myModalLabel33"><strong>Edit Property</strong></div>
+        @* <a onclick="CloseModal()">
+        <i class="fa-solid fa-circle-xmark newdepartmentdropdowncanclebtn" id="addDeptClose"></i>
+        </a> *@
+        <button type="button" class="close" onclick="CloseModal()">
+            <i class="fa-solid fa-circle-xmark" id="addDeptClose"></i>
+        </button>
+    </div>
+
+
+    <section class="input-validation">
+        <div class="card" style="border:none;">
+            <div class="card-body">
+                <form asp-controller="Property" asp-action="Edit" enctype="multipart/form-data">
+                    <input asp-for="Id" type="hidden" />
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="nameDiv">
+                                <label class="newdepartmentmodaltitle">Property Name</label>
+                                <input type="text" asp-for="PropertyName" name="PropertyName" placeholder="Enter Property Name" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="nameDiv">
+                                <label class="newdepartmentmodaltitle">Shop No.</label>
+                                <input type="text" asp-for="RoomNumber" name="RoomNumber" placeholder="Enter House Number" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="nameDiv">
+                                <label class="newdepartmentmodaltitle">Property Description</label>
+                                <input type="text" asp-for="PropertyDesciption" name="PropertyDesciption" placeholder="Enter Property Description" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="nameDiv">
+                                <label class="newdepartmentmodaltitle">Property Information</label>
+                                <input type="text" asp-for="PropertyInformation" name="PropertyInformation" placeholder="Enter Property Information" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="nameDiv">
+                                <label class="newdepartmentmodaltitle">Property Address</label>
+                                <input type="text" asp-for="PropertyAddress" name="PropertyAddress" placeholder="Enter Property Address" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="nameDiv">
+                                <label class="newdepartmentmodaltitle">Duration</label>
+                                <input type="text" asp-for="DurationAllowed" name="DurationAllowed" placeholder="Enter Duration" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="nameDiv">
+                                <label class="newdepartmentmodaltitle">Size</label>
+                                <input type="text" asp-for="Size" name="Size" placeholder="Enter Size" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="nameDiv">
+                                <label class="newdepartmentmodaltitle">Available Apartment</label>
+                                <input type="number" asp-for="AvailableRoom" name="AvailableRoom" placeholder="Enter Available Apartment" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="nameDiv">
+                                <label class="newdepartmentmodaltitle">Dimension</label>
+                                <input type="text" asp-for="Dimension" name="Dimension" placeholder="Enter Dimension" class="form-control" required>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="nameDiv">
+                                <label class="newdepartmentmodaltitle">Remaining Apartment</label>
+                                <input type="number" asp-for="RemainingRoom" name="RemainingRoom" placeholder="Enter Remaining Apartment" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        
+                        <div class="col-md-6">
+                            <div class="nameDiv">
+                                <label class="newdepartmentmodaltitle">Hostel Image</label>
+                                <input type="file" id="Passport" asp-for="PropertyImagePath" name="PropertyImagePath" class="form-control" accept=".jpg,.jpeg,.png" onchange="previewImage(this)" />
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="modal-footer">
+                        <button id="submitButton" type="submit" class="btn btn-success"><span>Submit</span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script src="~/app-assets/js/scripts/forms/form-tooltip-valid.js"></script>
+<script src="~/app-assets/vendors/js/forms/validation/jqBootstrapValidation.js"></script>
+<script src="~/app-assets/js/scripts/forms/validation/form-validation.js"></script>
+<script src="~/app-assets/js/scripts/modal/components-modal.js"></script>

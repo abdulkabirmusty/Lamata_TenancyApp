@@ -1,0 +1,337 @@
+<<<<<<< HEAD
+2023-11-30 07:58:22,431 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-30 07:58:22,635 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 07:58:22,670 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+=======
+2023-11-29 09:05:36,839 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-29 09:05:36,889 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-29 09:05:36,894 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+>>>>>>> origin/Abdulkabir
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+<<<<<<< HEAD
+2023-11-30 07:58:22,877 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-30 07:58:23,061 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-30 07:58:23,191 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdullateefOdufeso\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-30 07:58:24,000 [14] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-30 07:58:24,190 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:14944:d6dc271b successfully announced in 1301.7578 ms
+2023-11-30 07:58:24,399 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:14944:d6dc271b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 07:58:25,581 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:14944:d6dc271b all the dispatchers started
+2023-11-30 07:59:13,883 [62] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-30 07:59:30,536 [70] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-30 08:17:44,359 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-30 08:17:44,409 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 08:17:44,458 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+=======
+2023-11-29 09:05:37,560 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:22428:c53407bf successfully announced in 542.3072 ms
+2023-11-29 09:05:37,596 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:22428:c53407bf is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-29 09:05:37,698 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-29 09:05:37,956 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:22428:c53407bf all the dispatchers started
+2023-11-29 12:59:25,727 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-29 12:59:25,741 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-29 12:59:25,749 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+>>>>>>> origin/Abdulkabir
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+<<<<<<< HEAD
+2023-11-30 08:17:44,638 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-30 08:17:45,323 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:20128:01ae9412 successfully announced in 702.6877 ms
+2023-11-30 08:17:45,424 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:20128:01ae9412 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 08:17:45,492 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-30 08:17:46,116 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:20128:01ae9412 all the dispatchers started
+2023-11-30 08:24:12,070 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-30 08:24:12,121 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 08:24:12,219 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 08:24:12,815 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-30 08:24:12,934 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-30 08:24:13,625 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:16968:5654f872 successfully announced in 964.1318 ms
+2023-11-30 08:24:13,781 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:16968:5654f872 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 08:24:14,801 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:16968:5654f872 all the dispatchers started
+2023-11-30 08:26:35,524 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-30 08:26:35,585 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 08:26:35,622 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 08:26:35,807 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-30 08:26:35,843 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-30 08:26:36,274 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:26220:2b1c90e1 successfully announced in 461.0133 ms
+2023-11-30 08:26:36,332 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:26220:2b1c90e1 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 08:26:36,765 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:26220:2b1c90e1 all the dispatchers started
+2023-11-30 08:32:16,086 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-30 08:32:16,295 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 08:32:16,442 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 08:32:17,316 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdullateefOdufeso\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-30 08:32:18,794 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:17352:4e6dce92 successfully announced in 1584.7636 ms
+2023-11-30 08:32:18,872 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:17352:4e6dce92 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 08:32:18,995 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 2 servers were removed due to timeout
+2023-11-30 08:32:19,371 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:17352:4e6dce92 all the dispatchers started
+2023-11-30 08:39:39,885 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-30 08:39:39,943 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 08:39:40,070 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 08:39:41,843 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-30 08:39:42,851 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-30 08:39:43,504 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdullateefOdufeso\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-30 08:39:43,646 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:4344:56ab0f84 successfully announced in 2274.3771 ms
+2023-11-30 08:39:43,723 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:4344:56ab0f84 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 08:39:43,833 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 2 servers were removed due to timeout
+2023-11-30 08:39:44,385 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:4344:56ab0f84 all the dispatchers started
+2023-11-30 08:40:31,996 [50] WARN Microsoft.AspNetCore.Identity.UserManager - Invalid password for user 36bb8ba3-f247-4444-b242-b23d6cdb23ec.
+2023-11-30 08:52:08,617 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-30 08:52:08,718 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 08:52:08,756 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 08:52:09,501 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:23652:3d6409b9 successfully announced in 568.3672 ms
+2023-11-30 08:52:09,598 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:23652:3d6409b9 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 08:52:10,040 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:23652:3d6409b9 all the dispatchers started
+2023-11-30 09:07:50,624 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-30 09:07:50,677 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 09:07:50,699 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 09:07:50,824 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-30 09:07:50,871 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdullateefOdufeso\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-30 09:07:51,404 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:20204:b375bc4c successfully announced in 577.1871 ms
+2023-11-30 09:07:51,452 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:20204:b375bc4c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 09:07:51,559 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-30 09:07:51,827 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:20204:b375bc4c all the dispatchers started
+2023-11-30 10:28:09,790 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-30 10:28:09,838 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 10:28:09,868 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 10:28:09,947 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-30 10:28:09,970 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-30 10:28:10,279 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:29636:d064116f successfully announced in 333.288 ms
+2023-11-30 10:28:10,313 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:29636:d064116f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 10:28:10,412 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-30 10:28:10,545 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:29636:d064116f all the dispatchers started
+=======
+2023-11-29 12:59:25,825 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-29 12:59:25,841 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-29 12:59:25,845 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-29 12:59:26,058 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:28944:1e06e7dc successfully announced in 233.2836 ms
+2023-11-29 12:59:26,076 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:28944:1e06e7dc is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-29 12:59:26,115 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-29 12:59:26,291 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:28944:1e06e7dc all the dispatchers started
+>>>>>>> origin/Abdulkabir
+2023-11-30 10:39:38,179 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-30 10:39:38,218 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 10:39:38,249 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 10:39:38,355 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-30 10:39:38,851 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:23448:65b6bcc8 successfully announced in 470.512 ms
+2023-11-30 10:39:38,886 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:23448:65b6bcc8 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 10:39:38,981 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-30 10:39:39,149 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:23448:65b6bcc8 all the dispatchers started
+2023-11-30 10:48:47,250 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-30 10:48:47,290 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 10:48:47,305 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 10:48:47,391 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-30 10:48:47,746 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:836:1ef9abf3 successfully announced in 350.0545 ms
+2023-11-30 10:48:47,781 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:836:1ef9abf3 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 10:48:47,847 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 2 servers were removed due to timeout
+2023-11-30 10:48:48,021 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:836:1ef9abf3 all the dispatchers started
+2023-11-30 10:52:30,524 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-30 10:52:30,599 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 10:52:30,618 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 10:52:31,137 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:31320:49792a1c successfully announced in 415.3046 ms
+2023-11-30 10:52:31,167 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:31320:49792a1c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 10:52:31,472 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:31320:49792a1c all the dispatchers started
+2023-11-30 10:53:36,470 [8] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2023-11-30 10:57:04,807 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-30 10:57:04,871 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 10:57:04,897 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 10:57:05,031 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-30 10:57:05,163 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-30 10:57:05,759 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:18548:816a10b3 successfully announced in 734.1478 ms
+2023-11-30 10:57:05,841 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:18548:816a10b3 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 10:57:05,933 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-30 10:57:06,389 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:18548:816a10b3 all the dispatchers started
+2023-11-30 10:58:50,888 [74] WARN Microsoft.AspNetCore.Identity.UserManager - Invalid password for user 83906355-fa1f-41f7-9f05-fbf00f983863.
+2023-11-30 11:02:05,992 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-30 11:09:29,746 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-30 11:09:29,850 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 11:09:30,163 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 11:20:18,048 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-30 11:20:18,186 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 11:23:52,458 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-30 11:28:02,488 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-30 11:28:02,919 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 11:28:09,236 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 11:28:09,480 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-30 11:28:09,977 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:31296:9e0a2596 successfully announced in 514.5246 ms
+2023-11-30 11:28:10,028 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:31296:9e0a2596 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 11:28:10,154 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-30 11:28:10,498 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:31296:9e0a2596 all the dispatchers started
+2023-11-30 12:10:44,535 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-30 12:10:44,606 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 12:10:45,569 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 12:10:47,330 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-30 12:10:49,877 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:27380:f62ec571 successfully announced in 3132.618 ms
+2023-11-30 12:10:50,163 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:27380:f62ec571 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 12:10:51,377 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-30 12:10:51,737 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:27380:f62ec571 all the dispatchers started
+2023-11-30 17:39:40,112 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-30 17:39:40,152 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 17:39:40,159 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 17:39:40,271 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-30 17:39:40,275 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-30 17:39:40,278 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-30 17:39:40,596 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:29808:f6ba48c7 successfully announced in 327.8117 ms
+2023-11-30 17:39:40,625 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:29808:f6ba48c7 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 17:39:40,690 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-30 17:39:41,026 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:29808:f6ba48c7 all the dispatchers started
+2023-11-30 21:07:27,771 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-30 21:07:27,819 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 21:07:27,829 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 21:07:28,127 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-30 21:07:28,462 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-30 21:07:28,927 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:19936:53fcb084 successfully announced in 872.1717 ms
+2023-11-30 21:07:29,049 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:19936:53fcb084 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 21:07:29,354 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-30 21:07:30,654 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:19936:53fcb084 all the dispatchers started
+2023-11-30 21:36:08,151 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-30 21:36:08,572 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 21:36:08,597 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 21:36:09,087 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-30 21:36:09,097 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-30 21:36:09,120 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-30 21:36:12,451 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:11008:b7b0c59a successfully announced in 3131.6613 ms
+2023-11-30 21:36:12,859 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:11008:b7b0c59a is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 21:36:12,988 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-30 21:36:13,208 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:11008:b7b0c59a all the dispatchers started
+2023-11-30 21:39:06,658 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-30 21:39:06,873 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 21:39:07,045 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 21:39:10,639 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-30 21:39:10,791 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-30 21:39:11,058 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-30 21:39:11,925 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:16184:88a0d624 successfully announced in 3627.4512 ms
+2023-11-30 21:39:11,989 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:16184:88a0d624 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 21:39:12,482 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:16184:88a0d624 all the dispatchers started
+2023-11-30 21:42:16,431 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-30 21:42:16,480 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 21:42:16,493 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 21:42:17,566 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-30 21:42:17,779 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-30 21:42:17,912 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-30 21:42:18,467 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:14140:350c0d85 successfully announced in 1621.1233 ms
+2023-11-30 21:42:19,071 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:14140:350c0d85 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 21:42:19,652 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-30 21:42:23,662 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:14140:350c0d85 all the dispatchers started
+2023-11-30 21:47:19,665 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-30 22:32:11,138 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-30 22:32:11,176 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 22:32:11,225 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 22:32:11,883 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-30 22:32:11,912 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-30 22:32:11,921 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-30 22:32:14,504 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:16472:9a6a8da1 successfully announced in 1132.7774 ms
+2023-11-30 22:32:15,014 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:16472:9a6a8da1 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 22:32:16,220 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:16472:9a6a8da1 all the dispatchers started
+2023-11-30 22:35:21,012 [48] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2023-11-30 22:37:17,779 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-30 23:42:20,410 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-30 23:42:20,663 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 23:42:20,758 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 23:42:21,339 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-30 23:42:21,378 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-30 23:42:21,443 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-30 23:42:21,851 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:32360:6f3fb391 successfully announced in 661.9275 ms
+2023-11-30 23:42:21,918 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:32360:6f3fb391 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 23:42:22,147 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-30 23:42:23,346 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:32360:6f3fb391 all the dispatchers started
+2023-11-30 23:59:31,812 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-30 23:59:31,829 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-30 23:59:31,832 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-30 23:59:31,871 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-30 23:59:31,874 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-30 23:59:31,877 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-30 23:59:32,018 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:30256:e7c6ee64 successfully announced in 145.4083 ms
+2023-11-30 23:59:32,033 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:30256:e7c6ee64 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-30 23:59:32,079 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-30 23:59:32,177 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:30256:e7c6ee64 all the dispatchers started

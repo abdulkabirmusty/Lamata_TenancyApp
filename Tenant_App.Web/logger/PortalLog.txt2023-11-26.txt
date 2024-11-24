@@ -1,0 +1,273 @@
+<<<<<<< HEAD
+2023-11-25 21:17:22,175 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-25 21:17:22,185 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-25 21:17:22,188 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+=======
+2023-11-26 20:00:42,821 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-26 20:00:42,842 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-26 20:00:42,846 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+>>>>>>> origin/Abdulkabir
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+<<<<<<< HEAD
+2023-11-25 21:17:22,255 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-25 21:17:22,259 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-25 21:17:22,263 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting2\Evoting.Web
+2023-11-25 21:17:22,572 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:20568:97fb6a0d successfully announced in 313.7296 ms
+2023-11-25 21:17:22,601 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:20568:97fb6a0d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-25 21:17:22,690 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-25 21:17:22,888 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:20568:97fb6a0d all the dispatchers started
+2023-11-25 21:35:25,735 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-25 21:35:25,775 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-25 21:35:25,786 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-25 21:35:25,907 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-25 21:35:25,917 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-25 21:35:25,927 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-25 21:35:26,342 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:1784:a38ad57b successfully announced in 432.8184 ms
+2023-11-25 21:35:26,362 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:1784:a38ad57b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-25 21:35:26,448 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-25 21:35:26,611 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:1784:a38ad57b all the dispatchers started
+2023-11-25 22:49:40,424 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-25 22:49:40,455 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-25 22:49:40,460 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-25 22:49:40,574 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-25 22:49:40,895 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:23784:38b81cd3 successfully announced in 326.7065 ms
+2023-11-25 22:49:40,913 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:23784:38b81cd3 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-25 22:49:40,981 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-25 22:49:41,124 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:23784:38b81cd3 all the dispatchers started
+2023-11-25 22:50:18,116 [59] WARN Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware - Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2023-11-25 23:26:03,763 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-25 23:26:03,784 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-25 23:26:03,788 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-25 23:26:03,861 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-25 23:26:03,875 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-25 23:26:03,880 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-25 23:26:04,163 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:16312:2bfe779c successfully announced in 298.5619 ms
+2023-11-25 23:26:04,177 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:16312:2bfe779c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-25 23:26:04,210 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-25 23:26:04,379 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:16312:2bfe779c all the dispatchers started
+2023-11-26 19:58:52,646 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-26 19:58:52,744 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-26 19:58:52,780 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-26 19:58:53,009 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-26 19:58:53,063 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-26 19:58:53,147 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdullateefOdufeso\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-26 19:58:53,187 [6] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-26 19:59:08,255 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+2023-11-26 19:59:37,653 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:00:29.3543886 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 19:59:52,786 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:00:44.4824624 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:00:22,296 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:01:13.9764633 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:00:37,462 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:01:29.0950792 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:00:52,800 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:01:44.4971267 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:01:22,369 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:02:14.0618640 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:01:37,482 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:02:29.1486679 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:01:52,584 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:02:44.2783232 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:02:07,679 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:02:59.3519709 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:02:37,152 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:03:28.7763520 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:03:06,589 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:03:58.2962986 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:03:39,737 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:04:31.4164997 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:04:12,678 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:05:04.3770665 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:04:45,618 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:05:37.3220435 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:05:18,439 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:06:10.1417842 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:05:51,326 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:06:42.9916293 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:06:24,214 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:07:15.8942522 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:06:57,182 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:07:48.8807666 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:07:30,066 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:08:21.7429769 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:08:03,182 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:08:54.8617426 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:08:39,043 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:09:29.9414958 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:09:12,263 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:10:03.9614036 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:09:45,100 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:10:36.8034935 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:10:18,286 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:11:09.9851337 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:10:51,372 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:11:43.0513293 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:11:24,811 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:12:16.5043755 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:11:58,002 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:12:49.6681980 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:12:31,126 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:13:22.8281530 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:13:04,310 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:13:56.0079724 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:13:37,288 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:14:28.9814146 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:14:10,236 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:15:01.9191628 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:14:43,252 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:15:34.9506228 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:15:18,223 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:16:09.7327267 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:15:52,004 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:16:43.3442373 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:16:25,310 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:17:16.8716479 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:17:00,229 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:17:51.9071841 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:17:34,040 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:18:25.7219363 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:18:08,128 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:18:59.8297318 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:18:41,972 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:19:33.4997176 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:19:15,992 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:20:07.4736250 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:19:49,807 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:20:41.2066877 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:20:23,770 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:21:15.1101764 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:21:00,500 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:21:50.1828668 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:21:34,536 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:22:26.1603198 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:22:10,457 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:23:01.1123024 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:22:45,125 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:23:36.5920509 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:23:18,778 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:24:10.4550014 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:23:52,501 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:24:44.1504575 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:24:26,011 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:25:17.7069471 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:24:58,928 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:25:50.6172306 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:25:33,394 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:26:25.0861703 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:26:02,874 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:26:54.4792320 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:26:34,937 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:27:26.5792474 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:27:04,868 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:27:56.5682274 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:27:38,833 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:28:30.2158265 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:28:12,224 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:29:03.9253195 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:28:45,290 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:29:36.9924400 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:29:18,737 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:30:10.4442767 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:29:53,616 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:30:45.2567809 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:30:29,600 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:31:21.2937488 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:31:03,408 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:31:55.1061644 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:31:37,346 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:32:28.9548235 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:32:11,561 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:33:03.2582998 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:32:46,364 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:33:38.0622022 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:33:19,539 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:34:11.2026212 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:33:54,118 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:34:45.8134083 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:34:27,597 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:35:19.0348806 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:35:02,991 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:35:54.4308182 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:35:36,743 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:36:27.9908245 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:36:11,267 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:37:02.9295572 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:36:45,451 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:37:37.0479573 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:37:19,865 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:38:11.5435405 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:37:54,459 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:38:46.1574159 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:38:32,736 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:39:24.2921572 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:39:07,689 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:39:58.6041768 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:39:41,075 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:40:32.7557607 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:40:16,813 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:41:07.4592867 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:40:50,498 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:41:42.1619976 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:41:23,650 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:42:15.3388139 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:41:56,696 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:42:48.3935064 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:42:29,730 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:43:21.4259260 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:43:03,074 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:43:54.7780437 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:43:36,693 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:44:28.0687551 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:44:09,909 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:45:01.6096341 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:44:44,971 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:45:36.3401082 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:45:18,910 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:46:10.5792530 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:45:53,335 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:46:44.7003831 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:46:27,709 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:47:18.8125643 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:47:02,259 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:47:53.9507001 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:47:35,436 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:48:27.1370736 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:48:09,884 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:49:01.5751675 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:48:39,666 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:49:31.2019856 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:49:09,990 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:50:01.6850876 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:49:39,546 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:50:31.2361691 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:50:12,567 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:51:04.2667007 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:50:46,628 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:51:38.3242397 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:51:20,241 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:52:11.9322499 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:51:54,770 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:52:46.4074228 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:52:29,236 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:53:20.9261750 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:53:03,233 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:53:54.9342035 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:53:36,274 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:54:27.9343006 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:54:10,088 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:55:01.7525143 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:54:44,406 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:55:36.0816804 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:55:18,479 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:56:10.1777626 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:55:51,891 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:56:43.5653247 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:56:27,244 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:57:18.9087073 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:57:01,897 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:57:53.4168767 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:57:36,290 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:58:27.9648053 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:58:10,047 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:59:01.5277893 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:58:43,530 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:59:35.2024154 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:59:17,185 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:00:08.8429876 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 20:59:51,195 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:00:42.8578303 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:00:24,576 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:01:16.2721393 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:00:58,312 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:01:49.8326635 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:01:31,918 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:02:23.6114047 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:02:05,856 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:02:57.5552351 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:02:40,335 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:03:32.0385562 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:03:14,476 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:04:06.0937014 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:03:48,696 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:04:40.3803020 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:04:23,379 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:05:15.0793662 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:04:56,957 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:05:48.2489844 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:05:31,008 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:06:22.6115481 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:06:04,822 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:06:56.4904716 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:06:30,993 [57] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-26 21:06:38,028 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:07:29.7033427 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:07:11,676 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:08:03.3269984 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:07:45,712 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:08:37.0891743 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:08:19,079 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:09:10.7870386 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:08:56,026 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:09:46.9300527 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:09:30,167 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:10:21.8704511 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:09:45,733 [48] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-26 21:09:49,883 [74] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-26 21:09:52,181 [80] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-26 21:09:55,087 [81] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-26 21:10:03,636 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:10:55.2862962 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:10:36,590 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:11:28.2507797 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:11:09,613 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:12:01.3033395 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:11:21,022 [94] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-26 21:11:42,504 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:12:34.1920115 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:12:11,287 [100] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-26 21:12:16,310 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:13:07.9799989 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:12:39,293 [95] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-26 21:12:49,409 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:13:41.1001646 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:13:20,657 [117] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-26 21:13:22,313 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:14:14.0112787 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:13:57,851 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:14:48.5667702 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:14:31,873 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:15:23.5310626 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:15:05,844 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:15:57.4849611 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:15:39,732 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:16:31.4301398 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:16:14,246 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:17:05.2493185 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:16:47,916 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:17:39.6131318 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:17:20,854 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:18:12.5512790 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:17:46,033 [138] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-26 21:17:54,161 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:18:45.8540072 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:18:03,633 [143] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-26 21:18:18,846 [150] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-26 21:18:22,217 [147] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-26 21:18:22,448 [142] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-26 21:18:23,731 [149] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-26 21:18:25,540 [138] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-26 21:18:25,668 [141] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-26 21:18:25,669 [150] ERROR WeApproveProj.Services.Handler.RoleServices.RoleServices - The entity type 'ApplicationUserLogin' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2023-11-26 21:18:26,006 [142] ERROR WeApproveProj.Services.Handler.RoleServices.RoleServices - The entity type 'ApplicationUserLogin' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2023-11-26 21:18:26,541 [138] ERROR WeApproveProj.Services.Handler.RoleServices.RoleServices - The entity type 'ApplicationUserLogin' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2023-11-26 21:18:26,970 [141] ERROR WeApproveProj.Services.Handler.RoleServices.RoleServices - The entity type 'ApplicationUserLogin' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2023-11-26 21:18:27,495 [147] ERROR WeApproveProj.Services.Handler.RoleServices.RoleServices - The entity type 'ApplicationUserLogin' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2023-11-26 21:18:28,111 [149] ERROR WeApproveProj.Services.Handler.RoleServices.RoleServices - The entity type 'ApplicationUserLogin' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2023-11-26 21:18:28,963 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:19:20.6455157 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:18:39,809 [131] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-26 21:19:02,159 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:19:53.8604536 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:19:35,150 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:20:26.8513736 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:20:08,137 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:20:59.8168292 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:20:41,149 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:21:32.8452103 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 21:21:15,248 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 01:22:06.7134794 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 23:51:48,947 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 03:52:40.6433492 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 23:52:18,280 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 03:53:09.9793536 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 23:52:51,073 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 03:53:42.7704023 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 23:53:23,949 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 03:54:15.6437193 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 23:53:56,719 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 03:54:48.4231099 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 23:54:29,543 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 03:55:21.2481533 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 23:55:02,430 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 03:55:54.1277057 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 23:55:35,295 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 03:56:27.0035220 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 23:56:08,094 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 03:56:59.7959873 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 23:56:40,920 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 03:57:32.6260680 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 23:57:13,708 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 03:58:05.4173528 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 23:57:46,525 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 03:58:38.2313440 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 23:58:19,326 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 03:59:11.0308362 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 23:58:52,170 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 03:59:43.8741286 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 23:59:24,956 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 04:00:16.6598280 due to an exception, will be retried no more than in 00:00:15
+2023-11-26 23:59:57,810 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 04:00:49.5122287 due to an exception, will be retried no more than in 00:00:15
+=======
+2023-11-26 20:00:42,925 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-26 20:00:42,935 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-26 20:00:42,938 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-26 20:00:43,118 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:21576:ce82b9a6 successfully announced in 191.6406 ms
+2023-11-26 20:00:43,131 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:21576:ce82b9a6 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-26 20:00:43,180 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-26 20:00:43,239 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:21576:ce82b9a6 all the dispatchers started
+>>>>>>> origin/Abdulkabir

@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_NabtebLogi.cshtml";
+}
+
+<div class="">
+    <header class="header">
+        <div class="container">
+            <!-- nav -->
+            <nav class="pb-3">
+                <div id="logo">
+                    <h1>
+                        <a class="navbar-brand" href="index.html"><img src="~/TenancyAsset/images/lamata.png" alt="" style="max-width: 100%; max-height: 70px; margin-top: -3vh;" /></a>
+                    </h1>
+                </div>
+
+                <label for="drop" class="toggle">Menu</label>
+                <input type="checkbox" id="drop" />
+                <ul class="menu mt-2">
+                    <li class="active"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#services">Services</a></li>
+                    @* </li> *@
+                    @* <li class="header-right">
+                    <a href="contact.html" class="contact"> <span class="fa fa-user"></span> Admin Login</a>
+                    </li> *@
+                </ul>
+
+
+            </nav>
+            <!-- //nav -->
+        </div>
+    </header>
+</div>
+
+
+<div style="margin-top: 30vh; margin-bottom:42vh;">
+    <h2 class="form-heading">Select Category</h2>
+    <div class="app-cam">
+        <div class="form">
+
+            <div class="" style="width:30vw;">
+                <a asp-controller="CustomAccount" asp-action="TenantRegister" class="btn btn-primary">Individual Registration</a>
+                <a asp-controller="CustomAccount" asp-action="CooperateTenantRegister" class="btn btn-secondary">Corporate Registration</a>
+                @* <button asp-controller="Account" asp-action="TenantRegister" class="btn btn-sucess">Individual</button>
+                <button asp-controller="Account" asp-action="TenantRegister" class="btn btn-secondary">Coporate Organization</button> *@
+            </div>
+        </div>
+
+
+    </div>
+</div>
+

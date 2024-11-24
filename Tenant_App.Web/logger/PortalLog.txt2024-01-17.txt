@@ -1,0 +1,176 @@
+2024-01-17 09:01:42,194 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@NabtebHr'
+2024-01-17 09:01:42,243 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-17 09:01:42,265 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-17 09:01:42,328 [11] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 018d4c62-b2ca-4ece-a418-2edbaf09aed6 validation failed: DuplicateRoleName.
+2024-01-17 09:01:42,375 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-01-17 09:01:42,383 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-01-17 09:01:42,393 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Source\Repos\Nabteb_HR_Project\NABTEB_HR.Web
+2024-01-17 09:01:42,462 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:21176:2b7e6ec4 successfully announced in 60.1065 ms
+2024-01-17 09:01:42,496 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:21176:2b7e6ec4 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-17 09:01:42,626 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-01-17 09:01:42,837 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:21176:2b7e6ec4 all the dispatchers started
+2024-01-17 09:01:43,042 [5] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:09,977 [16] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:10,505 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:14,200 [16] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:33,092 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:33,912 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:33,914 [48] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:39,457 [49] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:40,073 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:40,076 [49] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:42,401 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:43,023 [49] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:43,028 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:44,719 [49] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:45,364 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:45,366 [48] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:47,828 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:47,923 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:47,923 [49] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:49,995 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:59,262 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:59,452 [17] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:59,593 [17] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:02:59,594 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:03:03,713 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:03:23,799 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:03:23,907 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:03:23,989 [76] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:03:23,998 [77] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:03:36,764 [78] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:03:36,869 [78] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:03:36,872 [76] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:03:39,206 [78] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:03:50,515 [16] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:03:50,619 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:03:50,705 [77] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:03:50,711 [78] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:03:54,029 [77] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:04:07,368 [76] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:04:07,419 [77] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:04:07,494 [78] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:04:07,503 [76] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:04:19,511 [78] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:04:24,482 [77] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:04:24,606 [76] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:04:24,658 [16] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:04:24,659 [76] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:04:28,979 [76] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:04:37,758 [77] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:04:37,794 [16] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:04:37,843 [16] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:04:37,844 [76] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:04:41,928 [81] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:04:45,450 [81] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:04:45,525 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:04:45,570 [81] WARN Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware - Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2024-01-17 09:04:45,592 [78] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:04:45,600 [76] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:06:19,100 [92] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:06:19,233 [85] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:06:19,236 [89] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:06:30,892 [84] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:06:30,993 [91] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:06:31,000 [89] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:06:37,851 [92] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:06:39,081 [90] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:06:39,156 [90] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:06:45,494 [90] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:06:45,565 [91] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:06:45,568 [83] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:07:07,416 [90] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:07:17,029 [49] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:07:17,162 [49] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:07:17,244 [49] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:07:17,247 [63] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:07:19,269 [49] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:07:34,064 [49] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:07:34,153 [63] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:07:34,207 [64] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:07:34,210 [49] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:08:16,049 [10] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:08:16,114 [8] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:32:36,306 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@NabtebHr'
+2024-01-17 09:32:36,325 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-17 09:32:36,330 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-17 09:32:36,349 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 191477db-7ac2-43d8-9e5f-378db363c0ad validation failed: DuplicateRoleName.
+2024-01-17 09:32:36,367 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 128c59b5-5415-431a-a1f5-a82a2debd844 validation failed: DuplicateRoleName.
+2024-01-17 09:32:36,389 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-01-17 09:32:36,392 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-01-17 09:32:36,395 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Source\Repos\Nabteb_HR_Project\NABTEB_HR.Web
+2024-01-17 09:32:36,436 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:4308:d4d3f48d successfully announced in 36.9863 ms
+2024-01-17 09:32:36,453 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:4308:d4d3f48d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-17 09:32:36,488 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-01-17 09:32:36,596 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:4308:d4d3f48d all the dispatchers started
+2024-01-17 09:32:36,756 [16] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:32:59,289 [53] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:32:59,822 [51] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:33:03,137 [15] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:33:05,966 [53] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:33:07,426 [15] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:33:07,433 [51] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:33:10,401 [52] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:33:29,504 [52] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2024-01-17 09:33:31,826 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:33:34,266 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:33:34,299 [51] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:33:39,047 [52] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:33:39,130 [52] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:33:39,235 [50] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:33:41,753 [52] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-01-17 09:53:17,998 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@NabtebHr'
+2024-01-17 09:53:18,189 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-17 09:53:18,194 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 6bd327f7-9876-4cea-b9e3-57a4f0b83b8f validation failed: DuplicateRoleName.
+2024-01-17 09:53:18,244 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-17 09:53:18,263 [11] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 82ee86d1-0619-4666-9749-72ae81375867 validation failed: DuplicateRoleName.
+2024-01-17 09:53:18,427 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-01-17 09:53:18,438 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-01-17 09:53:18,461 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Source\Repos\Nabteb_HR_Project\NABTEB_HR.Web
+2024-01-17 09:53:18,541 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:4520:cfd3bd75 successfully announced in 87.5957 ms
+2024-01-17 09:53:18,583 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:4520:cfd3bd75 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-17 09:53:18,654 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-01-17 09:53:19,029 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:4520:cfd3bd75 all the dispatchers started
+2024-01-17 14:02:00,887 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@NabtebHr'
+2024-01-17 14:02:00,930 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-17 14:02:00,939 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-17 14:02:00,978 [5] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 185e0ffe-2efd-4f5f-b9a4-39fb7bf985a8 validation failed: DuplicateRoleName.
+2024-01-17 14:02:01,021 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-01-17 14:02:01,050 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-01-17 14:02:01,068 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Source\Repos\Nabteb_HR_Project\NABTEB_HR.Web
+2024-01-17 14:02:01,153 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:46436:948b88aa successfully announced in 78.7711 ms
+2024-01-17 14:02:01,239 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:46436:948b88aa is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-17 14:02:01,367 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-01-17 14:02:01,752 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:46436:948b88aa all the dispatchers started
+2024-01-17 15:36:35,131 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@NabtebHr'
+2024-01-17 15:36:35,183 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-17 15:36:35,190 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-17 15:36:35,283 [9] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 59f41f34-cc3c-4c28-9f05-f9f9883ee4cd validation failed: DuplicateRoleName.
+2024-01-17 15:36:35,304 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-01-17 15:36:35,310 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-01-17 15:36:35,320 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Source\Repos\Nabteb_HR_Project\NABTEB_HR.Web
+2024-01-17 15:36:35,339 [4] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 0580ea3b-7ef4-43fd-8da6-29a6b5a8f89f validation failed: DuplicateRoleName.
+2024-01-17 15:36:35,468 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:42172:358c17bd successfully announced in 135.3381 ms
+2024-01-17 15:36:35,525 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:42172:358c17bd is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-17 15:36:35,619 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-01-17 15:36:35,848 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:42172:358c17bd all the dispatchers started

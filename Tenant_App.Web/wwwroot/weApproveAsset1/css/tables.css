@@ -1,0 +1,654 @@
+@font-face {
+    font-family: 'DaxlinePro';
+    src: url('../assets/DaxlinePro-Regular/DaxlinePro-Regular.ttf') format('opentype');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+a,
+button,
+section,
+td,
+th,
+tr {
+    font-family: 'DaxlinePro', sans-serif;
+}
+
+input {
+    border: 1px solid #a5a5a5;
+    color: #a5a5a5;
+}
+
+    input::placeholder {
+        color: #a5a5a5;
+    }
+
+label {
+    color: #a5a5a5;
+    font-size: 15px;
+}
+
+/*.dropdown-menus {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0rem;
+    margin: 0rem;
+    list-style: none;
+    z-index: 999;
+    min-width: 100%
+}
+
+.dropdowns {
+    width: 11.5vw;
+    height: 0.5vw;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menus li {
+    padding: 3px;
+    cursor: pointer;
+}
+
+.dropdown-menus li:hover {
+    background-color: #f4f4f4;
+}*/
+
+.makePayment {
+    color: white;
+    background-color: #D40E1F;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 12px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.table-container-general {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #7070701D;
+    height: fit-content;
+    margin-top: 80px;
+    margin-left: 4.6vw;
+    width: 90%;
+}
+
+.table-control {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 2px;
+    font-weight: bold;
+    font-size: 14px;
+    height: auto;
+}
+
+    .table-control > .p {
+        display: flex;
+        color: #D40E1F;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .table-control > .datesDiv {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        width: 95% !important;
+    }
+
+    .table-control > .reportdatesDiv,
+    .table-control > .mngSubDateDiv {
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+        margin-top: 10px;
+        margin-left: 70px;
+        width: 95% !important;
+    }
+
+.reportdate,
+.reportstaffDiv,
+.mngsubDate,
+.mngsubTo {
+    width: 48%;
+}
+
+.mngstaff > .btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.prevstaff > .btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+
+thead {
+    background-color: #09cf1840;
+}
+
+#addDeptModalOpen {
+    font-size: 14px;
+}
+
+#datepicker {
+    width: 70%;
+}
+
+.datePicker,
+#staffselect,
+#statusselect {
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding: 2%;
+    outline: none;
+    width: 70%;
+}
+
+.pagination > li.active > a,
+.pagination > li.active > span {
+    background-color: transparent;
+    color: #D40E1F;
+    outline: none !important;
+}
+
+
+
+.pagination .page-item a.page-link {
+    border: none;
+}
+
+tr {
+    color: #094b2b;
+    font-size: 8px;
+    font-weight: medium;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 3%; */
+    width: 100%;
+}
+
+.td {
+    color: #8E8E8E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 3%; */
+    width: auto;
+    border-bottom: 2px solid #7070701D;
+    font-size: 8px;
+}
+
+td {
+    text-align: center;
+    font-size: 9px;
+}
+
+.sn {
+    /*display: flex;
+    align-items: center;
+    justify-content: left;*/
+    /*width: 10%;*/
+    width: 5%;
+    border: none;
+    text-align: left;
+}
+
+.r1-col {
+    /*display: flex;*/
+    /*align-items: left;*/
+   /* justify-content: left;*/
+    text-align: left;
+    /*width: auto;*/
+    width: 20%;
+    border: none;
+}
+
+.r2-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 20%;
+    border: none;
+}
+
+.r3-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 20%;
+    border: none;
+}
+
+.r4-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 20%;
+    border: none;
+}
+
+.r5-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 15%;
+    border: none;
+}
+
+ .r6-col {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+     width: 15%;
+     border: none;
+ }
+
+
+.mngstaff > .p {
+    margin-top: 5%;
+}
+
+.prevstaff > .p {
+    margin-top: 5%;
+}
+
+#uploadStaffbtn {
+    border: none;
+}
+
+    #uploadStaffbtn > span {
+        display: none;
+    }
+
+#addStaffbtn {
+    border: none;
+    background-color: transparent;
+}
+
+    #addStaffbtn > span {
+        display: none;
+    }
+
+#uploadStaff > span {
+    display: none;
+}
+
+select {
+    color: #8E8E8E;
+    height: 100%;
+}
+
+#example_info {
+    text-align: center;
+    color: #8E8E8E;
+    margin: auto;
+}
+
+#example_paginate {
+    text-align: center;
+    color: #8E8E8E;
+    margin: auto;
+}
+
+.paginate_button > a {
+    border: none;
+    color: #8E8E8E;
+}
+
+    .paginate_button > a > .active {
+        color: #D40E1F;
+    }
+
+@media (min-width:768px) {
+    .table-control {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+    }
+
+        .table-control > .p {
+            display: flex;
+            color: #009900;
+            font-weight: bold;
+            width: 20% !important;
+        }
+
+        .table-control > .datesDiv {
+            display: flex;
+            align-items: center;
+            width: 79% !important;
+            margin-top: 0;
+        }
+
+        .table-control > .reportdatesDiv,
+        .table-control > .mngSubDateDiv {
+            width: 65% !important;
+        }
+
+    #uploadStaffbtn {
+        border: 0.5px solid;
+    }
+
+    .mngstaff > .btns {
+        width: 70%;
+    }
+
+    .prevstaff > .btns {
+        width: 50%;
+    }
+
+    .mngstaff > .p {
+        margin-top: 1vw;
+    }
+
+    .prevstaff > .p {
+        margin-top: 1vw;
+    }
+
+    #addStaffbtn > span {
+        display: inline-block;
+    }
+
+    #uploadStaff > span {
+        display: inline-block;
+    }
+
+    #uploadStaffbtn > span {
+        display: inline-block;
+        flex-direction: row;
+    }
+
+    .table-control {
+        font-size: 16px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    #addDeptModalOpen {
+        font-size: 16px;
+    }
+
+    tr,
+    .td,
+    td {
+        font-size: 12px;
+    }
+
+    .dataTables_wrapper div:nth-child(3) {
+        padding: 0 20%;
+        background-color: white;
+    }
+}
+
+@media (min-width:1024px) {
+    #datepicker {
+        width: auto;
+    }
+
+    .table-container-general {
+        width: 70%;
+        margin-top: 6.2vw;
+    }
+
+    .table-control {
+        font-size: 1.2vw;
+        height: 3vw;
+        padding: 2vw 3%;
+    }
+
+    #addDeptModalOpen {
+        font-size: 1vw;
+    }
+
+    tr,
+    .td,
+    td {
+        font-size: 1.1vw;
+    }
+
+    .table-control > .reportdatesDiv {
+        width: 55% !important;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .table-control > .datesDiv {
+        width: 75% !important;
+    }
+
+    .table-control > .mngSubDateDiv {
+        width: 60% !important;
+    }
+}
+
+.reports_s_n {
+    width: 5% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: none !important;
+}
+
+.reports_row1 {
+    width: 16% !important;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: start;
+    border-bottom: none !important;
+}
+
+.reports_row2 {
+    width: 18% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    border-bottom: none !important;
+}
+
+.reports_row3 {
+    width: 20% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    border-bottom: none !important;
+}
+
+.reports_row4 {
+    width: 10% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    border-bottom: none !important;
+}
+
+.reports_row5 {
+    width: 5% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: none !important;
+    text-decoration: underline;
+    color: #334AFF;
+}
+
+.reports_row6 {
+    width: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none !important;
+    text-decoration: underline;
+    color: #334AFF;
+}
+
+.processmemo_s_n {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5% !important;
+    text-align: start;
+    border-bottom: none !important;
+}
+
+.processmemo_row1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13% !important;
+    text-align: start;
+    border-bottom: none !important;
+}
+
+.processmemo_row2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18% !important;
+    text-align: start;
+    border-bottom: none !important;
+}
+
+.processmemo_row3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20% !important;
+    text-align: start;
+    border-bottom: none !important;
+}
+
+.processmemo_row4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10% !important;
+    text-align: start;
+    border-bottom: none !important;
+}
+
+.processmemo_row5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5% !important;
+    text-align: center;
+    border-bottom: none !important;
+    text-decoration: underline;
+    color: #334AFF;
+}
+
+.processmemo_row6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    text-align: center;
+    border-bottom: none !important;
+    text-decoration: underline;
+    color: #334AFF;
+}
+
+/* Custom styles for DataTables Buttons */
+
+/* Adjust the button group position */
+input[type=search] {
+    outline: none;
+}
+
+.dt-buttons {
+    background-color: white !important;
+}
+
+.dataTables_wrapper .dt-buttons {
+    float: right;
+    margin-right: 5%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+
+/* Style the button label */
+.dt-button {
+    color: #a5a5a5;
+    background-color: white;
+    border: none;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+    /* Style the button on hover */
+    .dt-button:hover {
+        color: #000066;
+    }
+
+    /* Style the button on active */
+    .dt-button.active {
+        color: #D40E1F;
+    }
+
+    /* Style the button icon */
+    .dt-button::before {
+        font-family: 'FontAwesome';
+        font-weight: normal;
+        margin-right: .5rem;
+    }
+
+/* Style the CSV download icon */
+.buttons-csv::before {
+    content: "\f019";
+    /* Unicode for the fa-file-excel-o icon */
+}
+
+/* Remove outline from DataTables search input */
+.dataTables_wrapper .dataTables_filter input[type=search] {
+    outline: none;
+}
+
+input.active {
+    border: none;
+    outline: none;
+}
+
+
+
+
+.editAction,
+.fa-pencil {
+    cursor: pointer;
+    font-size: 12px;
+}

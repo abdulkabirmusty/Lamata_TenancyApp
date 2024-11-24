@@ -1,0 +1,82 @@
+﻿@model Tenant_App.Models.RoleAndPermissionViewModels.PermissionViewModel
+@{
+    ViewData["Title"] = ViewBag.ProjectTitle + "::  " + "Role Management";
+
+    Layout = "~/Views/Shared/_Secured.cshtml";
+}
+
+
+
+<div class="container-fluid content-top-gap">
+
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb my-breadcrumb">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Dashboard", new { area = "" })">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Roles", new { area = "" })">Roles</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Assign Permission</li>
+        </ol>
+    </nav>
+
+    <div class="cards__heading">
+        <h3>Manage Permission For @Model.RoleName</h3>
+    </div>
+
+    <div class="card card_border p-lg-5 p-3 mb-4">
+        <div class="card-body py-3 p-0">
+            
+            <div class="row">
+
+
+                <form asp-controller="Permission" method="post" asp-action="Update" asp-route-id="@Model.RoleId" class="d-inline">
+                    <input asp-for="@Model.RoleId" type="hidden" />
+                    <table data-ordering="false" id="example" class="table " style="width:100%; background-color: white;">
+                        <thead>
+                            <tr>
+                                <th class="reports_s_n">S/N</th>
+                                <th class="reports_row1">Type</th>
+                                <th class="reports_row1">Permission</th>
+                                <th class="reports_row1">Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="pl-3">
+                            @{
+                                int rowNo = 0;
+                            }
+
+                            @for (int i = 0; i < Model.RoleClaims.Count(); i++)
+                            {
+                                <tr class="td">
+                                    <td class="reports_s_n">@(rowNo += 1)</td>
+                                    <td class="reports_row1">
+                                        <input asp-for="@Model.RoleClaims[i].Type" type="hidden" />
+                                        @Model.RoleClaims[i].Type
+                                    </td>
+                                    <td class="reports_row1">
+                                        <input asp-for="@Model.RoleClaims[i].Value" type="hidden" />
+                                        @Model.RoleClaims[i].Value
+                                    </td>
+                                    <td class="reports_row1">
+                                        <div class="form-check m-1">
+                                            <input asp-for="@Model.RoleClaims[i].Selected" class="form-check-input" />
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                    <div class="col-sm-12" style=" padding: 20px 20px 0px 0px">
+                        <button type="submit" id="save" class="btn btn-primary btn-style mt-4" style="margin: 20px;">
+                            <i class="fa fa-check"></i>
+                            Save
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

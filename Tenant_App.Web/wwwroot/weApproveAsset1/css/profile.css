@@ -1,0 +1,131 @@
+/* Raise Memo */
+
+.raisememomain{
+    display: flex;
+}
+.raisememoDiv {
+    width: 90vw;
+    background-color: white;
+    margin: 12vh 5% 0;
+    display:flex;
+    flex-direction: column;
+    border: 1px solid #7070701D;
+    padding-bottom:30px ;
+}
+.raisememo{
+display: flex;
+/* align-items: center; */
+padding: 1% 3%;
+}
+.raisememo > h1 {
+font-size: 16px;
+color: #D40E1F;
+font-weight: 700;
+}
+
+.raisememoformdiv{
+    padding: 1% 3%;
+    display: flex;
+    flex-direction: column;
+}
+.raiseMemolabel{
+    margin-top: 1%;
+    color: #A5A5A5;
+    font-size: 14px;
+}
+
+
+.raisememosubjectinput,.raisememouploadselect, .raisememouploadselect > option, .recipientselect{
+    margin-top: 1%;
+    width: 50%;
+    align-self: center;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #E2E2E2;
+    border-radius: 0.5vw;
+    position: relative;  
+}
+
+/* .maintexttextarea {
+width: 90%;
+outline: none;
+padding: 10px;
+margin-top: 10px;
+border: 1px solid #E2E2E2;
+border-radius: 0.5vw;
+} */
+
+/* .maintexttextarea::placeholder{
+    color: #A5A5A53C;
+}  */
+
+.raisememosubmit{
+    align-self: center;
+    margin-top: 10%;
+    padding: 10px;
+    width: 30%;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #D7B321;
+    border: 1px solid #9F810A;
+}
+.raisememosubmit > span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.raisememosubmit:hover {
+    background-color: #C32131;
+}
+
+
+@media screen and (min-width:1024px) {
+    .raisememoDiv {
+    width: 70vw;
+     padding-bottom:2%;
+}
+.raiseMemolabel{
+    margin-top: 1%;
+    color: #A5A5A5;
+    font-size: 14px;
+}
+
+.raisememosubjectinput,.raisememouploadselect, .raisememouploadselect > option, .recipientselect{
+    margin-top: 1%;
+    width: 50%;
+    align-self: center;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #E2E2E2;
+    border-radius: 0.5vw;
+    position: relative;  
+}
+
+
+.raisememosubmit{
+    width: 20%;
+    align-self: center;
+    margin-top: 2%;
+    padding: 1%;
+    outline: none;
+}
+
+  /* .maintexttextarea {
+padding: 2%;
+margin-top: 1%;
+} */
+}
+
+@media screen and (min-width:1440px){
+    .raisememo > h1{
+font-size: 18px;
+}
+.raiseMemolabel{
+    font-size: 18px;
+}
+}
+
+#select{
+    font-size: 16px;
+}

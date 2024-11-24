@@ -1,0 +1,31 @@
+.feature-card:hover {
+    border: solid 2.5px #000066;
+}
+.feature-card:hover > img,.imgs{
+    background-color: #D7B321;
+    color: #D7B321;
+}
+.feature-card:hover > h1 {
+    color: #000066;
+}
+
+.price-card:hover{
+    background: linear-gradient(#C32131,#621119);
+}
+.price-card:hover > h4{
+    color: white;
+}
+.price-card:hover > .price{
+    background-color: #D7B32126 ;
+    color: #D7B321;
+}
+.price-card:hover > .plans > span > .fa-solid{
+    color: #D7B321;
+}
+.price-card:hover > .plans > span > p{
+    color: white;
+}
+.price-card:hover > button{
+    background-color: #D7B321;
+    color: white;
+}

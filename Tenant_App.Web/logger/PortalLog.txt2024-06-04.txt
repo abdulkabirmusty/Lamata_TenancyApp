@@ -1,0 +1,361 @@
+2024-06-04 02:05:49,000 [5] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 7013b19f-a83e-4f0a-8604-c2876119791d validation failed: DuplicateRoleName.
+2024-06-04 02:05:49,012 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 096af355-ffd0-453c-b7a1-f19ee0fb0598 validation failed: DuplicateRoleName.
+2024-06-04 02:05:49,050 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-06-04 02:05:49,053 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-06-04 02:05:49,073 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-06-04 02:05:49,076 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-06-04 02:05:49,079 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-06-04 02:05:49,111 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-04 02:05:49,115 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-04 02:05:49,119 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-06-04 02:05:49,238 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:36700:6cd4dff1 successfully announced in 119.286 ms
+2024-06-04 02:05:49,250 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:36700:6cd4dff1 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 02:05:49,442 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:36700:6cd4dff1 all the dispatchers started
+2024-06-04 02:10:49,340 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-06-04 02:11:44,090 [51] ERROR Tenant_App.Services.Handler.PropertyHandler.PropertyService - Error updating property: Object reference not set to an instance of an object.
+2024-06-04 02:36:54,980 [9] WARN Microsoft.AspNetCore.Identity.RoleManager - Role adb8053e-6380-4427-8fc8-29afa0f9b9b6 validation failed: DuplicateRoleName.
+2024-06-04 02:36:54,999 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 773cf98f-8b85-4b6e-8599-a7191c8f3872 validation failed: DuplicateRoleName.
+2024-06-04 02:36:55,253 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-06-04 02:36:55,256 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-06-04 02:36:55,277 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-06-04 02:36:55,279 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-06-04 02:36:55,282 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-06-04 02:36:55,304 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-04 02:36:55,307 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-04 02:36:55,309 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-06-04 02:36:55,421 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:24996:5f0e59ee successfully announced in 109.8342 ms
+2024-06-04 02:36:55,431 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:24996:5f0e59ee is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 02:36:55,458 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-06-04 02:36:55,546 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:24996:5f0e59ee all the dispatchers started
+2024-06-04 02:44:35,722 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role f365961b-0b5e-420b-a96e-fd88fc94ebc4 validation failed: DuplicateRoleName.
+2024-06-04 02:44:35,737 [9] WARN Microsoft.AspNetCore.Identity.RoleManager - Role cd188092-fdce-4ab4-aac9-35db98840ca7 validation failed: DuplicateRoleName.
+2024-06-04 02:44:35,775 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-06-04 02:44:35,778 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-06-04 02:44:35,798 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-06-04 02:44:35,800 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-06-04 02:44:35,803 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-06-04 02:44:35,833 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-04 02:44:35,836 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-04 02:44:35,838 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-06-04 02:44:35,998 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:11268:473b8524 successfully announced in 156.7878 ms
+2024-06-04 02:44:36,007 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:11268:473b8524 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 02:44:36,036 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-06-04 02:44:36,140 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:11268:473b8524 all the dispatchers started
+2024-06-04 02:55:43,023 [12] WARN Microsoft.AspNetCore.Identity.RoleManager - Role c0b898d9-1f3f-4017-914d-fc58005a4fc8 validation failed: DuplicateRoleName.
+2024-06-04 02:55:43,036 [4] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 0cacbc5f-3c35-4dbf-9dd8-d7a9356ead64 validation failed: DuplicateRoleName.
+2024-06-04 02:55:43,201 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-06-04 02:55:43,204 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-06-04 02:55:43,223 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-06-04 02:55:43,225 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-06-04 02:55:43,228 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-06-04 02:55:43,253 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-04 02:55:43,255 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-04 02:55:43,266 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-06-04 02:55:43,368 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:164:dd1fd8eb successfully announced in 108.2701 ms
+2024-06-04 02:55:43,379 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:164:dd1fd8eb is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 02:55:43,407 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-06-04 02:55:43,484 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:164:dd1fd8eb all the dispatchers started
+2024-06-04 02:58:19,730 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 28161d8f-7acb-4d2a-af39-50297fd5f344 validation failed: DuplicateRoleName.
+2024-06-04 02:58:19,743 [11] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 2508578b-e32c-451c-941f-130bc36dd3a4 validation failed: DuplicateRoleName.
+2024-06-04 02:58:19,779 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-06-04 02:58:19,781 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-06-04 02:58:19,800 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-06-04 02:58:19,802 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-06-04 02:58:19,804 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-06-04 02:58:19,834 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-04 02:58:19,836 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-04 02:58:19,839 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-06-04 02:58:20,006 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:33324:865aac3d successfully announced in 164.5542 ms
+2024-06-04 02:58:20,016 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:33324:865aac3d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 02:58:20,125 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:33324:865aac3d all the dispatchers started
+2024-06-04 03:03:31,008 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role e2b05cdc-1f21-40e2-b7f8-d477c279b24b validation failed: DuplicateRoleName.
+2024-06-04 03:03:31,028 [9] WARN Microsoft.AspNetCore.Identity.RoleManager - Role dc185c99-4a94-4a19-ba48-bde9074487a8 validation failed: DuplicateRoleName.
+2024-06-04 03:03:31,071 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-06-04 03:03:31,073 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-06-04 03:03:31,094 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-06-04 03:03:31,096 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-06-04 03:03:31,099 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-06-04 03:03:31,129 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-04 03:03:31,132 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-04 03:03:31,134 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-06-04 03:03:31,368 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:18132:2de09d8f successfully announced in 230.2408 ms
+2024-06-04 03:03:31,380 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:18132:2de09d8f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 03:03:31,410 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-06-04 03:03:31,507 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:18132:2de09d8f all the dispatchers started
+2024-06-04 03:06:09,224 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role ac0f4725-a4ea-4fd1-8bc5-e41add034cce validation failed: DuplicateRoleName.
+2024-06-04 03:06:09,244 [4] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 45e810d1-a65f-4cf0-a91b-3e1903873f47 validation failed: DuplicateRoleName.
+2024-06-04 03:06:09,270 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-06-04 03:06:09,272 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-06-04 03:06:09,292 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-06-04 03:06:09,294 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-06-04 03:06:09,297 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-06-04 03:06:09,323 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-04 03:06:09,326 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-04 03:06:09,328 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-06-04 03:06:09,485 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:32688:2f124b96 successfully announced in 154.3641 ms
+2024-06-04 03:06:09,494 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:32688:2f124b96 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 03:06:09,521 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-06-04 03:06:09,578 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:32688:2f124b96 all the dispatchers started
+2024-06-04 03:44:26,988 [9] WARN Microsoft.AspNetCore.Identity.RoleManager - Role fd2100b7-ab7d-414f-9033-b6e602a9d16b validation failed: DuplicateRoleName.
+2024-06-04 03:44:27,009 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role efddaaee-8473-4159-a9c6-405f63225973 validation failed: DuplicateRoleName.
+2024-06-04 03:44:27,180 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-06-04 03:44:27,183 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-06-04 03:44:27,201 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-06-04 03:44:27,204 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-06-04 03:44:27,206 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-06-04 03:44:27,231 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-04 03:44:27,234 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-04 03:44:27,237 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-06-04 03:44:27,357 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:42540:e5dc1dfa successfully announced in 118.6789 ms
+2024-06-04 03:44:27,368 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:42540:e5dc1dfa is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 03:44:27,395 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 2 servers were removed due to timeout
+2024-06-04 03:44:27,467 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:42540:e5dc1dfa all the dispatchers started
+2024-06-04 03:50:57,067 [47] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2024-06-04 03:51:00,300 [58] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2024-06-04 03:51:16,339 [56] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2024-06-04 03:51:39,170 [7] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 02c650f4-142f-4d74-b61c-b5ba3d1a213f validation failed: DuplicateRoleName.
+2024-06-04 03:51:39,188 [9] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 8369a68a-d39a-4c3d-ba91-3b6982e7d1ad validation failed: DuplicateRoleName.
+2024-06-04 03:51:39,232 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-06-04 03:51:39,235 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-06-04 03:51:39,260 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-06-04 03:51:39,264 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-06-04 03:51:39,267 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-06-04 03:51:39,292 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-04 03:51:39,295 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-04 03:51:39,297 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-06-04 03:51:39,461 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:46184:223078e6 successfully announced in 162.6141 ms
+2024-06-04 03:51:39,471 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:46184:223078e6 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 03:51:39,562 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:46184:223078e6 all the dispatchers started
+2024-06-04 03:55:04,682 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 18a2c38d-4f8c-4f8d-aaef-32cea3ee0101 validation failed: DuplicateRoleName.
+2024-06-04 03:55:04,695 [4] WARN Microsoft.AspNetCore.Identity.RoleManager - Role e49a5e03-af9f-4073-a378-2e0a7641c9b6 validation failed: DuplicateRoleName.
+2024-06-04 03:55:04,915 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-06-04 03:55:04,917 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-06-04 03:55:04,938 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-06-04 03:55:04,940 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-06-04 03:55:04,943 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-06-04 03:55:04,977 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-04 03:55:04,981 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-04 03:55:04,984 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-06-04 03:55:05,122 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:37212:9cec09e4 successfully announced in 134.8837 ms
+2024-06-04 03:55:05,137 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:37212:9cec09e4 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 03:55:05,258 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:37212:9cec09e4 all the dispatchers started
+2024-06-04 04:00:05,165 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 2 servers were removed due to timeout
+2024-06-04 04:05:11,177 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 04fa9820-6c7e-47a5-9d8e-b8954cef6f86 validation failed: DuplicateRoleName.
+2024-06-04 04:05:11,215 [4] WARN Microsoft.AspNetCore.Identity.RoleManager - Role baab7eab-8be4-4c3a-856c-91a841bdbabe validation failed: DuplicateRoleName.
+2024-06-04 04:05:11,283 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-06-04 04:05:11,287 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-06-04 04:05:11,314 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-06-04 04:05:11,317 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-06-04 04:05:11,321 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-06-04 04:05:11,409 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-04 04:05:11,413 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-04 04:05:11,426 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-06-04 04:05:11,733 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:25340:e21d9c71 successfully announced in 311.014 ms
+2024-06-04 04:05:11,782 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:25340:e21d9c71 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 04:05:11,992 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:25340:e21d9c71 all the dispatchers started
+2024-06-04 04:06:26,604 [4] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 5971ce09-f815-4da0-a8a4-119db0153fe3 validation failed: DuplicateRoleName.
+2024-06-04 04:06:26,629 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 4aacae56-3248-4e74-8589-e36269a0a3b8 validation failed: DuplicateRoleName.
+2024-06-04 04:06:26,659 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-06-04 04:06:26,662 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-06-04 04:06:26,683 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-06-04 04:06:26,685 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-06-04 04:06:26,688 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-06-04 04:06:26,719 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-04 04:06:26,722 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-04 04:06:26,724 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-06-04 04:06:26,877 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:33648:3f613206 successfully announced in 150.0546 ms
+2024-06-04 04:06:26,886 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:33648:3f613206 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 04:06:26,937 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-06-04 04:06:27,002 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:33648:3f613206 all the dispatchers started
+2024-06-04 04:08:31,451 [4] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 926776c9-17d8-4731-9eb8-d47a2782630a validation failed: DuplicateRoleName.
+2024-06-04 04:08:31,464 [9] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 1c064c15-6957-4274-b4cf-20b56f8a29cf validation failed: DuplicateRoleName.
+2024-06-04 04:08:31,633 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-06-04 04:08:31,635 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-06-04 04:08:31,653 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-06-04 04:08:31,655 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-06-04 04:08:31,659 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-06-04 04:08:31,684 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-04 04:08:31,688 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-04 04:08:31,690 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-06-04 04:08:31,837 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:21136:12effb15 successfully announced in 146.8162 ms
+2024-06-04 04:08:31,847 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:21136:12effb15 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 04:08:31,955 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:21136:12effb15 all the dispatchers started
+2024-06-04 04:13:31,885 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 2 servers were removed due to timeout
+2024-06-04 10:30:40,006 [8] WARN Microsoft.AspNetCore.Identity.RoleManager - Role ac2e75a6-c6e7-404b-8a6d-b6c963e687a5 validation failed: DuplicateRoleName.
+2024-06-04 10:30:40,026 [4] WARN Microsoft.AspNetCore.Identity.RoleManager - Role d7e7672a-324f-400e-b472-15c96ecc6a71 validation failed: DuplicateRoleName.
+2024-06-04 10:30:40,268 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-06-04 10:30:40,272 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-06-04 10:30:40,294 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-06-04 10:30:40,297 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-06-04 10:30:40,300 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-06-04 10:30:40,354 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-04 10:30:40,357 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-04 10:30:40,360 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-06-04 10:30:40,521 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:18952:ec8254b6 successfully announced in 156.5241 ms
+2024-06-04 10:30:40,534 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:18952:ec8254b6 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 10:30:40,570 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-06-04 10:30:40,661 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:18952:ec8254b6 all the dispatchers started
+2024-06-04 10:34:49,569 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 14f23953-7b44-4d1c-b832-a4310de4fd72 validation failed: DuplicateRoleName.
+2024-06-04 10:34:49,594 [12] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 460953e0-3f83-4d98-a5f7-e44cb63e69b8 validation failed: DuplicateRoleName.
+2024-06-04 10:34:49,624 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-06-04 10:34:49,628 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-06-04 10:34:49,652 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-06-04 10:34:49,655 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-06-04 10:34:49,659 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-06-04 10:34:49,693 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-04 10:34:49,697 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-04 10:34:49,700 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-06-04 10:34:49,923 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:36984:54f3f2bd successfully announced in 220.3259 ms
+2024-06-04 10:34:49,936 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:36984:54f3f2bd is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 10:34:50,074 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:36984:54f3f2bd all the dispatchers started
+2024-06-04 10:39:49,983 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-06-04 11:29:54,558 [4] WARN Microsoft.AspNetCore.Identity.RoleManager - Role e5cbf9dd-9e70-4170-8249-0ae21dadd989 validation failed: DuplicateRoleName.
+2024-06-04 11:29:54,572 [11] WARN Microsoft.AspNetCore.Identity.RoleManager - Role f2347f73-34b8-49e3-b3d3-03d566b4fdc8 validation failed: DuplicateRoleName.
+2024-06-04 11:29:54,608 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-06-04 11:29:54,610 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-06-04 11:29:54,628 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-06-04 11:29:54,631 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-06-04 11:29:54,635 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-06-04 11:29:54,662 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-04 11:29:54,665 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-04 11:29:54,668 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-06-04 11:29:54,886 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:33156:1de03fc5 successfully announced in 214.6194 ms
+2024-06-04 11:29:54,900 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:33156:1de03fc5 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 11:29:54,939 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-06-04 11:29:55,008 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:33156:1de03fc5 all the dispatchers started
+2024-06-04 11:37:19,647 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-06-04 11:37:19,691 [ServerHeartbeatProcess #1] WARN Hangfire.Server.ServerHeartbeatProcess - Server vat-l-dev7:33156:1de03fc5 was considered dead by other servers, restarting...
+2024-06-04 11:37:19,699 [ServerHeartbeatProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:33156:1de03fc5 caught restart signal...
+2024-06-04 11:37:19,729 [BackgroundServerProcess #1] WARN Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:33156:1de03fc5 stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-06-04 11:37:25,311 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:33156:1de03fc5 successfully reported itself as stopped in 5521.6728 ms
+2024-06-04 11:37:25,314 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:33156:1de03fc5 has been stopped in total 5601.1155 ms
+2024-06-04 11:37:25,327 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:33156:5bcf0796 successfully announced in 9.615 ms
+2024-06-04 11:37:25,335 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:33156:5bcf0796 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 11:37:25,442 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:33156:5bcf0796 all the dispatchers started
+2024-06-04 11:47:57,894 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role c3f67812-f104-49fe-83f0-32d0d4e617f3 validation failed: DuplicateRoleName.
+2024-06-04 11:47:57,911 [6] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 29077c95-f6ea-41b8-8b20-2bcfb08b114c validation failed: DuplicateRoleName.
+2024-06-04 11:47:58,079 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-06-04 11:47:58,081 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-06-04 11:47:58,097 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-06-04 11:47:58,100 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-06-04 11:47:58,102 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-06-04 11:47:58,129 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-04 11:47:58,132 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-04 11:47:58,134 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-06-04 11:47:58,394 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:7264:082c0b3f successfully announced in 255.766 ms
+2024-06-04 11:47:58,404 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:7264:082c0b3f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 11:47:58,431 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-06-04 11:47:58,517 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:7264:082c0b3f all the dispatchers started
+2024-06-04 12:02:14,968 [11] WARN Microsoft.AspNetCore.Identity.RoleManager - Role e5913a05-4b35-4609-93f8-4f4fa238e726 validation failed: DuplicateRoleName.
+2024-06-04 12:02:14,990 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 3357da5c-83ce-4580-949b-aeac6ba29b87 validation failed: DuplicateRoleName.
+2024-06-04 12:02:15,227 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-06-04 12:02:15,230 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-06-04 12:02:15,251 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-06-04 12:02:15,255 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-06-04 12:02:15,259 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-06-04 12:02:15,290 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-04 12:02:15,293 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-04 12:02:15,330 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-06-04 12:02:15,517 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:3980:16089d77 successfully announced in 182.3427 ms
+2024-06-04 12:02:15,532 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:3980:16089d77 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 12:02:15,559 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-06-04 12:02:16,125 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:3980:16089d77 all the dispatchers started
+2024-06-04 12:25:01,840 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-06-04 12:25:01,861 [ServerHeartbeatProcess #1] WARN Hangfire.Server.ServerHeartbeatProcess - Server vat-l-dev7:3980:16089d77 was considered dead by other servers, restarting...
+2024-06-04 12:25:01,872 [ServerHeartbeatProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:3980:16089d77 caught restart signal...
+2024-06-04 12:25:01,883 [BackgroundServerProcess #1] WARN Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:3980:16089d77 stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-06-04 12:25:01,954 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:3980:16089d77 successfully reported itself as stopped in 26.9931 ms
+2024-06-04 12:25:01,957 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:3980:16089d77 has been stopped in total 69.9753 ms
+2024-06-04 12:25:01,973 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:3980:af44397c successfully announced in 5.3687 ms
+2024-06-04 12:25:01,979 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:3980:af44397c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 12:25:05,089 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:3980:af44397c all the dispatchers started
+2024-06-04 12:27:50,160 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 730db748-eac7-44f2-a615-8ce2b34ce121 validation failed: DuplicateRoleName.
+2024-06-04 12:27:50,179 [4] WARN Microsoft.AspNetCore.Identity.RoleManager - Role cb3d744a-7dae-4158-9c30-1ecf0b4b0b7b validation failed: DuplicateRoleName.
+2024-06-04 12:27:50,428 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-06-04 12:27:50,431 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-06-04 12:27:50,455 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-06-04 12:27:50,458 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-06-04 12:27:50,461 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-06-04 12:27:50,492 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-04 12:27:50,495 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-04 12:27:50,499 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-06-04 12:27:50,660 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:30980:fb1564e2 successfully announced in 157.1167 ms
+2024-06-04 12:27:50,676 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:30980:fb1564e2 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-06-04 12:27:50,789 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:30980:fb1564e2 all the dispatchers started
+2024-06-04 12:32:50,726 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout

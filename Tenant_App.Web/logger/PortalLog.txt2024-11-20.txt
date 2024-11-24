@@ -1,0 +1,72 @@
+2024-11-20 00:16:45,077 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@Lamata_TenantDb'
+2024-11-20 00:16:45,103 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-11-20 00:16:45,107 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-11-20 00:16:45,120 [11] WARN Microsoft.AspNetCore.Identity.RoleManager - Role fe71f057-dcaa-41d2-be03-a5a7f05ce66d validation failed: DuplicateRoleName.
+2024-11-20 00:16:45,157 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-11-20 00:16:45,164 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-11-20 00:16:45,169 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Documents\Lamata_TenantApp\Tenant_App\Tenant_App.Web
+2024-11-20 00:16:45,508 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:43296:9682be84 successfully announced in 334.6223 ms
+2024-11-20 00:16:45,528 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:43296:9682be84 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-11-20 00:16:45,578 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-11-20 00:16:45,726 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:43296:9682be84 all the dispatchers started
+2024-11-20 05:48:30,984 [141] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-11-20 05:48:31,007 [141] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"The Application for hostel Magan Plaza was successful. After Approval you can proceed to payment","options":{"title":"Success","type":"success"}}]
+2024-11-20 06:02:27,045 [127] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-11-20 06:02:27,062 [127] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"The Application for hostel Magan Plaza was successful. After Approval you can proceed to payment","options":{"title":"Success","type":"success"}}]
+2024-11-20 06:02:27,085 [125] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-11-20 06:02:27,097 [125] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"There is still pending rent which will expire on 11/20/2025","options":{"title":"Error","type":"error"}}]
+2024-11-20 06:03:31,797 [109] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2024-11-20 06:05:54,619 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@Lamata_TenantDb'
+2024-11-20 06:05:54,642 [8] WARN Microsoft.AspNetCore.Identity.RoleManager - Role d4481ce3-8a61-4f6f-a5e1-337dbd71b13e validation failed: DuplicateRoleName.
+2024-11-20 06:05:54,658 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-11-20 06:05:54,669 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-11-20 06:05:54,705 [8] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 705c93f6-9d41-425a-b182-e1766e28bdc3 validation failed: DuplicateRoleName.
+2024-11-20 06:05:54,787 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-11-20 06:05:54,798 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-11-20 06:05:54,807 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Documents\Lamata_TenantApp\Tenant_App\Tenant_App.Web
+2024-11-20 06:05:55,273 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:44012:eb6b92ab successfully announced in 456.9516 ms
+2024-11-20 06:05:55,296 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:44012:eb6b92ab is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-11-20 06:05:55,570 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:44012:eb6b92ab all the dispatchers started
+2024-11-20 06:10:55,354 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-11-20 06:16:28,993 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@Lamata_TenantDb'
+2024-11-20 06:16:29,012 [8] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 230bd59a-7f4d-43cc-a133-20534055c138 validation failed: DuplicateRoleName.
+2024-11-20 06:16:29,031 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-11-20 06:16:29,037 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-11-20 06:16:29,070 [4] WARN Microsoft.AspNetCore.Identity.RoleManager - Role cb64331a-2808-4a66-b250-ef71efde806a validation failed: DuplicateRoleName.
+2024-11-20 06:16:29,151 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-11-20 06:16:29,157 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-11-20 06:16:29,537 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:1508:20c40d0f successfully announced in 362.7816 ms
+2024-11-20 06:16:29,571 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:1508:20c40d0f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-11-20 06:16:29,777 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:1508:20c40d0f all the dispatchers started
+2024-11-20 06:20:48,081 [85] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-11-20 06:20:48,104 [85] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"Your payment has been successfully processed.","options":{"title":"Success","type":"success"}}]
+2024-11-20 06:21:29,644 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-11-20 07:16:34,966 [137] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-11-20 07:16:34,973 [137] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"The Application for hostel Magan Plaza was successful. After Approval you can proceed to payment","options":{"title":"Success","type":"success"}}]
+2024-11-20 07:26:08,714 [11] WARN Microsoft.AspNetCore.Identity.RoleManager - Role e9eed02c-720a-49fc-b8c2-6324c3012b83 validation failed: DuplicateRoleName.
+2024-11-20 07:26:08,714 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@Lamata_TenantDb'
+2024-11-20 07:26:08,743 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-11-20 07:26:08,750 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-11-20 07:26:08,935 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-11-20 07:26:08,943 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-11-20 07:26:08,952 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Documents\Lamata_TenantApp\Tenant_App\Tenant_App.Web
+2024-11-20 07:26:09,335 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:35316:a1c83c70 successfully announced in 381.5228 ms
+2024-11-20 07:26:09,377 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:35316:a1c83c70 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-11-20 07:26:09,661 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:35316:a1c83c70 all the dispatchers started
+2024-11-20 07:31:09,450 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout

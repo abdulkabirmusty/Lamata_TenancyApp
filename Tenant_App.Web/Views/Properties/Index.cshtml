@@ -1,0 +1,199 @@
+﻿@model List<Tenant_App.Models.DataObjects.PropertyDtos.PropertyDto>
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = ViewBag.ProjectTitle + "::  " + "Property";
+
+    Layout = "~/Views/Shared/_Secured.cshtml";
+}
+<!-- Link to Toastify CSS for Toast Notifications -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Toastify/1.11.2/Toastify.min.css">
+
+
+<div class="container-fluid content-top-gap">
+
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb my-breadcrumb">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Dashboard", new { area = "" })">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Properties", new { area = "" })">Properties</a></li>
+        </ol>
+    </nav>
+
+    <div class="cards__heading">
+        <h3>Property Application</h3>
+    </div>
+
+    <div class="card card_border p-lg-5 p-3 mb-4">
+        <div class="card-body py-3 p-0">
+            @* <div>
+            <button onclick="Create()" role="button" data-toggle="modal" data-target="#centralModalInfo" id="addDeptModalOpen" class="btn btn-primary btn-style mt-4">
+            <i class="fa-solid fa-plus"></i> Add Contract Type
+            </button>
+            </div> *@
+            <br /><br />
+            <div class="row">
+
+
+                <div class="row news-grids pb-lg-5 mt-3">
+                    @foreach (var property in Model)
+                    {
+                        <div class="col-lg-4 gal-img" id="property_@property.Id">
+                            <div class="gal-info">
+                                <a href="#popup_@property.Id"><img src="@property.PropertyImage" alt="news image" class="img-fluid" style="width: 80vw; height: 40vh;"></a>
+                                <div class="property-info-list" style="height: 40vh;">
+                                    <div class="detail">
+                                        <h4 class="title">
+                                            <a href="" class="property-link" data-id="@property.Id">@property.PropertyName</a>
+                                        </h4>
+                                        <div class="location mt-2">
+                                            <a href="single.html">
+                                                <span class="fa fa-map-marker"></span> @property.PropertyAddress
+                                            </a>
+                                        </div>
+                                        <div class="location mt-2">
+                                            <a href="single.html">
+                                                @*  <i class="lnr lnr-eye"> </i> *@
+                                                <strong>Available Rooms</strong> - @property.RemainingRoom
+                                            </a>
+                                        </div>
+                                        <ul class="facilities-list clearfix">
+                                            <li>
+                                                <span class="fa fa-bed"></span> @property.PropertyInformation
+                                            </li>
+                                            @if(property.Amount != 0)
+                                            {
+                                                <li>
+                                                    <span class="fa fa-money"></span> @property.Amount
+                                                </li>
+                                            }
+                                            
+                                        </ul>
+                                        <ul class="facilities-list clearfix">
+                                            <li>
+                                                <strong>Size</strong> - @property.Size
+                                            </li>
+                                            <li>
+                                                <strong>Dimension</strong> - @property.Dimension
+                                            </li>
+
+                                        </ul>
+                                        <div class="footer-properties">
+                                            <button type="submit" class="btn btn-success submit-button" data-id="@property.Id" onclick="Submitproperties('@property.Id')"><span>Apply</span></button>
+                                            <a asp-controller="Properties" asp-action="MakeAmount" asp-route-id="@property.Id" class="btn btn-success submit-button" style='margin-right:16px'>
+                                                <i class="fa fa-money"></i> Proceed to Payment
+                                            </a>
+
+                                            <div class="success-message" style="display:none; color: green;">Applied successfully </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                @foreach (var property in Model)
+                {
+                    <div id="popup_@property.Id" class="pop-overlay animate">
+                        <div class="popup">
+                            <img src="@property.PropertyImage" alt="Popup Image" class="img-fluid" style="width: 80vw; height: 40vh;" />
+                            <div class="property-info-list mode-info">
+                                <div class="detail">
+                                    <h4 class="title">
+                                        <a href="single.html">@property.PropertyName</a>
+                                    </h4>
+                                    <div class="location mt-2">
+                                        <a href="single.html">
+                                            <span class="fa fa-map-marker"></span> @property.PropertyAddress
+                                        </a>
+                                    </div>
+                                    <div class="location mt-2">
+                                        <a href="single.html">
+                                           @*  <i class="lnr lnr-eye"> </i> *@
+                                            <strong>Available Rooms</strong> - @property.RemainingRoom
+                                        </a>
+                                    </div>
+                                    <ul class="facilities-list clearfix">
+                                        <li>
+                                            <span class="fa fa-bed"></span> @property.PropertyInformation
+                                        </li>
+                                        @if (property.Amount != 0)
+                                        {
+                                            <li>
+                                                <span class="fa fa-money"></span> @property.Amount
+                                            </li>
+                                        }
+                                        
+                                    </ul>
+                                    <ul class="facilities-list clearfix">
+                                        <li>
+                                            <strong>Size</strong> - @property.Size
+                                        </li>
+                                        <li>
+                                            <strong>Dimension</strong> - @property.Dimension
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="footer-properties">
+                                    <button type="submit" class="btn btn-success submit-button" data-id="@property.Id" onclick="Submitproperties('@property.Id')"><span>Apply</span></button>
+                                    <a asp-controller="Properties" asp-action="MakeAmount" asp-route-id="@property.Id" class="btn btn-success submit-button" style='margin-right:16px'>
+                                        <i class="fa fa-money"></i> Proceed to Payment
+                                    </a>
+
+                                </div>
+                            </div>
+                            <a class="close" href="#gallery">&times;</a>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Link to Toastify JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Toastify/1.11.2/Toastify.min.js"></script>
+
+
+<script>
+    function loadPropertyDetailsIntoModal(propertyId) {
+        $.ajax({
+            url: '@Url.Action("ViewProperty", "Properties")',
+            type: 'GET',
+            data: { id: propertyId },
+            success: function (result) {
+                $('#modalBodyContent').html(result);
+            },
+            error: function (error) {
+                console.log(error);
+            }
+        });
+    }
+
+    function Submitproperties(propertyId) {
+        $.ajax({
+            url: '@Url.Action("Insert", "Properties")',
+            type: 'GET',
+            data: { id: propertyId },
+            success: function (result) {
+                if (result.success) {
+                    console.log('Property details inserted successfully:', result.property);
+                    // Display success message
+                    var propertySection = $('#property_' + propertyId);
+                    propertySection.find('.success-message').show().text('Applied successfully Admin will contact you shortly');
+                } else {
+                    // alert(result.message);
+                    console.log('Error:', result.message);
+                }
+            },
+            error: function (error) {
+                // alert('An error occurred while processing your request. Please try again.');
+                console.log('Error loading property details:', error);
+            }
+        });
+    }
+</script>

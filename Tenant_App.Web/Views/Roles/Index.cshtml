@@ -1,0 +1,135 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@model IEnumerable<IdentityRole>
+
+@{
+    ViewData["Title"] = ViewBag.ProjectTitle + "::  " + "Role Management";
+
+    Layout = "~/Views/Shared/_Secured.cshtml";
+}
+
+
+<style type="text/css">
+    .dropdown-menus {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 0rem;
+        margin: 0rem;
+        list-style: none;
+        z-index: 999;
+        min-width: 100%
+    }
+
+    .dropdowns {
+        width: 11.5vw;
+        height: 0.5vw;
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-menus li {
+        padding: 3px;
+        cursor: pointer;
+    }
+
+        .dropdown-menus li:hover {
+            background-color: #f4f4f4;
+        }
+
+</style>
+
+
+<div class="container-fluid content-top-gap">
+
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb my-breadcrumb">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Dashboard", new { area = "" })">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "IndividualTenant", new { area = "" })">Tenants</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Manage Tenants</li>
+        </ol>
+    </nav>
+
+    <div class="cards__heading">
+        <h3>Manage Roles/Permissions</h3>
+    </div>
+
+    <div class="card card_border p-lg-5 p-3 mb-4">
+        <div class="card-body py-3 p-0">
+            @* <div>
+                <form method="post" asp-action="addrole" asp-controller="roles">
+                    <div class="input-group">
+                        <input name="roleName" placeholder="Enter role name" class="form-control">
+                        <br />
+
+                        <button class="btn btn-primary btn-style mt-4">Add New Role</button>
+                       
+                    </div>
+                </form>
+            </div> *@
+            <br /><br />
+            <div class="row">
+
+
+                <div class="table-responsive ">
+                    <table data-ordering="false" id="example" class="table " style="width:100%; background-color: white;">
+                        <thead>
+                            <tr>
+                                <th>S/N</th>
+                                <th>Role</th>
+                                <th>Actions</th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody class="pl-3">
+                            @{
+                                int rowNo = 0;
+                            }
+
+                            @foreach (var role in Model)
+                            {
+                                <tr class="td">
+                                    <td>@(rowNo += 1)</td>
+                                    <td>
+                                        @role.Name
+                                    </td>
+                                    <td id="date_row">
+
+                                        <div class="dropdowns">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            <ul class="dropdown-menus">
+                                                @* <li data-value="edit" role="button" data-toggle="modal" data-target="#centralModalInfo" class='editAction' id="editDepartment">
+                                            <i class="fa fa-edit"></i> Edit
+                                            </li>
+                                            <li data-value="delete" role="button" data-toggle="modal" data-target="#centralModalInfo" class='editAction' id="deleteDepartment">
+                                            <i class="fa fa-trash"></i> Delete
+                                            </li> *@
+                                                <li data-value="delete" data-id="" role="button" data-toggle="modal" data-target="#centralModalInfo" class='editAction' id="deleteDepartment">
+                                                    @if (role.Name != "Admin")
+                                                    {
+                                                        <a style='margin-right:16px' asp-controller="Permission" asp-action="Index" asp-route-roleId="@role.Id" class="dropdown-item">
+                                                            <i class="fas fa-user-gear"></i> Manage Permissions
+                                                        </a>
+                                                    }
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </td>
+
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+   

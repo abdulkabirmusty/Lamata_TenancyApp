@@ -1,0 +1,2022 @@
+@font-face {
+    font-family: 'DaxlinePro';
+    src: url('../assets/DaxlinePro-Regular/DaxlinePro-Regular.ttf') format('opentype');
+}
+
+h1, h2, h3, h4, h5, h6, p, span, div, a, button, section {
+    font-family: 'DaxlinePro', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* @media screen and (max-width:600px) {
+    
+} */
+input {
+    outline: #707070;
+}
+
+    input::-webkit-input-placeholder {
+        color: #8E8E8E;
+        opacity: 0.3;
+    }
+
+.vw1 {
+    font-size: 1;
+}
+
+.vw1-6 {
+    font-size: 1.6;
+}
+
+.vw2 {
+    font-size: 2;
+}
+
+.vw3 {
+    font-size: 3vw;
+}
+
+.vw1-3, .vw1-25 {
+    font-size: 1.3vw;
+}
+
+.vw1-9 {
+    font-size: 1.9vw;
+}
+
+.vw3-4 {
+    font-size: 3.4vw;
+}
+
+.vw2-5 {
+    font-size: 2.5vw;
+}
+
+.vw2-75 {
+    font-size: 2.75vw;
+}
+
+.vw2-25 {
+    font-size: 2.25vw;
+}
+
+.vw2-8 {
+    font-size: 2.8vw;
+}
+
+.vw3-8 {
+    font-size: 3.8vw;
+}
+
+.vw4-4 {
+    font-size: 4.4vw;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.bg-#F8F8F8 {
+    background-color: #F8F8F8
+}
+
+.color-#F8F8F8 {
+    color: #F8F8F8
+}
+
+.border-#7070701D {
+    border-color: #7070701D;
+}
+
+
+/* upload staff */
+.uploadStaffModal, .modal-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.uploadStaffmodal-content {
+    background-color: #fefefe;
+    margin: 10% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.uploadStaffmodal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px 3px;
+    border-bottom: 1px solid #bdbbbb;
+}
+
+    .uploadStaffmodal-header div {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+.close-button {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.uploadStaffmodal-body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0 10px 10px;
+}
+
+.uploadStaffdropdown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1.5vw 0;
+}
+
+    .uploadStaffdropdown > label {
+        color: #707070;
+        font-size: 14px;
+    }
+
+    .uploadStaffdropdown > select {
+        width: 70%;
+        height: 36px;
+        padding: 0 2%;
+        border-radius: 0.5rem;
+        margin-top: 10px;
+    }
+
+.uploadStaffmodal-button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.downloadTemp {
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+    .uploadStaffmodal-button > p {
+        color: #D7B321;
+        margin-top: 10px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+.uploadStaffbutton {
+    background-color: #D7B321;
+    color: white;
+    margin-top: 5px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+    .uploadStaffbutton:hover {
+        background-color: #D40E1F;
+    }
+
+@media screen and (min-width:600px) and (max-width:1199px) {
+    .uploadStaffdropdown > select {
+        width: 60%;
+        height: 42px;
+        padding: 0 2%;
+        border-radius: 0.5rem;
+        margin-top: 10px;
+    }
+
+    .uploadStaffmodal-content {
+        width: 500px;
+    }
+
+    .uploadStaffmodal-header {
+        padding: 10px 15px 5px;
+    }
+
+    .uploadStaffdropdown > label {
+        color: #707070;
+        font-size: 16px;
+    }
+
+    .uploadStaffmodal-header div {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .close-button {
+        font-size: 18px;
+    }
+
+    .uploadStaffmodal-body {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 0 15px 10px;
+    }
+
+    .uploadStaffbutton {
+        width: 25%;
+        font-size: 16px;
+    }
+
+    .uploadStaffmodal-button > p {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    .uploadStaffmodal-content {
+        background-color: #fefefe;
+        margin: 10% auto 15% auto;
+        border: 1px solid #888;
+        width: 50%;
+    }
+
+    .uploadStaffmodal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px 5px;
+        border-bottom: 1px solid #bdbbbb;
+    }
+
+    .close-button {
+        font-size: 28px;
+    }
+
+    .uploadStaffmodal-header div {
+        font-size: 1.5vw;
+    }
+
+    .uploadStaffdropdown > label {
+        color: #707070;
+        font-size: 1.2vw;
+    }
+
+    .uploadStaffdropdown > select {
+        width: 40%;
+        height: 3.5vw;
+        padding: 0 2%;
+        border-radius: 0.5rem;
+        margin-top: 0.5vw;
+    }
+
+    .uploadStaffmodal-body {
+        padding: 0 20px 10px;
+    }
+
+    .uploadStaffbutton {
+        width: 20%;
+        height: 3vw;
+        font-size: 18px;
+    }
+
+    .uploadStaffmodal-button > p {
+        font-size: 18px;
+        margin-top: 0.3vw;
+    }
+
+    .uploadStaffmodal-button {
+        margin-top: 0.3vw;
+    }
+}
+
+
+
+/* NewStaffModal */
+
+.newStaffModalcontainer {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.newStaffform {
+    width: 80vw;
+    height: 490px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.newstaffmodaltittlediv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+    padding: 2% 4%;
+}
+
+.newstaffmodalinputsdiv {
+    height: 80%;
+    padding: 0 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+.newstaffmodaltitle, .newstaffdropdowncanclebtn {
+    color: #A5A5A5;
+    font-size: 15px;
+}
+
+.newstaffmodallabel {
+    font-size: 18px;
+    font-weight: 400;
+    color: #A5A5A5;
+    margin-top: 2%;
+}
+
+.newstaffmodalinputs {
+    width: 80%;
+    padding: 4% 3%;
+    background-color: white;
+    border: 1px solid #E2E2E2;
+    border-radius: 0.5vw;
+    outline: none;
+    margin-top: 1%;
+}
+
+.newstaffmodalstatus, .newstaffmodaloptions {
+    font-size: 16px;
+    font-weight: 400;
+    color: #A5A5A5;
+}
+
+.newstaffmodaladdstaffbtn {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border: 1px solid #9F810A;
+    background-color: #D7B321;
+    cursor: pointer;
+    height: 8%;
+}
+
+    .newstaffmodaladdstaffbtn > h1 {
+        font-size: 16px;
+        color: white;
+    }
+
+@media screen and (min-width:600px) and (max-width:1199px) {
+    .newStaffform {
+        width: 450px;
+        height: 520px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 1.5%;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    .newStaffform {
+        width: 35vw;
+        height: 40vw;
+        padding-bottom: 1.5%;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .newStaffform {
+        width: 35vw;
+        height: 42vw;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 1.5%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .newstaffmodallabel {
+        font-size: 26px;
+    }
+
+    .newstaffmodalstatus, .newstaffmodaloptions {
+        font-size: 20px;
+        font-weight: 400;
+        color: #A5A5A5;
+    }
+}
+
+.newstaffmodalstatusDiv {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.newstaffmodaldropdown {
+    position: relative;
+    display: flex;
+    width: 60%;
+    align-self: flex-start;
+    background-color: white;
+    padding: 2% 1%;
+    border: 1px solid #E2E2E2;
+    border-radius: 0.5vw;
+}
+
+.newstaffmodaldropdown-toggle {
+    cursor: pointer;
+}
+
+
+.newstaffmodaldropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #E2E2E2;
+}
+
+.newstaffmodaldropdown-item {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/* drop down menu */
+.newstaffmodaldropdownDiv {
+    position: absolute;
+    top: 1.7vw;
+    right: 7.3vw;
+}
+
+.visiblenewstaffmodaldropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.5% 3%;
+    width: 100%;
+}
+
+.userImg {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+}
+
+.userName {
+    font-size: 1vw;
+    font-weight: bold;
+    color: #707070;
+}
+
+.newstaffmodaldropdown-toggle {
+    font-weight: 900;
+    border: none;
+    color: #707070;
+}
+
+.newstaffmodaldropdown-menu {
+    width: 100%;
+}
+
+.newstaffmodaldropdown-item {
+    display: flex;
+    align-items: center;
+}
+
+
+/* add new department modal */
+.newdepartmentModalcontainer {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #00000057;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.newdepartmentform {
+    width: 80vw;
+    min-height: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    z-index: 99;
+}
+
+.newdepartmentmodaltittlediv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #094b2b;
+    padding: 2% 4%;
+}
+
+.newdepartmentmodalinputsdiv {
+    height: 95%;
+    padding: 0 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+.newdepartmentmodaltitle, .newdepartmentdropdowncanclebtn {
+    color: #A5A5A5;
+    font-size: 13px;
+}
+
+.newdepartmentmodaltitle {
+    font-weight: 500;
+}
+
+.newdepartmentmodallabel {
+    font-size: 16px;
+    font-weight: 400;
+    color: #A5A5A5;
+    margin-top: 3%;
+}
+
+.input-validation {
+    font-size: 13px;
+    color: red;
+    margin-top: 3%;
+}
+
+.newdepartmentmodalinputs {
+    width: 80%;
+    padding: 2% 3%;
+    background-color: white;
+    border: 1px solid #E2E2E2;
+    border-radius: 0.5vw;
+    outline: none;
+    margin-top: 1%;
+    color: #A5A5A5;
+}
+
+.newdepartmentmodalstatus, .newdepartmentmodaloptions {
+    font-size: 16px;
+    font-weight: 400;
+    color: #A5A5A5;
+}
+
+.newdepartmentmodaladdstaffbtn {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border: 1px solid #9F810A;
+    background-color: #D7B321;
+    cursor: pointer;
+    height: 10%;
+    font-size: 16px;
+    color: white;
+}
+
+
+.newdepartmentdropdowncanclebtn {
+    cursor: pointer;
+}
+
+@media screen and (min-width:600px) and (max-width:1200px) {
+    .newdepartmentform {
+        width: 400px;
+        height: 450px;
+    }
+
+    .newdepartmentmodallabel {
+        font-size: 18px;
+        font-weight: 400;
+        color: #A5A5A5;
+        margin-top: 3%;
+    }
+
+    .newdepartmentmodaltitle, .newdepartmentdropdowncanclebtn {
+        color: #A5A5A5;
+        font-size: 15px;
+    }
+
+    .newdepartmentmodaltitle, .newdepartmentdropdowncanclebtn {
+        color: #A5A5A5;
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .newdepartmentform {
+        width: 35vw;
+        height: 35vw;
+    }
+
+    .newdepartmentmodaltitle, .newdepartmentdropdowncanclebtn {
+        color: #A5A5A5;
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (min-width:1440px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .newdepartmentmodallabel {
+        font-size: 26px;
+    }
+
+    .newdepartmentmodalstatus, .newdepartmentmodaloptions {
+        font-size: 20px;
+        font-weight: 400;
+        color: #A5A5A5;
+    }
+
+    .newdepartmentform {
+        width: 35vw;
+        height: 38vw;
+    }
+}
+
+.newdepartmentmodalstatusDiv {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.newdepartmentmodaldropdown {
+    position: relative;
+    display: flex;
+    width: 60%;
+    align-self: flex-start;
+    margin-top: 3%;
+    background-color: white;
+    padding: 3% 1%;
+    border: 1px solid #E2E2E2;
+    border-radius: 0.5vw;
+}
+
+.newdepartmentmodaldropdown-toggle {
+    cursor: pointer;
+}
+
+
+.newdepartmentmodaldropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #E2E2E2;
+}
+
+.newdepartmentmodaldropdown-item {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/* drop down menu */
+.newdepartmentmodaldropdownDiv {
+    position: absolute;
+    top: 1.7vw;
+    right: 7.3vw;
+}
+
+.visiblenewdepartmentmodaldropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.5% 3%;
+    width: 100%;
+}
+
+.userImg {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+}
+
+.userName {
+    font-size: 1vw;
+    font-weight: bold;
+    color: #000;
+}
+
+.newdepartmentmodaldropdown-toggle {
+    font-weight: 900;
+    border: none;
+    color: #707070;
+}
+
+.newdepartmentmodaldropdown-menu {
+    width: 100%;
+}
+
+.newdepartmentmodaldropdown-item {
+    display: flex;
+    align-items: center;
+}
+
+/* make payment modal */
+
+.makepaymentModalcontainer {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.makepaymentModalcontainers {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.makepaymentmodal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.makepaymentform {
+    width: 35vw;
+    height: 45vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1.5%;
+}
+
+.makepaymentmodaltittlediv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+    padding: 2% 4%;
+}
+
+.makepaymentdetailsdiv {
+    display: flex;
+    flex-direction: column;
+    height: 25vw;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.makepaymentmodaltitle, .makepaymentdropdowncanclebtn {
+    color: #A5A5A5;
+    font-size: 15px;
+}
+
+
+.makepaymentmodallabel {
+    font-size: 18px;
+    font-weight: 400;
+    color: #A5A5A5;
+    margin-top: 3%;
+}
+
+.makepaymentmodalinputsdiv {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.makepaymentmodalinputs {
+    width: 100%;
+    padding: 4% 3%;
+    background-color: white;
+    border: 1px solid #E2E2E2;
+    border-radius: 0.5vw;
+    outline: none;
+    margin-top: 2%;
+    color: #A5A5A5;
+}
+
+.makepaymentmodalExpirydate, .makepaymentmodalcvv {
+    padding: 7% 5%;
+    margin-top: 2%;
+    background-color: white;
+    border: 1px solid #E2E2E2;
+    border-radius: 0.5vw;
+    color: #A5A5A5;
+}
+
+
+.makepaymentmodalpay {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border: 1px solid #9F810A;
+    background-color: #D7B321;
+    cursor: pointer;
+    height: 18%;
+}
+
+    .makepaymentmodalpay > h1 {
+        font-size: 16px;
+        color: white;
+    }
+
+
+@media screen and (min-width:1440px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .makepaymentmodallabel {
+        font-size: 26px;
+    }
+
+    .makepaymentmodalstatus, .makepaymentmodaloptions {
+        font-size: 20px;
+        font-weight: 400;
+        color: #A5A5A5;
+    }
+}
+
+.makepaymentmodalstatusDiv {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.makepaymentmodaldropdown {
+    position: relative;
+    display: flex;
+    width: 60%;
+    align-self: flex-start;
+    margin-top: 3%;
+    background-color: white;
+    padding: 3% 1%;
+    border: 1px solid #E2E2E2;
+    border-radius: 0.5vw;
+}
+
+.makepaymentmodaldropdown-toggle {
+    cursor: pointer;
+}
+
+
+.makepaymentmodaldropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #E2E2E2;
+}
+
+.makepaymentmodaldropdown-item {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* makepayment-2
+   */
+.makepaymentform2 {
+    width: 35vw;
+    height: 20vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5%;
+}
+
+    .makepaymentform2 > button {
+        width: 55%;
+        height: 20%;
+        color: white;
+        background-color: #D7B321;
+        border: none;
+        font-size: 1.25vw;
+        font-weight: 500;
+    }
+
+    .makepaymentform2 > a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55%;
+        height: 20%;
+        color: white;
+        background-color: #D7B321;
+        border: none;
+        font-size: 1.3vw;
+        font-weight: 500;
+    }
+
+.recurring {
+    display: flex;
+    margin-top: 5%;
+    font-size: 1vw;
+}
+/* edit department */
+
+.newdepartmentmodaladdstaffbtns {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.editdepartmentmodaladdstaffbtns {
+    width: 20%;
+    height: 40%;
+    margin: 0 5%;
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width:768px) {
+    .editdepartmentmodaladdstaffbtns {
+        width: 20%;
+        height: 60%;
+        margin: 0 5%;
+        border: none;
+        color: white;
+        font-size: 1vw;
+        font-weight: 500;
+    }
+}
+
+
+/* edit staff */
+
+.newstaffmodaladdstaffbtns {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editstaffmodaladdstaffbtns {
+    width: 30%;
+    height: 40%;
+    margin: 0 5%;
+    border: none;
+    color: white;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+/* memo */
+.modalViewMemo {
+    cursor: pointer;
+}
+
+#viewMemomodalcontainer {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.memo-form {
+    width: 70vw;
+    min-height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1.5%;
+    color: #A5A5A5;
+    font-size: 1.3vw;
+}
+
+.viewmemomodaltittlediv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+    padding: 2% 4%;
+}
+
+.viewmemoitemsdiv {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.viewmemomodaltitle, .viewmemodropdowncanclebtn {
+    color: #A5A5A5;
+    font-size: 15px;
+}
+
+.viewmemodropdowncanclebtn {
+    cursor: pointer;
+}
+
+.memo-items {
+    display: flex;
+}
+
+.memo-doc {
+    border-radius: 5px;
+}
+
+    .memo-items > p {
+        width: 15%;
+        font-size: 12px;
+    }
+
+    .memo-items > span {
+        margin-left: 6%;
+        font-size: 12px;
+    }
+
+    .memo-items > textarea {
+        margin-left: 6%;
+        padding: 5%;
+        /* border: #A5A5A5; */
+        height: 4rem;
+        outline: #A5A5A5;
+        font-size: 12px;
+    }
+
+.memo-items-button {
+    align-items: center;
+    justify-content: center;
+    margin: 2% 3%;
+}
+
+    .memo-items-button > button {
+        width: 30%;
+        height: 30px;
+        margin: 0% 3%;
+        font: 700;
+        font-size: 12px;
+    }
+
+#memo-accept {
+    background-color: #D7B321;
+    color: white;
+    border: #D7B321;
+}
+
+    #memo-accept:hover {
+        background-color: #D40E1F;
+        color: white;
+    }
+
+#memo-decline {
+    background-color: white;
+    color: #D7B321;
+    border: 1px solid #D7B321
+}
+
+    #memo-decline:hover {
+        color: #D40E1F;
+        border: 2px solid #D40E1F;
+    }
+
+@media screen and (min-width:600px) {
+    .memo-form {
+        width: 450px;
+        height: 500px;
+    }
+
+    .viewmemomodaltitle, .viewmemodropdowncanclebtn {
+        font-size: 20px;
+    }
+
+    .memo-items > p {
+        width: 15%;
+        font-size: 15px;
+        margin-bottom: 0.5rem;
+    }
+
+    .memo-items > span {
+        margin-left: 6%;
+        font-size: 15px;
+    }
+
+    .memo-items-button > button {
+        font-size: 15px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .memo-form {
+        width: 40vw;
+        height: 35vw;
+    }
+
+    .memo-items > p {
+        width: 15%;
+        font-size: 18px;
+    }
+
+    .memo-items > span {
+        margin-left: 6%;
+        font-size: 18px;
+    }
+
+    .memo-items-button > button {
+        width: 30%;
+        height: 2.5vw;
+        margin: 0% 3%;
+        font: 700;
+    }
+
+    .memo-items-button > button {
+        font-size: 1.2vw;
+    }
+}
+
+/*Memo Comment*/
+.comgeneral {
+    background-color: #F5F5F5;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    bottom: -0.5rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+
+.comh {
+    color: #fbfbfb;
+}
+
+.sech {
+    height: 35px;
+    width: 35px;
+    border-radius: 17.5px;
+    background-color: #D7B31F;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+    .sech h4 {
+        margin-left: 0.5rem;
+        color: white;
+        margin-top: 0.7rem;
+        font-size: 1.2rem;
+    }
+
+.secgeneral {
+    position: relative;
+    padding-left: 0.5rem;
+    padding-right: 1.4rem;
+    margin-right: 1.4rem;
+}
+
+    .secgeneral h5 {
+        margin-left: 3.5rem;
+        margin-top: -35px;
+        color: #A5A5A5;
+        font-size: 1rem;
+    }
+
+    .secgeneral span {
+        margin-left: 3.5rem;
+        margin-top: -35px;
+        color: #A5A5A5;
+        font-size: 10px;
+    }
+    
+
+.genapp {
+    display: flex;
+    margin-left: 6px;
+}
+
+#htxt {
+    margin-left: 10px;
+}
+
+#commentText {
+    margin-top: -15px;
+    margin-left: 3.9rem;
+}
+
+.curvegeneral {
+    background-color: white;
+    width: 85%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    position: relative;
+    left: 25px;
+    top: 1.5rem;
+}
+
+#imgcom {
+    width: 60px;
+    position: relative;
+    top: -62px;
+    left: 21.5rem;
+}
+
+.curh {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: #D7B31F;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: -30px;
+}
+
+.curh {
+    position: relative;
+    bottom: 33px;
+    left: 40px;
+}
+
+.curvegeneral h4 {
+    margin-left: 0.3rem;
+    color: white;
+    margin-top: 0.6rem;
+    font-size: 1.2rem;
+}
+
+#addCommentText {
+    width: 70%;
+    height: 44px;
+    border-radius: 25px;
+    border: none;
+    position: relative;
+    left: 50px;
+    padding-top: 0.4rem;
+}
+
+::placeholder {
+    position: relative;
+    color: #c7c3c3;
+    border: none;
+}
+
+
+.accndec {
+    height: 30px;
+    display: flex;
+    margin-top: 3.5rem;
+    position: relative;
+    left: 4.2rem;
+}
+
+#dec {
+    color: #D7B321;
+    background-color: white;
+    margin-left: 30px;
+    width: 150px;
+    border: 1px solid #D7B321;
+    position: relative;
+    top: -15px;
+}
+
+#acc {
+    width: 150px;
+    color: white;
+    background-color: #D7B321;
+    border: none;
+    position: relative;
+    top: -15px;
+    border: #D7B321;
+}
+
+    #acc:hover, #dec:hover {
+        background-color: #D40E1F;
+        border: 2px solid #D40E1F;
+    }
+
+input[type="image"] {
+    outline: none;
+}
+
+
+/* Media Query */
+/* Media Query */
+/* Media Query */
+
+@media screen and (max-width:800px) {
+    .curvegeneral {
+        background-color: white;
+        width: 70%;
+    }
+
+    .accndec {
+        position: relative;
+        top: -10px;
+        margin-left: -100px;
+    }
+
+    #imgcom {
+        position: relative;
+        left: 180px;
+        top: -62px;
+    }
+
+    #place {
+        width: 80%;
+        height: 45px;
+    }
+
+    .comh {
+        color: #fbfbfb;
+        font-size: 15px;
+    }
+
+    .sech {
+        height: 35px;
+        width: 35px;
+        border-radius: 17.5px;
+        background-color: #D7B31F;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+        .sech h4 {
+            margin-left: 13px;
+            color: white;
+        }
+
+    .secgeneral {
+        position: relative;
+        left: 10px;
+    }
+
+        .secgeneral h5 {
+            margin-left: 45px;
+            margin-top: -35px;
+            color: #A5A5A5;
+            font-size: 12px;
+        }
+
+    .genapp {
+        display: flex;
+        margin-left: 6px;
+    }
+
+    #htxt {
+        margin-left: 10px;
+    }
+
+    #commentText {
+        margin-top: -10px;
+        margin-left: 45px;
+        font-size: 11.5px;
+    }
+
+
+
+    .curh {
+        position: relative;
+        bottom: 38px;
+    }
+
+    #dec {
+        margin-left: 30px;
+        width: 100px;
+        position: relative;
+    }
+
+    #acc {
+        width: 100px;
+    }
+}
+
+/* pricing */
+.pricingdiv {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3%;
+    width: 95vw;
+}
+
+.chooseaplanheading {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+    --tw-text-opacity: 1;
+    color: rgb(195 33 49 / var(--tw-text-opacity));
+    font-weight: 700;
+}
+
+.plansDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.planDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    cursor: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 0.5rem;
+    border: 1px solid #D1D1D14F;
+}
+
+.planDivPlanName {
+    font-size: 20px;
+    color: #74747480;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.planDivPlanPrice {
+    background-color: #74747426;
+    color: #747474FF;
+    width: 70%;
+    font-weight: 700;
+    border-radius: 0.75rem /* 12px */;
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.planDivCheckboxs {
+    margin-top: 10px;
+    width: 70%;
+}
+
+.planDivbreakline {
+    margin-top: 10px;
+    border: 0.5px solid rgb(218, 215, 215);
+    width: 80%;
+}
+
+.planDivCheckCircleDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #747474FF;
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    align-items: center;
+}
+
+.plandivcheckboxtext {
+    width: 75%;
+}
+
+.choosePlanBtn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #747474FF;
+    width: 80%;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .plansDiv {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .chooseaplanheading {
+        margin-bottom: 30px;
+    }
+
+    .choosePlanBtn {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-size: 15px;
+        height: 35px;
+    }
+
+    .planDiv {
+        width: 40%;
+        margin-top: 1%;
+    }
+
+    .planDivCheckboxs {
+        margin-top: 14px;
+    }
+
+    .planDivbreakline {
+        margin-top: 15px;
+        width: 80%;
+    }
+
+    .planDivCheckCircleDiv {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .planDivPlanPrice {
+        font-size: 30px;
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .chooseaplanheading {
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        font-size: 30px;
+        text-align: start;
+        padding-left: 8%;
+    }
+
+    .pricingdiv {
+        width: 78vw;
+    }
+
+    .plansDiv {
+        flex-wrap: nowrap;
+    }
+
+    .planDiv {
+        width: 22vw;
+        margin-right: 2%;
+        margin-top: 0;
+    }
+
+    .planDivPlanName {
+        font-size: 1.4vw;
+        margin-top: 2vw;
+    }
+
+    .planDivPlanPrice {
+        font-size: 3.4vw;
+        margin-top: 1vw;
+    }
+
+    .planDivbreakline {
+        margin-top: 2.3vw;
+    }
+
+    .planDivCheckboxs {
+        margin-top: 2.3vw;
+    }
+
+    .planDivCheckCircleDiv {
+        margin-top: 6%;
+        font-size: 1vw;
+    }
+
+    .choosePlanBtn {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        font-size: 1.3vw;
+        height: 3.1vw;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .chooseaplanheading {
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        font-size: 3vw;
+        text-align: start;
+        padding-left: 8%;
+    }
+}
+
+/* Raise Memo */
+
+.raisememomain {
+    display: flex;
+}
+
+.raisememoDiv {
+    width: 90vw;
+    background-color: white;
+    margin: 0 2vh 2vh 2vh;
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid #7070701D;*/
+    padding-bottom: 30px;
+}
+
+.raisememo {
+    display: flex;
+    align-items: center;
+    padding: 1% 3%;
+}
+
+    .raisememo > h1 {
+        font-size: 16px;
+        color: #D40E1F;
+        font-weight: 700;
+    }
+
+.raisememoformdiv {
+    padding: 0% 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.raiseMemolabel {
+    margin-top: 2%;
+    color: #A5A5A5;
+    font-size: 16px;
+}
+
+.select2-container .select2-selection--single {
+   
+    padding-top: 0vw;
+    height: 40px;
+    
+}
+
+.raisememosubjectinput, .raisememouploadselect, .raisememouploadselect > option, .recipientselect {
+    margin-top: 1%;
+    width: 90%;
+    padding: 1.8%;
+    border-radius: 0.5vw;
+    background-color: #74747416;
+}
+.raisedoc {
+    border-radius: 50px;
+    margin-left: 1.8rem;
+    text-decoration: none;
+    border-color: #A5A5A5;
+    font-size: 1rem;
+    width: 20rem;
+    height: 1.5rem;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maintexttextarea {
+    width: 90%;
+    outline: none;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #E2E2E2;
+    border-radius: 0.5vw;
+}
+
+    .maintexttextarea::placeholder {
+        color: #A5A5A53C;
+    }
+
+.raisememosubmit {
+    align-self: center;
+    margin-top: 10%;
+    padding: 15px;
+    width: 30%;
+    border: none;
+    color: white;
+    background-color: #094b2b;
+    border: 1px solid #9F810A;
+}
+
+    .raisememosubmit > span {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .raisememosubmit:hover {
+        background-color: #009900;
+    }
+
+
+
+    @media screen and (min-width:1024px) {
+        .raisememoDiv {
+            width: 67vw;
+            padding-bottom: 5%;
+            height: 55vh;
+            overflow: scroll;
+        }
+
+        .raiseMemolabel {
+            margin-top: 2%;
+            color: #A5A5A5;
+            font-size: 16px;
+        }
+
+
+        .raisememosubjectinput, .raisememouploadselect, .raisememouploadselect > option, .recipientselect {
+            /*margin-top: 1%;*/
+            /*width: 35%;*/
+            /*padding: 1.8%;*/
+            border-radius: 0.5vw;
+        }
+
+
+        .raisememosubmit {
+            width: 20%;
+            align-self: center;
+            margin-top: 1%;
+            padding: 1.5%;
+            margin-left: 20rem;
+        }
+
+        .maintexttextarea {
+            padding: 2%;
+            margin-top: 1%;
+            background-color: #74747416;
+        }
+    }
+
+    @media screen and (min-width:1440px) {
+        .raisememo > h1 {
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 0.1rem;
+            line-height: 1;
+        }
+
+        .raiseMemolabel {
+            font-size: 18px;
+        }
+    }
+
+    .payment-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 30%;
+    margin-bottom: 5%;
+    font-size: 1.3vw;
+    color: #A5A5A5;
+    font-weight: 600;
+}
+
+.datedropdown {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* Styles for the modal container */
+.freetrialregcontainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    width: 30vw;
+    height: 18vw;
+}
+
+/* Styles for the overlay background */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9998;
+}
+
+.freetrialregcontainer i.fa-check-double {
+    color: #D7B321;
+    margin-left: 47%;
+    margin-top: 10%;
+}
+
+.freetrialtxt {
+    color: #6c757d;
+    margin-top: 5%;
+    margin-left: 3.2vw;
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+}
+
+.freetrialregcontainer a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #D7B321;
+    position: absolute;
+    padding-left: 7vw;
+}
+
+.freetrialregcontainer a:hover {
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #c6202f;
+}
+
+/* Process Memo toggle */
+.toggle_container {
+    display: flex;
+}
+
+.toggle_btn_on {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid #009900;
+    padding: 10px;
+    width: 50%;
+}
+
+.toggle_btn_off {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 50%;
+    border-bottom: 2px solid #707070;
+}
+
+.toggle_btn_pend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 50%;
+    border-bottom: 5px solid #ffc107;
+}
+
+.toggle_click {
+    color: #707070;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.toggle_click:hover {
+    color: #009900;
+    font-size: 16px;
+    text-decoration: none;
+}
+/* Process Memo toggle */
+
+.make-payment-button {
+    background-color: #094b2b;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+    .make-payment-button:hover {
+        background-color: #009900;
+        border-radius: 10px;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+.warning-message {
+    display: flex;
+    position: fixed;
+    height: 3vh;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    background-color: #ffc107; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    font-size: 0.8rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    animation: slide-in 2s ease-out; /* Adjust the animation duration and easing as needed */
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.warning-icon {
+    margin-right: 10px; /* Adjust the margin as needed */
+    font-size: 20px;
+    vertical-align: middle;
+}

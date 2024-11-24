@@ -1,0 +1,76 @@
+﻿  <!-- BEGIN: Header-->
+
+@using Microsoft.AspNet.Identity
+@using Tenant_App.Models.DataObjects.Icon
+@using Microsoft.AspNetCore.Http
+@using Tenant_App.Web.Filters;
+@using System.Security.Claims;
+@using Newtonsoft.Json;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+
+@{
+    string fullName = "";
+    string roleName = "";
+    string greeting = "";
+    try
+    {
+        var claimsIdentity = User.Identity as ClaimsIdentity;
+        fullName = claimsIdentity.FindFirst(ClaimTypes.GivenName).Value;
+        // Anonymous was used to hold the roleName
+        roleName = claimsIdentity.FindFirst(ClaimTypes.Anonymous).Value;
+
+        DateTime timeOfDayGreeting = DateTime.Now;
+
+        if (timeOfDayGreeting.Hour >= 5 && timeOfDayGreeting.Hour < 12)
+        {
+           greeting ="Good morning!";
+        }
+        else if (timeOfDayGreeting.Hour >= 12 && timeOfDayGreeting.Hour < 16)
+        {
+           greeting ="Good afternoon!";
+        }
+        else
+        {
+            greeting = "Good Evening!";
+        }
+    }
+    catch (Exception ex)
+    {
+
+
+    }
+}
+<div class="header-navbar-shadow"></div>
+<nav class="header-navbar main-header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top navbar-light">
+    <div class="navbar-wrapper">
+        <div class="navbar-container content">
+            <div class="navbar-collapse" id="navbar-mobile">
+                <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon bx bx-menu"></i></a></li>
+                    </ul>
+                 
+                
+                </div>
+                <ul class="nav navbar-nav float-right">
+
+                   
+                    
+                    <li class="dropdown dropdown-user nav-item">
+                        <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+
+                            <div class="user-nav d-sm-flex d-none"><span class="user-name" style="color:red">@greeting @fullName [@roleName]</span><span class="user-status"></span></div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" asp-area="admin" asp-controller="UpdateProfile" action="Index"><i class="bx bx-user mr-50"></i> Edit Profile</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" asp-area="admin" asp-controller="changepassword" action="Update"><i class="bx bx-power-off mr-50"></i>Change Password</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="@Url.Action("LogOff", "Account", new { area = "" })"><i class="bx bx-power-off mr-50"></i>Log Out </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- END: Header-->

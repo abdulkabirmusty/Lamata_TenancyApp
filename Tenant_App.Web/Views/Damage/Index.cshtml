@@ -1,0 +1,220 @@
+﻿@model List<Tenant_App.Models.DataObjects.DamageDtos.FetchDamageDto>
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = ViewBag.ProjectTitle + "::  " + "Damages report";
+
+    Layout = "~/Views/Shared/_Secured.cshtml";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-datatables@latest/vanilla-dataTables.min.css">
+<script src="https://cdn.jsdelivr.net/npm/vanilla-datatables@latest/vanilla-dataTables.min.js"></script>
+<style>
+
+    .dropdown-menus {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 0rem;
+        margin: 0rem;
+        list-style: none;
+        z-index: 999;
+        min-width: 100%
+    }
+
+    .dropdowns {
+        width: 11.5vw;
+        height: 0.5vw;
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-menus li {
+        padding: 3px;
+        cursor: pointer;
+    }
+
+        .dropdown-menus li:hover {
+            background-color: #f4f4f4;
+        }
+</style>
+
+<div class="container-fluid content-top-gap">
+
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb my-breadcrumb">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Dashboard", new { area = "" })">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Damage", new { area = "" })">Setup</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Manage Damages</li>
+        </ol>
+    </nav>
+
+    <div class="cards__heading">
+        <h3>Manage Damages</h3>
+    </div>
+
+    <div class="card card_border p-lg-5 p-3 mb-4">
+        <div class="card-body py-3 p-0">
+            <div>
+                <button onclick="Create()" role="button" data-toggle="modal" data-target="#centralModalInfo" id="addDeptModalOpen" class="btn btn-primary btn-style mt-4">
+                    <i class="fa-solid fa-plus"></i> Add Damage Report
+                </button>
+            </div>
+            <br /><br />
+            <div class="row">
+
+
+                <div class="table-responsive ">
+                    <table data-ordering="false" id="example" class="table " style="width:100%; background-color: white;">
+                        <thead>
+                            <tr>
+                                <th class="sn">S/N</th>
+                                <th class="r1-col">Property Name</th>
+                                <th class="r1-col">FullName</th>
+                                <th class="r1-col">Damage Type</th>
+                                <th class="r1-col">Priority</th>
+                                <th class="r1-col">Report Date</th>
+                                <th class="r1-col">Status</th>
+                                <th class="r1-col">Actions</th>
+                                <th class="r1-col"></th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody class="pl-3">
+                            @{
+                                int rowNo = 0;
+                            }
+
+                            @foreach (var item in Model)
+                            {
+                                <tr class="td">
+                                    <td class="sn">@(rowNo += 1)</td>
+                                    <td class="r1-col">@item.PropertyName</td>
+                                    <td class="r1-col">@item.FullName</td>
+                                    <td class="r1-col">@item.DamageType</td>
+                                    <td class="r1-col">@item.Priority</td>
+                                    <td class="r1-col">@item.ReportDate.ToString("d")</td>
+                                    <td class="r1-col">@item.status</td>
+                                    <td class="r1-col" id="date_row">
+                                        <div class="dropdowns">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            <ul class="dropdown-menus">
+
+                                                <li data-value="edit" data-id="@item.Id" role="button" data-toggle="modal" data-target="#centralModalInfo" class='editAction' id="editDepartment">
+                                                    <i class="fa fa-edit"></i> Edit
+                                                </li>
+                                                <li data-value="delete" data-id="@item.Id" role="button" data-toggle="modal" data-target="#centralModalInfo" class="editAction" id="deleteDepartment">
+                                                    <i class="fa fa-trash"></i> Delete
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td style="color:blue; cursor: pointer;">
+                                        <a style='margin-right:16px' onclick="Preview('@item.Id')" data-value="preview" data-id="@item.Id" role="button" data-toggle="modal" data-target="#centralModalInfo" id="addDeptModalOpen">
+                                            Preview
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                        
+                    </table>
+                    <br />
+                    <br />
+                    <br />
+                    <div class="modal item-fade text-left" id="inlineForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel17" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document" @* style="box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);" *@>
+                            <!-- Modal content -->
+                            <div class="modal-content" id="bodycontentPartial">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src=" https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+<script src=" https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap5.min.js"></script>
+<script src="../js/layout.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"></script>
+
+<script type="text/javascript">
+
+    function Create() {
+        $("#inlineForm").hide();
+        $("#bodycontentPartial").show();
+        debugger
+        $.ajax({
+            type: 'GET',
+            url: "@Url.Action("Create", "Damage")",
+            success: function (content) {
+
+                $("#inlineForm").show();
+                console.log(content);
+                $("#bodycontentPartial").html(content);
+            }
+        });
+    }
+
+    function Edit(id) {
+        $("#inlineForm").hide();
+        $("#bodycontentPartial").show();
+        debugger
+        $.ajax({
+            type: 'GET',
+            url: "@Url.Action("Edit", "Damage")",
+            data: { id: id },
+            success: function (content) {
+
+                $("#inlineForm").show();
+                console.log(content);
+                $("#bodycontentPartial").html(content);
+            }
+        });
+    }
+
+    function Delete(id) {
+        console.log("here");
+        $("#inlineForm").hide();
+        $("#bodycontentPartial").show();
+        //debugger
+        $.ajax({
+            type: 'GET',
+            url: "@Url.Action("Delete", "Damage")",
+            data: { id: id },
+            success: function (content) {
+                $("#inlineForm").show();
+                $("#bodycontentPartial").html(content);
+            }
+        });
+    }
+
+    function Preview(id) {
+        $("#inlineForm").hide();
+        $("#bodycontentPartial").show();
+        debugger
+        $.ajax({
+            type: 'GET',
+            url: "@Url.Action("Preview", "Damage")",
+            data: { id: id },
+            success: function (content) {
+
+                $("#inlineForm").show();
+                console.log(content);
+                $("#bodycontentPartial").html(content);
+            }
+        });
+    }
+</script>

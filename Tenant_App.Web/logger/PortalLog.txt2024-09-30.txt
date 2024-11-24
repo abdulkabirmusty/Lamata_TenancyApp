@@ -1,0 +1,32 @@
+2024-09-30 17:05:14,845 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@TenantDb'
+2024-09-30 17:05:15,025 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-09-30 17:05:15,079 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-09-30 17:05:15,193 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 1eb18d8e-df36-4011-8a5e-5d0fed0f0c47 validation failed: DuplicateRoleName.
+2024-09-30 17:05:15,385 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-30 17:05:15,399 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-30 17:05:15,414 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Documents\Tenant_App\Tenant_App.Web
+2024-09-30 17:05:15,840 [5] WARN Microsoft.AspNetCore.Identity.UserManager - User 9a90e6ca-0643-4542-ba5a-80b5b56a4af1 validation failed: DuplicateUserName.
+2024-09-30 17:05:16,032 [6] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-30 17:05:16,239 [19] WARN Microsoft.AspNetCore.Identity.UserManager - User 9a90e6ca-0643-4542-ba5a-80b5b56a4af1 validation failed: DuplicateUserName.
+2024-09-30 17:05:16,301 [20] WARN Microsoft.AspNetCore.Identity.UserManager - User 1bef6fc1-81c8-4893-a851-7fd000723174 validation failed: DuplicateUserName.
+2024-09-30 17:05:16,400 [4] WARN Microsoft.AspNetCore.Identity.UserManager - User 1bef6fc1-81c8-4893-a851-7fd000723174 validation failed: DuplicateUserName.
+2024-09-30 17:05:16,400 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:33616:5a6a5748 successfully announced in 969.2095 ms
+2024-09-30 17:05:16,492 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:33616:5a6a5748 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-30 17:05:17,252 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:33616:5a6a5748 all the dispatchers started
+2024-09-30 17:05:47,894 [49] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-30 17:06:07,341 [14] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-30 17:06:08,669 [6] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-30 17:06:54,939 [21] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-30 17:07:20,012 [77] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-30 17:07:23,480 [75] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-30 17:07:33,117 [5] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-30 17:07:46,868 [81] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-30 17:07:49,525 [21] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-30 17:07:49,528 [75] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-30 17:07:59,640 [4] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-30 17:08:31,964 [5] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-30 17:08:32,053 [77] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.

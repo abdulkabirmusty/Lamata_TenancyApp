@@ -1,0 +1,120 @@
+﻿
+@using Microsoft.AspNet.Identity
+@using Tenant_App.Models.DataObjects.Icon
+@using Microsoft.AspNetCore.Http
+@using Tenant_App.Web.Filters;
+@using System.Security.Claims;
+@using Newtonsoft.Json;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+@inject Tenant_App.Models.Data.AppDbContext _context;
+
+@{
+
+    var sidebarMenus = Tenant_App.Web.Filters.SessionExtensions.GetObjectFromJson<List<SidebarMenuViewModel>>(Context.Session, "MenuString");
+    @if (sidebarMenus == null || User.Identity.IsAuthenticated == false)
+
+    {
+        <script>
+            window.location.replace("Account/Login");
+        </script>
+    }
+
+}
+
+@{
+    var user = User.Identity as ClaimsIdentity;
+    var userid = user.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+    // var activeuser = _context.IdentityCompanyAccounts.FirstOrDefault(x => x.Id == userid);
+
+    // @if (!activeuser.IsActive || User.Identity.IsAuthenticated == false)
+    // {
+    //     <script>
+    //         window.location.replace("Account/AccountDeactivated");
+    //     </script>
+    // }
+}
+
+@if (sidebarMenus != null)
+{
+    <!--/-SIDEBAR-->
+    <div class='nav-container'>
+        <div class='nav-list '>
+            <img src="~/weApproveAsset/assets/WeApprove black.png" class="logo">
+
+            <div class='nav-links'>
+                @*<div id="PaymentPlanReport" class=' text-[#707070] w-full hover:text-[#D40E1F] navitemsdiv font-medium flex items-center px-[5%] h-[8vh] rounded-[0.2vw] text-[0.9vw] mb-[3%]  '>
+                    <i class="fa-solid fa-arrow-right-from-bracket text-[1.22vw]"></i>
+                    <a class='anchor ml-[8%]' asp-controller="Reports" asp-action="Index" asp-route-subscriptionStatus="false">Reports</a>
+                </div>*@
+
+                <div class=' text-[#707070] w-full hover:text-[#D40E1F] navitemsdiv font-medium flex items-center px-[5%] h-[8vh] rounded-[0.2vw] text-[0.9vw] mb-[3%]  '>
+                    <i class="fa-solid fa-arrow-right-from-bracket text-[1.22vw]"></i>
+
+                    <a href="@Url.Action("LogOff", "Account", new { area = "" })" class='anchor ml-[8%]'>Log out</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- mobile nav bar -->
+    <div class="mobilenavlogodiv">
+        <i class="fa-solid fa-bars" onclick="toggleNav()"></i>
+        <img src="~/weApproveAsset/assets/WeApprove black.png" class="mobilelogo ">
+    </div>
+
+    <div class='mobilenav-container'>
+        <div class='nav-list'>
+            <div class='nav-links '>
+                <div class='link  navitemsdiv '>
+                    <i class="fa-solid fa-border-all "></i>
+                    <a href="@Url.Action("Index", "Dashboard", new { area = "Admin" })" class='anchor '>Dashboard</a>
+                </div>
+
+                @foreach (var menu in sidebarMenus)
+                {
+                    string[] breakURL = menu.Url.Split("/");
+
+                    string ControllerName = "";
+                    string ActionName = "";
+
+                    if (breakURL.Length == 0)
+                    {
+
+                    }
+                    else if (breakURL.Length == 1)
+                    {
+                        ControllerName = breakURL[0];
+                    }
+                    else if (breakURL.Length == 2)
+                    {
+                        ControllerName = breakURL[0];
+                        ActionName = breakURL[1];
+                    }
+
+                    <div class='link  navitemsdiv '>
+                        <i class="fa-solid fa-border-all "></i>
+                        <a href="@Url.Action(ActionName, ControllerName)" class='anchor '>@menu.MenuText</a>
+                    </div>
+                }
+
+                <div class='link  text-[#707070] w-full hover:text-[#D40E1F] navitemsdiv font-medium flex items-center px-[5%] h-[8vh] rounded-[0.2vw] text-[0.9vw] mb-[3%]  '>
+                    <i class="fa-solid fa-arrow-right-from-bracket text-[1.22vw]"></i>
+                    <a href="@Url.Action("LogOff", "Account", new { area = "" })" class='anchor ml-[8%]'>Log out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section scripts {
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#toast").show();
+           
+        });
+    </script>
+}

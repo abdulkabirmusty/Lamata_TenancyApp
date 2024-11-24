@@ -1,0 +1,98 @@
+2024-09-18 00:21:17,847 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@TenantDb'
+2024-09-18 00:21:17,857 [9] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 8a656b92-6db8-4b23-8844-ca4df44125fb validation failed: DuplicateRoleName.
+2024-09-18 00:21:17,871 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-09-18 00:21:17,880 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-09-18 00:21:17,939 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-18 00:21:17,942 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-18 00:21:17,948 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Documents\Tenant_App\Tenant_App.Web
+2024-09-18 00:21:18,091 [9] WARN Microsoft.AspNetCore.Identity.UserManager - User 2e47dbb0-99e9-4397-aa3f-caf3bc1cc2e5 validation failed: DuplicateUserName.
+2024-09-18 00:21:18,158 [16] WARN Microsoft.AspNetCore.Identity.UserManager - User 2e47dbb0-99e9-4397-aa3f-caf3bc1cc2e5 validation failed: DuplicateUserName.
+2024-09-18 00:21:18,181 [18] WARN Microsoft.AspNetCore.Identity.UserManager - User 835f2139-a8fd-42a5-aa5b-4ba548dbc93a validation failed: DuplicateUserName.
+2024-09-18 00:21:18,200 [10] WARN Microsoft.AspNetCore.Identity.UserManager - User 835f2139-a8fd-42a5-aa5b-4ba548dbc93a validation failed: DuplicateUserName.
+2024-09-18 00:21:18,218 [21] WARN Microsoft.AspNetCore.Identity.UserManager - User 835f2139-a8fd-42a5-aa5b-4ba548dbc93a validation failed: DuplicateUserName.
+2024-09-18 00:21:18,268 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:65ef6501 successfully announced in 316.4236 ms
+2024-09-18 00:21:18,286 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:65ef6501 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-18 00:21:18,330 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-09-18 00:21:18,487 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:65ef6501 all the dispatchers started
+2024-09-18 00:21:18,508 [20] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 00:21:27,732 [21] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 00:21:30,827 [20] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 00:21:31,056 [57] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 00:21:32,359 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 00:21:32,397 [58] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 00:21:35,895 [58] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 00:38:33,284 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-09-18 00:38:33,361 [ServerHeartbeatProcess #1] WARN Hangfire.Server.ServerHeartbeatProcess - Server vat-l-dev18:41844:65ef6501 was considered dead by other servers, restarting...
+2024-09-18 00:38:33,393 [ServerHeartbeatProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:65ef6501 caught restart signal...
+2024-09-18 00:38:33,592 [BackgroundServerProcess #1] WARN Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:65ef6501 stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-09-18 00:38:33,707 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:65ef6501 successfully reported itself as stopped in 7.8155 ms
+2024-09-18 00:38:33,712 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:65ef6501 has been stopped in total 282.6085 ms
+2024-09-18 00:38:33,746 [21] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 00:38:33,795 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:ebbbc015 successfully announced in 42.3479 ms
+2024-09-18 00:38:33,809 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:ebbbc015 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-18 00:38:34,144 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:ebbbc015 all the dispatchers started
+2024-09-18 00:38:36,286 [58] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2024-09-18 00:38:36,286 [21] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2024-09-18 04:52:35,909 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-09-18 04:52:36,400 [ServerHeartbeatProcess #1] WARN Hangfire.Server.ServerHeartbeatProcess - Server vat-l-dev18:41844:ebbbc015 was considered dead by other servers, restarting...
+2024-09-18 04:52:36,479 [ServerHeartbeatProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:ebbbc015 caught restart signal...
+2024-09-18 04:52:37,967 [BackgroundServerProcess #1] WARN Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:ebbbc015 stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-09-18 04:52:38,876 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:ebbbc015 successfully reported itself as stopped in 226.5934 ms
+2024-09-18 04:52:39,670 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:ebbbc015 has been stopped in total 2387.0049 ms
+2024-09-18 04:52:40,773 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:352a9590 successfully announced in 867.5291 ms
+2024-09-18 04:52:40,861 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:352a9590 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-18 04:52:42,891 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:352a9590 all the dispatchers started
+2024-09-18 13:58:14,396 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-09-18 13:58:22,417 [ServerHeartbeatProcess #1] WARN Hangfire.Server.ServerHeartbeatProcess - Server vat-l-dev18:41844:352a9590 was considered dead by other servers, restarting...
+2024-09-18 13:58:23,776 [ServerHeartbeatProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:352a9590 caught restart signal...
+2024-09-18 13:58:25,959 [BackgroundServerProcess #1] WARN Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:352a9590 stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-09-18 13:58:43,041 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:352a9590 successfully reported itself as stopped in 2175.888 ms
+2024-09-18 13:58:43,316 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:352a9590 has been stopped in total 19323.4747 ms
+2024-09-18 13:58:44,730 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:20d28b31 successfully announced in 1199.1527 ms
+2024-09-18 13:58:45,622 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:20d28b31 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-18 13:58:54,061 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:41844:20d28b31 all the dispatchers started
+2024-09-18 14:04:15,406 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@TenantDb'
+2024-09-18 14:04:15,410 [12] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 23d73ed6-0b87-46ad-bd36-892a6baf0090 validation failed: DuplicateRoleName.
+2024-09-18 14:04:15,457 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-09-18 14:04:15,487 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-09-18 14:04:15,917 [4] WARN Microsoft.AspNetCore.Identity.UserManager - User 99d2624b-6b93-43f1-8d0a-15191dccf527 validation failed: DuplicateUserName.
+2024-09-18 14:04:16,219 [12] WARN Microsoft.AspNetCore.Identity.UserManager - User 99d2624b-6b93-43f1-8d0a-15191dccf527 validation failed: DuplicateUserName.
+2024-09-18 14:04:16,273 [11] WARN Microsoft.AspNetCore.Identity.UserManager - User 90408810-19b0-4fd2-9461-7950f345cb77 validation failed: DuplicateUserName.
+2024-09-18 14:04:16,315 [12] WARN Microsoft.AspNetCore.Identity.UserManager - User 90408810-19b0-4fd2-9461-7950f345cb77 validation failed: DuplicateUserName.
+2024-09-18 14:04:16,346 [12] WARN Microsoft.AspNetCore.Identity.UserManager - User 90408810-19b0-4fd2-9461-7950f345cb77 validation failed: DuplicateUserName.
+2024-09-18 14:04:16,352 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:17840:81b0d7fc successfully announced in 727.1792 ms
+2024-09-18 14:04:16,409 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:17840:81b0d7fc is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-18 14:04:17,010 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:17840:81b0d7fc all the dispatchers started
+2024-09-18 14:04:17,269 [4] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 14:04:33,564 [19] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 14:04:36,827 [4] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 14:04:37,602 [58] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 14:04:44,408 [12] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 14:04:44,461 [22] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 14:04:46,923 [55] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 14:04:48,363 [56] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 14:04:48,518 [58] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 14:04:54,809 [58] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 14:04:55,858 [19] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 14:04:56,089 [19] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 14:05:00,273 [5] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 14:05:00,515 [5] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 14:05:00,575 [22] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-18 14:09:16,568 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-09-18 18:38:45,231 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-09-18 18:38:45,546 [ServerHeartbeatProcess #1] WARN Hangfire.Server.ServerHeartbeatProcess - Server vat-l-dev18:17840:81b0d7fc was considered dead by other servers, restarting...
+2024-09-18 18:38:45,844 [ServerHeartbeatProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:17840:81b0d7fc caught restart signal...
+2024-09-18 18:38:48,089 [BackgroundServerProcess #1] WARN Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:17840:81b0d7fc stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-09-18 19:46:35,729 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:17840:81b0d7fc successfully reported itself as stopped in 4072038.3123 ms
+2024-09-18 19:46:35,772 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:17840:81b0d7fc has been stopped in total 4074104.3813 ms
+2024-09-18 19:46:38,634 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:17840:5ead7997 successfully announced in 2268.5293 ms
+2024-09-18 19:46:40,575 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:17840:5ead7997 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-18 19:46:47,492 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:17840:5ead7997 all the dispatchers started

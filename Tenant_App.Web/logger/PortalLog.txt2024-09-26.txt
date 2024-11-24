@@ -1,0 +1,791 @@
+2024-09-26 02:55:01,701 [81] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 02:55:20,636 [81] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 02:55:20,671 [88] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 02:55:20,688 [73] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 03:00:29,542 [127] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 03:00:29,543 [133] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 03:00:29,542 [98] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 03:01:14,135 [165] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 03:01:14,826 [170] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 03:01:14,844 [169] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 03:01:15,961 [169] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 03:23:00,366 [174] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 03:23:02,825 [182] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 03:23:13,706 [185] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 03:23:21,264 [178] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 03:23:21,409 [187] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:18:56,558 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@TenantDb'
+2024-09-26 16:18:56,564 [5] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 8a8d4caf-7a49-4be4-9dc1-25b3de40b458 validation failed: DuplicateRoleName.
+2024-09-26 16:18:56,888 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role aad0d3bf-d4c3-466f-9db5-58d427b18b73 validation failed: DuplicateRoleName.
+2024-09-26 16:18:57,069 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-26 16:18:57,097 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-26 16:18:57,116 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Documents\Tenant_App\Tenant_App.Web
+2024-09-26 16:18:58,573 [5] WARN Microsoft.AspNetCore.Identity.UserManager - User 7c5a70fa-9b69-48f3-818f-969841989f64 validation failed: DuplicateUserName.
+2024-09-26 16:18:58,775 [17] WARN Microsoft.AspNetCore.Identity.UserManager - User 7c5a70fa-9b69-48f3-818f-969841989f64 validation failed: DuplicateUserName.
+2024-09-26 16:18:58,856 [21] WARN Microsoft.AspNetCore.Identity.UserManager - User 9d46342a-58b6-4576-931b-c710759f5e0e validation failed: DuplicateUserName.
+2024-09-26 16:18:58,907 [5] WARN Microsoft.AspNetCore.Identity.UserManager - User 9d46342a-58b6-4576-931b-c710759f5e0e validation failed: DuplicateUserName.
+2024-09-26 16:18:59,296 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:12908:0bf747ad successfully announced in 2058.3171 ms
+2024-09-26 16:18:59,403 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:12908:0bf747ad is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-26 16:18:59,411 [19] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:19:00,231 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-09-26 16:19:00,923 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:12908:0bf747ad all the dispatchers started
+2024-09-26 16:20:02,499 [24] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:20:44,815 [78] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:20:46,036 [96] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:20:54,893 [101] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:21:02,105 [100] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:21:02,200 [100] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 16:21:02,210 [100] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"There is no available at the moment","options":{"title":"Error","type":"error"}}]
+2024-09-26 16:22:08,874 [108] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:23:03,180 [72] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:23:04,032 [72] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:23:15,834 [20] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:23:24,320 [20] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:23:24,588 [20] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 16:23:24,596 [20] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"The Application for hostel Laurel Hall was successful. Proceeding to payment","options":{"title":"Success","type":"success"}}]
+2024-09-26 16:23:42,708 [21] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:23:42,755 [23] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:25:04,998 [10] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:25:05,105 [10] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:31:43,439 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@TenantDb'
+2024-09-26 16:31:43,439 [11] WARN Microsoft.AspNetCore.Identity.RoleManager - Role b78f4cea-0c0b-47a3-b661-ea9e3bc4e68e validation failed: DuplicateRoleName.
+2024-09-26 16:31:43,529 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-09-26 16:31:43,664 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-09-26 16:31:44,334 [11] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 5a68fdcc-87da-4147-9ff3-1dd203fe66ce validation failed: DuplicateRoleName.
+2024-09-26 16:31:45,151 [18] WARN Microsoft.AspNetCore.Identity.UserManager - User 80fd46a1-1615-448b-af4c-e4b2cd9e6994 validation failed: DuplicateUserName.
+2024-09-26 16:31:45,353 [10] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:31:45,527 [19] WARN Microsoft.AspNetCore.Identity.UserManager - User 1dd7fb05-7592-4822-ab0a-9f4c50407842 validation failed: DuplicateUserName.
+2024-09-26 16:31:45,611 [18] WARN Microsoft.AspNetCore.Identity.UserManager - User 1dd7fb05-7592-4822-ab0a-9f4c50407842 validation failed: DuplicateUserName.
+2024-09-26 16:31:45,723 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:49832:be545208 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-26 16:31:48,431 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:49832:be545208 all the dispatchers started
+2024-09-26 16:32:30,473 [22] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:32:40,103 [22] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:32:41,295 [57] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:32:51,256 [57] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:32:59,492 [19] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:33:00,127 [19] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 16:33:00,156 [19] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"The Application for hostel Laurel Hall was successful. After Approval you can proceed to payment","options":{"title":"Success","type":"success"}}]
+2024-09-26 16:33:47,011 [57] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:33:47,112 [57] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 16:33:47,137 [57] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"There is still pending rent which will expire on 26/09/2025 00:00:00","options":{"title":"Error","type":"error"}}]
+2024-09-26 16:34:59,669 [56] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:35:00,228 [18] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:35:00,239 [56] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:35:00,303 [17] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:35:00,314 [56] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:35:58,437 [17] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:35:58,915 [80] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:35:58,935 [81] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:35:59,100 [10] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:35:59,168 [86] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:36:08,600 [86] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:36:14,494 [86] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:36:15,036 [86] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:36:43,679 [86] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:36:44,027 [86] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:36:44,286 [89] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:36:44,394 [103] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:36:44,418 [99] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:36:45,812 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-09-26 16:37:03,698 [106] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:37:04,070 [106] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:37:04,782 [110] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:37:05,154 [104] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:37:05,331 [103] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:37:05,365 [105] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:37:21,733 [114] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:37:27,449 [114] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:37:27,650 [114] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 16:37:27,668 [114] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"There is still pending rent which will expire on 26/09/2025 00:00:00","options":{"title":"Error","type":"error"}}]
+2024-09-26 16:37:35,395 [114] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:37:36,852 [114] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:37:36,866 [112] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:37:36,917 [86] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:37:36,956 [87] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:37:54,008 [124] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:38:00,964 [124] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:38:00,990 [124] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 16:38:00,996 [124] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"There is no available at the moment","options":{"title":"Error","type":"error"}}]
+2024-09-26 16:38:56,057 [90] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:38:56,233 [90] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 16:38:56,351 [90] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"There is still pending rent which will expire on 26/09/2025 00:00:00","options":{"title":"Error","type":"error"}}]
+2024-09-26 16:39:13,101 [85] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:42:14,646 [11] WARN Microsoft.AspNetCore.Identity.RoleManager - Role ef99b6a8-893e-4389-b4ef-0d94611c3811 validation failed: DuplicateRoleName.
+2024-09-26 16:42:14,656 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@TenantDb'
+2024-09-26 16:42:14,693 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-09-26 16:42:14,756 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-09-26 16:42:14,806 [6] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 1c5d7fee-e508-4bb1-ac69-b7d3a28bee0d validation failed: DuplicateRoleName.
+2024-09-26 16:42:15,116 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-26 16:42:15,132 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Documents\Tenant_App\Tenant_App.Web
+2024-09-26 16:42:15,364 [5] WARN Microsoft.AspNetCore.Identity.UserManager - User 367391a6-012e-4ac3-ad73-09f1dd4a4e0d validation failed: DuplicateUserName.
+2024-09-26 16:42:15,576 [12] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:42:15,967 [19] WARN Microsoft.AspNetCore.Identity.UserManager - User 367391a6-012e-4ac3-ad73-09f1dd4a4e0d validation failed: DuplicateUserName.
+2024-09-26 16:42:16,025 [21] WARN Microsoft.AspNetCore.Identity.UserManager - User a7095286-cd7b-44b8-ae07-c0575967b574 validation failed: DuplicateUserName.
+2024-09-26 16:42:16,133 [23] WARN Microsoft.AspNetCore.Identity.UserManager - User a7095286-cd7b-44b8-ae07-c0575967b574 validation failed: DuplicateUserName.
+2024-09-26 16:42:16,276 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:42468:2fe10c8d successfully announced in 1154.2019 ms
+2024-09-26 16:42:16,346 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:42468:2fe10c8d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-26 16:42:16,857 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:42468:2fe10c8d all the dispatchers started
+2024-09-26 16:42:50,522 [24] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:43:01,876 [24] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:43:02,500 [4] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:43:10,279 [24] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:43:41,985 [24] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:43:43,042 [24] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 16:43:43,064 [24] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"The Application for hostel Bungalo was successful. After Approval you can proceed to payment","options":{"title":"Success","type":"success"}}]
+2024-09-26 16:43:48,677 [8] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:43:48,796 [8] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 16:43:48,812 [8] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"There is still pending rent which will expire on 26/09/2025 00:00:00","options":{"title":"Error","type":"error"}}]
+2024-09-26 16:43:56,903 [76] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:43:57,347 [76] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 16:43:58,050 [76] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"There is still pending rent which will expire on 26/09/2025 00:00:00","options":{"title":"Error","type":"error"}}]
+2024-09-26 16:44:05,975 [76] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:44:07,058 [24] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:44:07,058 [76] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:44:07,283 [6] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:44:07,290 [16] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:45:09,147 [97] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:45:09,799 [6] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:45:11,332 [87] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:45:11,371 [6] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:45:11,553 [110] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:45:11,644 [113] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:45:40,453 [117] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:45:45,565 [131] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:45:46,411 [115] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:45:46,908 [116] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:45:47,425 [125] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:45:47,531 [127] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:47:16,504 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-09-26 16:47:37,736 [137] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:47:39,384 [148] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:47:41,653 [137] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:47:46,028 [149] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:47:48,454 [137] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:47:48,558 [148] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:47:48,740 [100] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:47:48,788 [147] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:49:29,343 [121] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:49:29,821 [120] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:49:29,869 [121] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:49:29,883 [124] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:49:29,892 [123] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:50:06,283 [91] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:50:06,863 [96] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:50:06,874 [90] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:50:06,978 [90] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:50:06,998 [96] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:50:43,522 [16] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:50:44,088 [94] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:50:44,095 [16] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:50:44,220 [112] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:50:44,339 [8] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:50:50,376 [16] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:50:55,984 [15] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:50:56,065 [78] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:50:56,136 [112] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:50:56,227 [77] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:52:32,077 [120] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:52:37,384 [120] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:52:37,407 [117] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:52:37,471 [104] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:52:37,496 [120] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:53:39,825 [113] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:53:44,096 [131] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:53:44,290 [135] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:53:44,350 [134] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:53:44,362 [131] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:53:44,392 [113] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:53:46,993 [135] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:55:35,603 [136] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:55:35,633 [135] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:55:35,765 [61] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:55:35,776 [137] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:56:47,657 [143] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:56:47,727 [61] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:58:41,227 [161] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:58:46,920 [153] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:58:46,930 [165] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:58:47,238 [153] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 16:58:47,245 [166] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 17:05:27,961 [176] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 17:05:35,338 [173] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 17:05:35,341 [190] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 17:05:35,627 [189] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 17:05:35,636 [173] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 17:05:43,573 [190] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 17:05:43,619 [191] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 17:07:13,740 [196] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 17:07:15,960 [194] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 17:07:16,020 [195] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 17:07:16,122 [214] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 17:07:16,172 [196] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 17:07:21,696 [213] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 17:07:21,945 [214] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 17:56:09,119 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-09-26 17:56:23,116 [ServerHeartbeatProcess #1] WARN Hangfire.Server.ServerHeartbeatProcess - Server vat-l-dev18:42468:2fe10c8d was considered dead by other servers, restarting...
+2024-09-26 17:56:23,141 [ServerHeartbeatProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:42468:2fe10c8d caught restart signal...
+2024-09-26 17:56:23,301 [BackgroundServerProcess #1] WARN Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:42468:2fe10c8d stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-09-26 17:56:23,499 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:42468:2fe10c8d successfully reported itself as stopped in 12.72 ms
+2024-09-26 17:56:23,521 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:42468:2fe10c8d has been stopped in total 349.2968 ms
+2024-09-26 17:56:23,588 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:42468:2527c8a5 successfully announced in 24.3656 ms
+2024-09-26 17:56:23,680 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:42468:2527c8a5 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-26 17:56:24,271 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:42468:2527c8a5 all the dispatchers started
+2024-09-26 18:51:12,092 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@TenantDb'
+2024-09-26 18:51:12,207 [4] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 0fd46bbb-4cef-42a2-a04e-91d13ab3866d validation failed: DuplicateRoleName.
+2024-09-26 18:51:12,236 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-09-26 18:51:12,248 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-09-26 18:51:12,329 [11] WARN Microsoft.AspNetCore.Identity.RoleManager - Role b586ce4b-73e8-4ab8-8417-a78070428a8a validation failed: DuplicateRoleName.
+2024-09-26 18:51:12,791 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-26 18:51:12,826 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-26 18:51:12,889 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Documents\Tenant_App\Tenant_App.Web
+2024-09-26 18:51:13,929 [7] WARN Microsoft.AspNetCore.Identity.UserManager - User e2c0daa0-aded-4a98-9bd0-26694f17ebd6 validation failed: DuplicateUserName.
+2024-09-26 18:51:14,174 [7] WARN Microsoft.AspNetCore.Identity.UserManager - User 1b9909be-e685-456c-8dca-df01bbd2dd80 validation failed: DuplicateUserName.
+2024-09-26 18:51:14,319 [13] WARN Microsoft.AspNetCore.Identity.UserManager - User 1b9909be-e685-456c-8dca-df01bbd2dd80 validation failed: DuplicateUserName.
+2024-09-26 18:51:14,364 [15] WARN Microsoft.AspNetCore.Identity.UserManager - User 1b9909be-e685-456c-8dca-df01bbd2dd80 validation failed: DuplicateUserName.
+2024-09-26 18:51:14,713 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:45044:7dd9ae95 successfully announced in 1915.3323 ms
+2024-09-26 18:51:14,760 [17] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 18:51:15,484 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:45044:7dd9ae95 all the dispatchers started
+2024-09-26 18:51:42,064 [15] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 18:51:57,133 [17] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 18:51:57,813 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 18:52:08,058 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 18:52:10,572 [60] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 18:52:14,286 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 18:52:16,146 [15] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 18:52:16,509 [60] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 18:52:16,574 [17] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 18:52:16,584 [59] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 18:55:54,782 [58] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 18:56:46,351 [58] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2024-09-26 18:57:10,429 [76] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 18:57:10,620 [75] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 18:57:13,808 [71] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 18:57:31,810 [71] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2024-09-26 18:57:41,995 [9] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:00:25,675 [9] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2024-09-26 19:00:40,038 [110] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:00:51,799 [110] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2024-09-26 19:00:56,586 [115] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:00:56,940 [110] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:00:59,265 [115] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:01:16,986 [110] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:01:16,991 [115] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:01:17,106 [110] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:01:17,112 [11] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:03:15,534 [141] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:03:20,918 [141] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:03:20,924 [140] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:03:21,082 [129] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:03:21,087 [138] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:04:42,609 [151] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:04:43,073 [154] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:04:43,081 [155] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:04:43,176 [160] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:04:43,235 [153] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:05:40,426 [173] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:05:41,075 [175] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:05:41,082 [174] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:05:41,263 [176] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:05:41,274 [175] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:20:18,543 [113] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:20:19,205 [108] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:20:19,218 [101] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:20:19,318 [101] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:20:19,325 [113] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:21:44,596 [73] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:21:44,852 [72] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:21:44,853 [73] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:21:44,933 [72] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:21:44,942 [69] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:23:02,086 [84] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:23:02,315 [9] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:23:02,319 [89] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:23:02,397 [84] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:23:02,418 [89] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:23:35,792 [11] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:23:36,009 [68] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:23:36,006 [66] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:23:36,077 [75] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:23:36,080 [91] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:23:54,768 [83] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:23:54,914 [91] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:23:57,082 [91] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:23:57,229 [90] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:23:57,238 [74] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:23:57,270 [68] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:23:57,281 [11] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:24:16,086 [91] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:24:16,282 [113] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:24:16,288 [91] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:24:16,331 [83] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:24:16,342 [113] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:28:52,553 [123] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:28:53,424 [129] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:28:53,436 [136] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:28:53,475 [132] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:28:53,486 [136] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:30:57,879 [158] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:30:58,122 [148] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:30:58,127 [158] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:30:58,222 [161] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:30:58,227 [165] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:31:40,801 [77] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:31:41,264 [9] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:31:41,267 [179] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:31:41,349 [178] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 19:31:41,355 [85] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 20:55:53,384 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@TenantDb'
+2024-09-26 20:55:53,641 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-09-26 20:55:54,727 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-09-26 20:55:54,852 [9] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 4be60e9c-38ac-4fdb-b767-2fcb77450dba validation failed: DuplicateRoleName.
+2024-09-26 20:55:57,781 [9] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 689e0246-a42f-4167-b54b-694186d35240 validation failed: DuplicateRoleName.
+2024-09-26 20:56:04,516 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-26 20:56:07,321 [14] WARN Microsoft.AspNetCore.Identity.UserManager - User e52123fb-89dc-491f-8435-a5024f489bc7 validation failed: DuplicateUserName.
+2024-09-26 20:56:08,087 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-26 20:56:09,325 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Documents\Tenant_App\Tenant_App.Web
+2024-09-26 20:56:11,464 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:11964:86e5e342 successfully announced in 11547.8026 ms
+2024-09-26 20:56:11,537 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:11964:86e5e342 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-26 20:56:11,629 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-09-26 20:56:11,695 [4] WARN Microsoft.AspNetCore.Identity.UserManager - User e52123fb-89dc-491f-8435-a5024f489bc7 validation failed: DuplicateUserName.
+2024-09-26 20:56:11,919 [24] WARN Microsoft.AspNetCore.Identity.UserManager - User d3591329-065f-4b96-8c12-efdcd4ad29d7 validation failed: DuplicateUserName.
+2024-09-26 20:56:12,011 [24] WARN Microsoft.AspNetCore.Identity.UserManager - User d3591329-065f-4b96-8c12-efdcd4ad29d7 validation failed: DuplicateUserName.
+2024-09-26 20:56:12,090 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:11964:86e5e342 all the dispatchers started
+2024-09-26 20:56:12,135 [17] WARN Microsoft.AspNetCore.Identity.UserManager - User d3591329-065f-4b96-8c12-efdcd4ad29d7 validation failed: DuplicateUserName.
+2024-09-26 20:56:12,254 [21] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 20:56:49,664 [68] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 20:57:10,394 [69] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 20:57:12,870 [68] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 20:57:23,714 [69] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 20:57:24,555 [69] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2024-09-26 20:59:25,606 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@TenantDb'
+2024-09-26 20:59:25,722 [9] WARN Microsoft.AspNetCore.Identity.RoleManager - Role bdf83851-25c0-46d3-9130-90b17e8b7587 validation failed: DuplicateRoleName.
+2024-09-26 20:59:25,852 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-09-26 20:59:25,924 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-09-26 20:59:26,125 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-26 20:59:26,134 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-26 20:59:26,141 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Documents\Tenant_App\Tenant_App.Web
+2024-09-26 20:59:26,208 [9] WARN Microsoft.AspNetCore.Identity.UserManager - User 319d72ee-7d10-44fb-bd61-22c450f27c7b validation failed: DuplicateUserName.
+2024-09-26 20:59:26,315 [16] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 20:59:26,470 [10] WARN Microsoft.AspNetCore.Identity.UserManager - User 319d72ee-7d10-44fb-bd61-22c450f27c7b validation failed: DuplicateUserName.
+2024-09-26 20:59:26,507 [10] WARN Microsoft.AspNetCore.Identity.UserManager - User 9628b982-b427-4d9e-8ee7-2c6f40ed4953 validation failed: DuplicateUserName.
+2024-09-26 20:59:26,540 [9] WARN Microsoft.AspNetCore.Identity.UserManager - User 9628b982-b427-4d9e-8ee7-2c6f40ed4953 validation failed: DuplicateUserName.
+2024-09-26 20:59:26,570 [10] WARN Microsoft.AspNetCore.Identity.UserManager - User 9628b982-b427-4d9e-8ee7-2c6f40ed4953 validation failed: DuplicateUserName.
+2024-09-26 20:59:26,624 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:31800:fc1ec9fc successfully announced in 508.319 ms
+2024-09-26 20:59:26,649 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:31800:fc1ec9fc is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-26 20:59:27,128 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:31800:fc1ec9fc all the dispatchers started
+2024-09-26 20:59:52,849 [27] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:01:06,373 [27] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:01:06,800 [16] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:01:20,171 [27] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:01:22,360 [27] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2024-09-26 21:04:00,574 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@TenantDb'
+2024-09-26 21:04:00,575 [4] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 0462efb0-c876-4cb4-bd65-b68d5ceb7b59 validation failed: DuplicateRoleName.
+2024-09-26 21:04:00,601 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-09-26 21:04:00,613 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-09-26 21:04:00,659 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-26 21:04:00,662 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-26 21:04:00,666 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Documents\Tenant_App\Tenant_App.Web
+2024-09-26 21:04:00,763 [4] WARN Microsoft.AspNetCore.Identity.UserManager - User de8e3bab-d420-4817-bb58-6780fa149d82 validation failed: DuplicateUserName.
+2024-09-26 21:04:00,798 [11] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:04:00,870 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:36676:b41550b3 successfully announced in 204.0634 ms
+2024-09-26 21:04:00,876 [4] WARN Microsoft.AspNetCore.Identity.UserManager - User 3c23cc94-5ffa-44f8-8dab-0fd0c452a204 validation failed: DuplicateUserName.
+2024-09-26 21:04:00,886 [16] WARN Microsoft.AspNetCore.Identity.UserManager - User 3c23cc94-5ffa-44f8-8dab-0fd0c452a204 validation failed: DuplicateUserName.
+2024-09-26 21:04:00,899 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:36676:b41550b3 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-26 21:04:00,969 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-09-26 21:04:01,111 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:36676:b41550b3 all the dispatchers started
+2024-09-26 21:04:43,861 [53] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:05:12,008 [11] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:05:15,303 [11] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:05:29,602 [73] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:05:33,928 [11] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:05:38,495 [85] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:05:39,423 [80] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:05:39,426 [82] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:05:39,455 [71] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:05:39,461 [65] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:05:46,557 [85] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:07:07,560 [85] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2024-09-26 21:09:00,995 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-09-26 21:12:05,178 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role f8f3ffac-1948-4cf0-8545-4aa3c3da8f8c validation failed: DuplicateRoleName.
+2024-09-26 21:12:05,301 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 82259427-9c11-4fbd-8b2a-bd51aaadbb32 validation failed: DuplicateRoleName.
+2024-09-26 21:12:06,001 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@TenantDb'
+2024-09-26 21:12:06,983 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-09-26 21:12:07,165 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-09-26 21:12:09,259 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-26 21:12:09,984 [8] WARN Microsoft.AspNetCore.Identity.UserManager - User 471e5178-6e19-49ac-9c0c-1741f58930da validation failed: DuplicateUserName.
+2024-09-26 21:12:11,234 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-26 21:12:11,546 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Documents\Tenant_App\Tenant_App.Web
+2024-09-26 21:12:11,698 [4] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:12:11,800 [15] WARN Microsoft.AspNetCore.Identity.UserManager - User d08961cd-1e00-49a2-a4b4-06556961a815 validation failed: DuplicateUserName.
+2024-09-26 21:12:11,838 [15] WARN Microsoft.AspNetCore.Identity.UserManager - User d08961cd-1e00-49a2-a4b4-06556961a815 validation failed: DuplicateUserName.
+2024-09-26 21:12:11,843 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:43348:2699b50a successfully announced in 2594.2181 ms
+2024-09-26 21:12:11,872 [21] WARN Microsoft.AspNetCore.Identity.UserManager - User d08961cd-1e00-49a2-a4b4-06556961a815 validation failed: DuplicateUserName.
+2024-09-26 21:12:11,873 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:43348:2699b50a is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-26 21:12:12,123 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:43348:2699b50a all the dispatchers started
+2024-09-26 21:12:42,021 [23] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:13:07,736 [23] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:13:12,165 [22] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:14:09,531 [66] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:14:10,828 [73] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:14:13,484 [73] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:14:15,153 [7] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:14:15,176 [76] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:14:15,195 [66] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:14:15,227 [17] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:14:23,972 [80] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:14:34,235 [80] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2024-09-26 21:17:12,081 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-09-26 21:24:15,340 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@TenantDb'
+2024-09-26 21:24:15,967 [11] WARN Microsoft.AspNetCore.Identity.RoleManager - Role c0a572a8-4b79-4d38-977f-d98fdb6ca1fc validation failed: DuplicateRoleName.
+2024-09-26 21:24:18,389 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-09-26 21:24:19,621 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-09-26 21:24:20,627 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 2ada82d8-20c5-43b3-a0f7-720a00e7dcdb validation failed: DuplicateRoleName.
+2024-09-26 21:24:22,996 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-26 21:24:24,820 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-26 21:24:25,931 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Documents\Tenant_App\Tenant_App.Web
+2024-09-26 21:24:27,105 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:35648:d6ca6050 successfully announced in 4277.0011 ms
+2024-09-26 21:24:27,158 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:35648:d6ca6050 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-26 21:24:27,475 [7] WARN Microsoft.AspNetCore.Identity.UserManager - User 0c9f14a0-2bc4-44bd-b770-185dec11af8a validation failed: DuplicateUserName.
+2024-09-26 21:24:27,488 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:35648:d6ca6050 all the dispatchers started
+2024-09-26 21:24:27,513 [4] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:24:27,691 [22] WARN Microsoft.AspNetCore.Identity.UserManager - User 0c9f14a0-2bc4-44bd-b770-185dec11af8a validation failed: DuplicateUserName.
+2024-09-26 21:24:27,741 [22] WARN Microsoft.AspNetCore.Identity.UserManager - User fa41fe80-02f2-45f2-805b-379c247f1389 validation failed: DuplicateUserName.
+2024-09-26 21:24:55,515 [64] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:25:19,954 [70] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:25:23,118 [4] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:25:32,470 [79] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:25:35,235 [4] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:25:38,957 [4] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:25:40,260 [75] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:25:40,265 [79] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:25:40,302 [78] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:25:40,312 [79] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:25:44,089 [4] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:26:10,654 [4] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2024-09-26 21:29:27,241 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-09-26 21:31:11,880 [7] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 9004b31b-97a4-4a32-a543-3fbec0890b36 validation failed: DuplicateRoleName.
+2024-09-26 21:31:11,888 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@TenantDb'
+2024-09-26 21:31:11,903 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-09-26 21:31:11,915 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-09-26 21:31:12,011 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-26 21:31:12,175 [9] WARN Microsoft.AspNetCore.Identity.UserManager - User e2a1810e-d41b-4462-8b63-a8a1a6414346 validation failed: DuplicateUserName.
+2024-09-26 21:31:12,356 [4] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:31:12,398 [9] WARN Microsoft.AspNetCore.Identity.UserManager - User e2a1810e-d41b-4462-8b63-a8a1a6414346 validation failed: DuplicateUserName.
+2024-09-26 21:31:12,459 [20] WARN Microsoft.AspNetCore.Identity.UserManager - User ede10117-51c0-49d2-a77e-69b9dda07951 validation failed: DuplicateUserName.
+2024-09-26 21:31:12,509 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:27712:a5937af3 successfully announced in 466.4872 ms
+2024-09-26 21:31:12,538 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:27712:a5937af3 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-26 21:31:12,827 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:27712:a5937af3 all the dispatchers started
+2024-09-26 21:31:48,767 [4] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:32:12,559 [67] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:32:17,932 [7] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:32:41,803 [68] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:32:52,038 [63] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:33:13,032 [7] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:33:14,995 [7] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:33:15,025 [74] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:33:15,062 [76] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:33:15,077 [7] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:33:18,518 [83] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:33:22,689 [83] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2024-09-26 21:36:12,632 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-09-26 21:37:33,166 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@TenantDb'
+2024-09-26 21:37:33,185 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-09-26 21:37:33,195 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-09-26 21:37:33,330 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-26 21:37:33,352 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Documents\Tenant_App\Tenant_App.Web
+2024-09-26 21:37:33,353 [4] WARN Microsoft.AspNetCore.Identity.UserManager - User 56c9a414-9340-4afa-be89-76056a99bb20 validation failed: DuplicateUserName.
+2024-09-26 21:37:33,558 [10] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:37:33,650 [8] WARN Microsoft.AspNetCore.Identity.UserManager - User 56c9a414-9340-4afa-be89-76056a99bb20 validation failed: DuplicateUserName.
+2024-09-26 21:37:33,814 [22] WARN Microsoft.AspNetCore.Identity.UserManager - User 5d36d3c8-ca32-49e8-99fa-8f7301a60225 validation failed: DuplicateUserName.
+2024-09-26 21:37:33,865 [22] WARN Microsoft.AspNetCore.Identity.UserManager - User 5d36d3c8-ca32-49e8-99fa-8f7301a60225 validation failed: DuplicateUserName.
+2024-09-26 21:37:33,916 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:25236:9466f5b2 successfully announced in 540.4414 ms
+2024-09-26 21:37:34,080 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:25236:9466f5b2 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-26 21:37:37,179 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:25236:9466f5b2 all the dispatchers started
+2024-09-26 21:38:11,862 [11] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:38:27,663 [18] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:38:34,294 [8] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:38:45,449 [66] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:38:46,323 [57] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:38:50,383 [66] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:38:54,619 [4] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:38:54,620 [62] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:38:54,650 [58] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:38:54,666 [66] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:39:01,275 [66] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:40:11,681 [66] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:40:12,995 [5] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:40:13,056 [77] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:40:13,069 [5] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:40:13,083 [82] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:40:17,632 [86] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:42:15,914 [88] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:42:16,922 [108] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:42:16,940 [109] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:42:16,991 [101] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:42:17,008 [88] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:42:27,651 [100] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:42:34,329 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-09-26 21:43:41,689 [90] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:43:43,143 [104] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:44:16,698 [118] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:44:21,830 [58] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:44:22,489 [58] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 21:44:22,599 [58] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"There is still pending rent which will expire on 26/09/2025 00:00:00","options":{"title":"Error","type":"error"}}]
+2024-09-26 21:46:55,899 [55] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:46:56,516 [55] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 21:46:57,198 [55] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"There is still pending rent which will expire on 26/09/2025 00:00:00","options":{"title":"Error","type":"error"}}]
+2024-09-26 21:47:11,884 [100] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:47:34,184 [55] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:47:35,634 [55] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 21:47:35,889 [55] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"There is still pending rent which will expire on 09/26/2025","options":{"title":"Error","type":"error"}}]
+2024-09-26 21:47:41,670 [55] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:47:41,705 [55] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 21:47:41,717 [55] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"There is still pending rent which will expire on 09/26/2025","options":{"title":"Error","type":"error"}}]
+2024-09-26 21:47:49,069 [92] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:47:49,494 [97] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:47:49,500 [96] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:47:49,569 [97] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:47:49,573 [92] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:48:27,391 [93] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:51:36,421 [138] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:51:43,063 [138] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:51:43,413 [138] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:52:12,123 [145] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:52:24,638 [157] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:52:26,325 [157] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:53:12,525 [159] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:53:12,571 [159] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 21:53:12,578 [159] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"There is still pending rent which will expire on 09/26/2025","options":{"title":"Error","type":"error"}}]
+2024-09-26 21:53:15,092 [160] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:53:15,169 [168] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:54:22,248 [172] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:54:26,525 [178] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:54:27,238 [178] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 21:54:27,246 [178] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"The Application for hostel Laurel Hall was successful. After Approval you can proceed to payment","options":{"title":"Success","type":"success"}}]
+2024-09-26 21:54:32,632 [178] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:54:33,327 [178] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 21:54:33,368 [178] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"There is still pending rent which will expire on 09/26/2025","options":{"title":"Error","type":"error"}}]
+2024-09-26 21:54:33,399 [178] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:54:33,760 [178] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 21:54:33,895 [178] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"There is still pending rent which will expire on 09/26/2025","options":{"title":"Error","type":"error"}}]
+2024-09-26 21:55:24,661 [192] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:55:24,787 [192] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:55:32,050 [200] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:55:33,125 [200] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:55:33,129 [199] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:55:33,163 [199] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 21:55:33,170 [179] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:02:24,669 [230] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:02:25,455 [245] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:02:25,464 [241] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:02:25,522 [240] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:02:25,536 [243] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:03:04,186 [255] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:03:04,417 [254] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:03:04,422 [239] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:03:04,630 [255] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:03:04,641 [228] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:03:40,486 [258] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:03:49,246 [257] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:03:49,681 [262] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:03:49,686 [258] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:03:49,753 [258] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:03:49,762 [255] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:05:08,472 [264] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:05:08,715 [271] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:05:08,719 [273] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:05:08,782 [270] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:05:08,789 [274] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:06:27,820 [248] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:06:32,018 [260] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:06:32,230 [260] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 22:06:32,237 [260] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"There is still pending rent which will expire on 09/26/2025","options":{"title":"Error","type":"error"}}]
+2024-09-26 22:09:17,481 [240] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:09:22,872 [238] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:09:24,243 [238] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 22:09:24,485 [238] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"The Application for hostel Laurel Hall was successful. After Approval you can proceed to payment","options":{"title":"Success","type":"success"}}]
+2024-09-26 22:09:59,996 [237] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:10:04,658 [221] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:10:07,159 [218] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:10:07,166 [211] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:10:07,214 [217] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:10:07,225 [247] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:10:21,914 [211] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:10:26,810 [247] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:10:26,936 [247] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:10:26,945 [220] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:10:27,010 [238] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:10:27,019 [220] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:10:41,439 [236] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:10:41,756 [247] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:10:48,327 [224] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:10:52,663 [232] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:10:52,752 [232] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 22:10:52,780 [232] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"There is still pending rent which will expire on 09/26/2025","options":{"title":"Error","type":"error"}}]
+2024-09-26 22:11:03,481 [232] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:11:03,665 [247] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:11:16,635 [211] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:11:22,492 [211] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:11:22,561 [220] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:11:29,147 [208] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:11:29,215 [212] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:11:32,249 [208] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:11:32,394 [216] WARN Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware - Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2024-09-26 22:12:02,277 [204] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:12:02,357 [182] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:22:16,502 [190] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:22:23,523 [189] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:22:26,013 [189] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 22:22:26,812 [189] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"There is still pending rent which will expire on 09/26/2025","options":{"title":"Error","type":"error"}}]
+2024-09-26 22:22:31,688 [176] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:22:31,851 [174] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:22:31,855 [175] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:22:31,908 [177] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:22:31,918 [174] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:22:36,182 [174] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:22:51,247 [189] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:22:51,259 [190] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:22:51,321 [191] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:22:51,332 [176] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:23:18,972 [173] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:23:18,982 [174] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:24:32,079 [168] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:24:39,701 [154] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:24:43,326 [154] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:24:43,418 [154] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:24:43,431 [156] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:24:43,496 [174] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:24:43,503 [163] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:24:46,565 [169] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:24:48,949 [158] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:24:48,955 [174] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:24:48,962 [155] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:24:48,971 [154] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:24:58,324 [156] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:24:58,328 [174] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:58:43,759 [186] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:58:57,426 [199] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:58:57,441 [198] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:58:57,757 [214] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:58:57,917 [210] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:58:57,948 [208] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:58:57,962 [213] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:59:21,142 [214] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:59:23,854 [213] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:59:23,891 [234] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:59:24,131 [234] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:59:24,167 [225] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:59:35,170 [234] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 22:59:35,177 [233] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:00:02,396 [217] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:00:03,474 [241] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:00:03,499 [242] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:00:07,380 [242] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:00:12,353 [242] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:00:12,619 [237] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:00:12,632 [240] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:00:12,998 [233] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:00:13,010 [217] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:00:13,118 [237] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:00:13,172 [234] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:00:17,069 [228] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:00:19,315 [245] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:00:19,378 [239] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:00:19,919 [217] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:00:20,137 [233] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:00:20,166 [238] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:00:20,198 [228] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:01:29,278 [228] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:01:30,578 [219] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:01:30,602 [220] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:01:31,434 [218] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:02:14,177 [232] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:02:14,491 [232] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:02:14,512 [204] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:02:14,907 [232] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:02:14,915 [225] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:02:15,026 [204] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:02:15,071 [208] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:02:22,487 [200] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:05:54,957 [193] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:05:54,972 [190] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:05:55,062 [188] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:05:55,073 [190] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:05:55,316 [188] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:05:55,335 [195] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:27:18,992 [107] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:27:31,650 [107] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:27:31,900 [107] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:27:31,916 [96] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:27:32,035 [107] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:27:32,056 [92] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:28:04,121 [90] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:28:04,411 [115] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:28:08,986 [4] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:28:09,105 [103] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:28:30,765 [15] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:28:31,107 [10] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:28:35,703 [56] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:28:39,990 [56] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:28:40,207 [10] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:28:44,531 [56] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:28:44,613 [4] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:28:44,615 [24] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:28:44,738 [24] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:28:44,790 [15] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:28:52,533 [56] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:29:15,366 [26] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:29:15,582 [110] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:29:25,751 [271] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:29:38,747 [91] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:29:38,835 [91] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 23:29:38,849 [91] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"The Application for hostel Laurel Hall was successful. After Approval you can proceed to payment","options":{"title":"Success","type":"success"}}]
+2024-09-26 23:29:49,228 [272] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:29:54,573 [110] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:29:54,668 [110] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header Access-Control-Expose-Headers with X-NToastNotify-Messages
+2024-09-26 23:29:54,675 [110] INFO NToastNotify.NtoastNotifyAjaxToastsMiddleware - Setting response header X-NToastNotify-Messages with [{"message":"There is still pending rent which will expire on 09/26/2025","options":{"title":"Error","type":"error"}}]
+2024-09-26 23:29:58,191 [271] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:29:58,372 [26] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:29:58,416 [110] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:29:58,486 [4] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2024-09-26 23:29:58,512 [26] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.

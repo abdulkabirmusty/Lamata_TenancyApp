@@ -1,0 +1,18 @@
+2024-01-16 07:49:23,625 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@NabtebHr'
+2024-01-16 07:49:23,633 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-16 07:49:23,643 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-16 07:49:23,702 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-01-16 07:49:23,706 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-01-16 07:49:23,710 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Source\Repos\Nabteb_HR_Project\NABTEB_HR.Web
+2024-01-16 07:49:23,712 [9] WARN Microsoft.AspNetCore.Identity.RoleManager - Role a00df90a-3365-4e12-9462-4f8919ea0ecc validation failed: DuplicateRoleName.
+2024-01-16 07:49:23,722 [7] WARN Microsoft.AspNetCore.Identity.RoleManager - Role bd3cebff-ace4-4424-997d-61744d9fb7fe validation failed: DuplicateRoleName.
+2024-01-16 07:49:23,748 [7] WARN Microsoft.AspNetCore.Identity.RoleManager - Role d9a5493c-70cd-4e1c-8c1c-ac43dc751c01 validation failed: DuplicateRoleName.
+2024-01-16 07:49:23,748 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:15904:67a08108 successfully announced in 28.5164 ms
+2024-01-16 07:49:23,765 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:15904:67a08108 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-16 07:49:23,845 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-01-16 07:49:23,950 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:15904:67a08108 all the dispatchers started
+2024-01-16 08:50:01,119 [159] WARN Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware - Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.

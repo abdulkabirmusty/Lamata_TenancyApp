@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="NABTEB-HR Onboarding" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="~/NabtebHrAsset/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    @* <link href="~/NabtebHrAsset/css/style.css" rel='stylesheet' type='text/css' /> *@
+    <link href="~/NabtebHrAsset/css/font-awesome.css" rel="stylesheet">
+    <script src="~/NabtebHrAsset/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="~/NabtebNewAssets/styles/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <script src="~/NabtebHrAsset/js/bootstrap.min.js"></script>
+    <link rel="icon" href="~/NABTEB_Logo.ico" />
+    <title>Onboarding</title>
+</head>
+<body>
+    
+                
+        @await Component.InvokeAsync("NToastNotify")
+
+        @RenderBody()
+
+            
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+﻿@model Tenant_App.Models.DataObjects.IndividualTenantDtos.IndividualTenantDto
+@using Tenant_App.Utilities.Status;
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    
+    Layout = "~/Views/Shared/_Secured.cshtml";
+}
+
+<style>
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* space between the buttons */
+        margin-top: 30px;
+    }
+</style>
+
+
+<div class="container-fluid content-top-gap">
+
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb my-breadcrumb">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Dashboard", new { area = "" })">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "IndividualTenant", new { area = "" })">Tenants</a></li>
+            <li class="breadcrumb-item active" aria-current="page">View Tenants</li>
+        </ol>
+    </nav>
+
+    <div class="cards__heading">
+        <h3>Tenants Detail</h3>
+    </div>
+    <div>
+        <a href="@Url.Action("Index", "IndividualTenant", new { area = "" })"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
+    </div>
+    <br />
+    
+    <section class="forms">
+        <div class="card card_border py-2 mb-4">
+            <div class="card-body">
+                <h4>Personal Detail</h4>
+                <hr />
+                
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">First Name:</label>
+                        <input type="text" value="@Model.FirstName" class="form-control input-style" placeholder="First Name" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Last Name:</label>
+                        <input type="text" value="@Model.LastName" class="form-control input-style" placeholder="Last Name" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Email</label>
+                        <input type="email" value="@Model.Email" class="form-control input-style" id="inputEmail4" placeholder="Email" readonly>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Current Address:</label>
+                        <input type="text" value="@Model.CurrentAddress" class="form-control input-style" placeholder="Current Address" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Home Phone No:</label>
+                        <input type="text" value="@Model.HomePhoneNo" class="form-control input-style" placeholder="Home Phone No" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Work Phone No</label>
+                        <input type="text" value="@Model.WorkPhoneNo" class="form-control input-style" id="inputEmail4" placeholder="Work Phone No" readonly>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Date of Birth:</label>
+                        <input type="date" value="@Model.DOB" class="form-control input-style" placeholder="Date of Birth" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Sex:</label>
+                        <input type="text" value="@Model.Sex" class="form-control input-style" placeholder="Sex" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Duration</label>
+                        <input type="text" value="@Model.RentDuration" class="form-control input-style" id="inputEmail4" placeholder="Rent Duration" readonly>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Nationality:</label>
+                        <input type="text" value="@Model.Nationality" class="form-control input-style" placeholder="Nationality" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">State of origin:</label>
+                        <input type="text" value="@Model.StateOfOrigin" class="form-control input-style" placeholder="State of origin" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Identity Type</label>
+                        <input type="email" value="@Model.IdentityType" class="form-control input-style" id="inputEmail4" placeholder="Identity Type" readonly>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Type of Business:</label>
+                        <input type="text" value="@Model.TypeOfBusiness" class="form-control input-style" placeholder="Type of Business" readonly>
+                    </div>
+                    
+                </div>
+                    <br />
+                <h4>Documents</h4>
+                <hr />
+                <div class="form-row">
+                    <ul>
+                        <li><a asp-controller="IndividualTenant" asp-action="DownloadFile" asp-route-filePath="@Model.IdentityAttach">Download Identity Attachment</a>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-file-arrow-down"></i></li>
+                        <li><a asp-controller="IndividualTenant" asp-action="DownloadFile" asp-route-filePath="@Model.SignaturePath">Download Signature</a>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-file-arrow-down"></i></li>
+                        <li><a asp-controller="IndividualTenant" asp-action="DownloadFile" asp-route-filePath="@Model.PassportPath">Download Passport</a>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-file-arrow-down"></i></li>
+                    </ul>
+                </div>
+                <br />
+
+                <h4>Next Of Kin</h4>
+                <hr />
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Next of kin Full Name:</label>
+                        <input type="text" value="@Model.nextOfKinFullName" class="form-control input-style" placeholder="Next of kin Full Name" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Relationship:</label>
+                        <input type="text" value="@Model.Relationship" class="form-control input-style" placeholder="Relationship" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Next Of Kin Address</label>
+                        <input type="text" value="@Model.NextOfKinAddress" class="form-control input-style" id="inputEmail4" placeholder="Next Of Kin Address" readonly>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Next of kin Email:</label>
+                        <input type="email" value="@Model.NextOfKinEmail" class="form-control input-style" placeholder="Next of kin Email" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Next Of Kin Mobile PhoneNo:</label>
+                        <input type="text" value="@Model.NextOfKinMobilePhoneNo" class="form-control input-style" placeholder="Next Of Kin Mobile PhoneNo" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Next Of Kin Phone no</label>
+                        <input type="text" value="@Model.NextOfKinWorkPhoneNo" class="form-control input-style" id="inputEmail4" placeholder="Next Of Kin phone no" readonly>
+                    </div>
+                </div>
+
+                <h4>Bank Details</h4>
+                <hr />
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Bank Name:</label>
+                        <input type="text" value="@Model.BankName" class="form-control input-style" placeholder="Bank Name" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Account Number:</label>
+                        <input type="text" value="@Model.BankAccountNo" class="form-control input-style" placeholder="Account Number" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Account Name</label>
+                        <input type="text" value="@Model.AccountName" class="form-control input-style" id="inputEmail4" placeholder="Account Name" readonly>
+                    </div>
+                </div>
+                
+                <h4>Rental History</h4>
+                <hr />
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Previous Address:</label>
+                        <input type="text" value="@Model.PreviousAddress" class="form-control input-style" placeholder="Previous Address" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Length Of Time:</label>
+                        <input type="text" value="@Model.LengthOfTime" class="form-control input-style" placeholder="Length Of Time" readonly>
+                    </div>
+                    
+                </div>
+                <br />
+
+                <div class="button-container">
+                    @if (ViewBag.IsDeskOfficer == true && ViewBag.Status == 0)
+                    {
+                        <form asp-action="AcceptTenant" asp-controller="IndividualTenant" method="post" asp-route-id="@Model.Id">
+                            <input type="hidden" asp-for="Id" value="@Model.Id" />
+                            <button id="acceptButton" type="submit" class="btn btn-success"><span>Accept</span></button>
+                        </form>
+
+                        <form asp-action="RejectTenant" asp-controller="IndividualTenant" method="post" asp-route-id="@Model.Id">
+                            <input type="hidden" asp-for="Id" value="@Model.Id" />
+                            <button id="rejectButton" type="submit" class="btn btn-danger"><span>Reject</span></button>
+                        </form>
+                    }
+                    @if (ViewBag.IsAdmin == true && ViewBag.Status == 1)
+                    {
+                        <form asp-action="AcceptTenant" asp-controller="IndividualTenant" method="post" asp-route-id="@Model.Id">
+                            <input type="hidden" asp-for="Id" value="@Model.Id" />
+                            <button id="acceptButton" type="submit" class="btn btn-success"><span>Accept</span></button>
+                        </form>
+
+                        <form asp-action="RejectTenant" asp-controller="IndividualTenant" method="post" asp-route-id="@Model.Id">
+                            <input type="hidden" asp-for="Id" value="@Model.Id" />
+                            <button id="rejectButton" type="submit" class="btn btn-danger"><span>Reject</span></button>
+                        </form>
+                    }
+                    else
+                    {
+                        
+                    }
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+</div>
+
+

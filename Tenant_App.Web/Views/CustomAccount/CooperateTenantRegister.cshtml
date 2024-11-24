@@ -1,0 +1,283 @@
+﻿@model Tenant_App.Models.DataObjects.Account.CooperateTenantRegDto
+@using Tenant_App.Models.DataObjects.TenantDocumentDtos;
+@using Tenant_App.Utilities.Document;
+@* @using Evoting.Models.DataObjects.DocumentDTOs; *@
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@* @using Evoting.Utilities.Document; *@
+@{
+	ViewData["Title"] = "Cooperate Tenant Register";
+	Layout = "~/Views/Shared/_contestantReg.cshtml";
+}
+
+
+<div Class="container">
+	<h2 id="heading">Corporate Registration</h2>
+	<p>Fill all form field to go to next step</p>
+	<div class="container-fluid">
+		<button class="cancel-button" onclick="cancelRegistration()">
+			<i class="fas fa-times"></i>
+		</button>
+		<div class="row justify-content-center">
+			<div class="card " style="width: 72vw;">
+				<form id="msform" method="post" asp-controller="CustomAccount" asp-action="CooperateTenantRegister" enctype="multipart/form-data">
+					<div asp-validation-summary="All" class="text-danger"></div>
+					<!-- progress bar -->
+					<ul id="progressbar">
+						<li class="active" style="width: 50%;" id="personal"><strong>Corporate Details</strong></li>
+						<li id="account" style="width: 50%;"><strong>Document Upload</strong></li>
+					</ul>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+					</div> <br>
+
+					<!-- fieldsets -->
+					<fieldset>
+						<div class="form-card">
+							<div class="row">
+								<div class="col-7">
+									<h2 class="fs-title">Corporate Information:</h2>
+								</div>
+								<div class="col-5">
+									<h2 class="steps">Step 1 - 2</h2>
+								</div>
+							</div>
+
+							<div>
+								<label class="fieldlabels">Corporate Name: *</label>
+								<input type="text" placeholder="Enter Agent Name" asp-for="CompanyName" required />
+								<span asp-validation-for="CompanyName" class="text-danger"></span>
+							</div>
+
+							<div>
+								<label class="fieldlabels">Corporate Email: *</label>
+								<input type="text" placeholder="Enter Company Email" asp-for="CooperateEmail" required />
+								<span asp-validation-for="CooperateEmail" class="text-danger"></span>
+							</div>
+
+							<div>
+								<label class="fieldlabels">CAC Reg Number: *</label>
+								<input type="text" placeholder="Enter CAC Reg Number" asp-for="CACRegNo" required />
+								<span asp-validation-for="CACRegNo" class="text-danger"></span>
+							</div>
+
+							<div>
+								<label class="fieldlabels">TIN Number: *</label>
+								<input type="text" placeholder="Enter TIN Number" asp-for="TIN" required />
+								<span asp-validation-for="TIN" class="text-danger"></span>
+							</div>
+
+							<div>
+								<label class="fieldlabels">Address: *</label>
+								<input type="text" placeholder="Enter Address" asp-for="Address" required />
+								<span asp-validation-for="Address" class="text-danger"></span>
+							</div>
+
+							<div>
+								<label class="fieldlabels">Mobile Phone Number: *</label>
+								<input type="text" placeholder="Enter Mobile Phone Number" asp-for="MobilePhoneNo" required />
+								<span asp-validation-for="MobilePhoneNo" class="text-danger"></span>
+							</div>
+
+							<div>
+								<label class="fieldlabels">Contact Phone Number: *</label>
+								<input type="text" placeholder="Enter Contact Phone Number" asp-for="PersonalContact" required />
+								<span asp-validation-for="PersonalContact" class="text-danger"></span>
+							</div>
+
+							
+
+						</div>
+
+						<input type="button" name="next" class="next action-button" value="Next" />
+						<a type="button" name="previous" class="previous action-button-previous" asp-controller="Home" asp-action="Index">Cancel</a>
+
+					</fieldset>
+
+					<fieldset>
+						<div class="form-card">
+							<div class="row">
+								<div class="col-7">
+									<h2 class="fs-title">Document Upload:</h2>
+								</div>
+								<div class="col-5">
+									<h2 class="steps">Step 2 - 2</h2>
+								</div>
+							</div>
+
+							<div class="documents-container">
+
+								<div>
+									<label class="fieldlabels">@DocumentUtils.FORM_C07</label>
+									<input type="file" name="FormC07" asp-for="FormC07" class=""
+										   maxlength="2097152" accept=".pdf,.doc,.docx,.xls,.xlsx,.csv" required />
+									<span asp-validation-for="FormC07" class="text-danger"></span>
+
+								</div>
+
+								<div>
+									<label class="fieldlabels">@DocumentUtils.BANK_REFERENCE</label>
+									<input type="file" name="BankReference" asp-for="BankReference" class=""
+										   maxlength="2097152" accept=".pdf,.doc,.docx,.xls,.xlsx,.csv" required />
+									<span asp-validation-for="BankReference" class="text-danger"></span>
+
+								</div>
+
+								<div>
+									<label class="fieldlabels">@DocumentUtils.DIRECTOR_PROFILE</label>
+									<input type="file" name="DirectorProfile" asp-for="DirectorProfile" class=""
+										   maxlength="2097152" accept=".pdf,.doc,.docx,.xls,.xlsx,.csv" required />
+									<span asp-validation-for="DirectorProfile" class="text-danger"></span>
+
+								</div>
+
+								<br />
+								<br />
+								<br />
+								<div class="form-group consent">
+									<p>
+										By submitting this form, you agree to our Terms and Conditions and Privacy Policy. <br />
+										We respect your privacy and will handle your personal information as described in our Privacy Policy.
+									</p>
+									
+									<p> <input type="checkbox" style="width: 50px;" class="bxs-checkbox" name="IsConsent" asp-for="IsConsent" required> &nbsp; &nbsp; I consent to the processing of my personal data in accordance with the Terms and Conditions and Privacy Policy.</p>
+									<span class="text-danger" asp-validation-for="IsConsent"></span>
+								</div>
+								
+							</div>
+
+						</div>
+
+						<input type="submit" name="submit" class="next action-button" value="Submit" />
+						@* <button id="submitBtn" type="button" class="next action-button" onclick="Register()">Submit</button> *@
+						<input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+					</fieldset>
+
+					
+				</form>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="guidelinesModal" tabindex="-1" role="dialog" aria-labelledby="guidelinesModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="guidelinesModalLabel">Corporate Registration Guidelines</h5>
+				<button type="button" class="close" data-dismiss="modal" id="closeModalBtnn" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<!-- Insert your guidelines message here -->
+				<p>Guidelines for Corporate Registration:</p>
+				<p>
+					<strong>Step 1 - Corporate Information:</strong><br />
+					Fill in your name, and other details accurately.<br />
+					Provide your contact information, including email and phone number.
+
+					<br />
+					<strong>Step 2 - Upload document:</strong>
+					<br />
+					You are expected to upload some document to be able to have a succesful registration
+					Click the "Submit" button to complete your registration.
+					<br />
+					<strong>Note:</strong>
+					<br />
+					Ensure all information is accurate and up-to-date.
+					Follow the guidelines, and be prepared to make the registration fee payment at the end of the process.
+					If you have any questions, contact our support team for assistance.
+					Thank you for choosing our services!
+				</p>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" id="closeModalBtn" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+	function previewImage(input) {
+		var preview = document.getElementById('Passport-preview');
+		var file = input.files[0];
+		var reader = new FileReader();
+
+		reader.onloadend = function () {
+			preview.src = reader.result;
+		}
+
+		if (file) {
+			reader.readAsDataURL(file);
+		} else {
+			preview.src = "~/NabtebHrAsset/images/user.png";
+		}
+	}
+
+	function previewDoc(input) {
+		var preview = document.getElementById('Doc-preview');
+		var file = input.files[0];
+		var reader = new FileReader();
+
+		reader.onloadend = function () {
+			preview.src = reader.result;
+		}
+
+		if (file) {
+			reader.readAsDataURL(file);
+		} else {
+			preview.src = "~/NabtebHrAsset/images/idcard.png";
+		}
+	}
+
+	function previewSign(input) {
+		var preview = document.getElementById('Sign-preview');
+		var file = input.files[0];
+		var reader = new FileReader();
+
+		reader.onloadend = function () {
+			preview.src = reader.result;
+		}
+
+		if (file) {
+			reader.readAsDataURL(file);
+		} else {
+			preview.src = "~/NabtebHrAsset/images/sign.png";
+		}
+	}
+</script>
+
+<!-- Button to trigger modal -->
+<button type="button" class="btn btn-primary" hidden data-toggle="modal" data-target="#guidelinesModal">
+	View Guidelines
+</button>
+<script>
+	$(document).ready(function () {
+		$('#guidelinesModal').modal('show');
+	});
+</script>
+
+<script>
+	$(document).ready(function () {
+		$('#closeModalBtn').on('click', function () {
+			$('#guidelinesModal').modal('hide');
+		});
+	});
+</script>
+<script>
+	$(document).ready(function () {
+		$('#closeModalBtnn').on('click', function () {
+			$('#guidelinesModal').modal('hide');
+		});
+	});
+</script>
+
+
+
+

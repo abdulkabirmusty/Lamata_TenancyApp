@@ -1,0 +1,94 @@
+2024-11-18 00:25:03,244 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@Lamata_TenantDb'
+2024-11-18 00:25:03,247 [14] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 0d3604b8-c292-45d8-b83d-8a3da8656e8f validation failed: DuplicateRoleName.
+2024-11-18 00:25:03,269 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-11-18 00:25:03,276 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-11-18 00:25:03,350 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-11-18 00:25:03,357 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-11-18 00:25:03,362 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Documents\Lamata_TenantApp\Tenant_App\Tenant_App.Web
+2024-11-18 00:25:03,711 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:35812:acad8968 successfully announced in 341.5746 ms
+2024-11-18 00:25:03,763 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:35812:acad8968 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-11-18 00:25:03,807 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-11-18 00:25:04,070 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:35812:acad8968 all the dispatchers started
+2024-11-18 00:39:15,920 [69] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2024-11-18 00:43:54,172 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role dd1afff9-a6ce-4722-ac0e-34d859a34909 validation failed: DuplicateRoleName.
+2024-11-18 00:43:54,262 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@Lamata_TenantDb'
+2024-11-18 00:43:54,485 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-11-18 00:43:54,488 [15] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 087279ac-f24f-4bc1-8a98-75f996c9cdbc validation failed: DuplicateRoleName.
+2024-11-18 00:43:54,634 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-11-18 00:43:55,235 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-11-18 00:43:55,565 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-11-18 00:43:55,877 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Documents\Lamata_TenantApp\Tenant_App\Tenant_App.Web
+2024-11-18 00:43:56,883 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:34868:8a2dee22 successfully announced in 1856.9046 ms
+2024-11-18 00:43:57,023 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:34868:8a2dee22 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-11-18 00:44:01,002 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:34868:8a2dee22 all the dispatchers started
+2024-11-18 00:49:19,696 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@Lamata_TenantDb'
+2024-11-18 00:49:19,786 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-11-18 00:49:19,803 [4] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 3cd6d816-aace-43c3-800e-6e53c38d73c5 validation failed: DuplicateRoleName.
+2024-11-18 00:49:19,804 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-11-18 00:49:20,522 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-11-18 00:49:20,577 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-11-18 00:49:20,596 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Documents\Lamata_TenantApp\Tenant_App\Tenant_App.Web
+2024-11-18 00:49:21,242 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:6644:c3aeb16a successfully announced in 714.0956 ms
+2024-11-18 00:49:21,307 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:6644:c3aeb16a is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-11-18 00:49:21,392 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-11-18 00:49:21,643 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:6644:c3aeb16a all the dispatchers started
+2024-11-18 00:53:33,907 [63] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+2024-11-18 00:54:41,360 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@Lamata_TenantDb'
+2024-11-18 00:54:41,364 [5] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 7c81e88c-8414-476b-a4f3-fea6eaee0d99 validation failed: DuplicateRoleName.
+2024-11-18 00:54:41,401 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-11-18 00:54:41,436 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-11-18 00:54:41,563 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-11-18 00:54:41,575 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-11-18 00:54:41,641 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Documents\Lamata_TenantApp\Tenant_App\Tenant_App.Web
+2024-11-18 00:54:41,957 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:22492:72162908 successfully announced in 378.2198 ms
+2024-11-18 00:54:42,179 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:22492:72162908 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-11-18 00:54:43,996 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-11-18 00:54:51,174 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:22492:72162908 all the dispatchers started
+2024-11-18 00:59:44,216 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-11-18 01:02:29,659 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@Lamata_TenantDb'
+2024-11-18 01:02:29,683 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-11-18 01:02:29,688 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-11-18 01:02:29,724 [5] WARN Microsoft.AspNetCore.Identity.RoleManager - Role de787ae5-2205-4f4a-aea6-1b6acf8fdac2 validation failed: DuplicateRoleName.
+2024-11-18 01:02:29,926 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:1260:c93c1336 successfully announced in 171.7358 ms
+2024-11-18 01:02:29,940 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:1260:c93c1336 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-11-18 01:02:30,109 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:1260:c93c1336 all the dispatchers started
+2024-11-18 01:07:29,979 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-11-18 02:03:15,390 [15] WARN Microsoft.AspNetCore.Identity.RoleManager - Role bcb470ee-fc52-4caa-bfd5-c448c74e1cde validation failed: DuplicateRoleName.
+2024-11-18 02:03:15,387 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@Lamata_TenantDb'
+2024-11-18 02:03:15,431 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-11-18 02:03:15,448 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-11-18 02:03:15,457 [15] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 15b2ebdd-00d1-4bda-9285-da01ebfe328a validation failed: DuplicateRoleName.
+2024-11-18 02:03:15,526 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-11-18 02:03:15,534 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-11-18 02:03:15,541 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Documents\Lamata_TenantApp\Tenant_App\Tenant_App.Web
+2024-11-18 02:03:15,889 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:18608:05c86c0a successfully announced in 354.9662 ms
+2024-11-18 02:03:15,937 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:18608:05c86c0a is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-11-18 02:03:15,998 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-11-18 02:03:16,820 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:18608:05c86c0a all the dispatchers started
+2024-11-18 02:05:41,241 [61] WARN Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware - Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2024-11-18 02:08:02,602 [115] WARN Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware - Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2024-11-18 02:15:47,566 [133] WARN Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware - Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.

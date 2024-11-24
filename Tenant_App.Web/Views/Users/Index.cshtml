@@ -1,0 +1,146 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@using Tenant_App.Models.Domains.Account
+@model IEnumerable<User>
+
+@{
+    ViewData["Title"] = ViewBag.ProjectTitle + "::  " + "User Management";
+
+    Layout = "~/Views/Shared/_Secured.cshtml";
+}
+
+
+<style type="text/css">
+    .dropdown-menus {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 0rem;
+        margin: 0rem;
+        list-style: none;
+        z-index: 999;
+        min-width: 100%
+    }
+
+    .dropdowns {
+        width: 11.5vw;
+        height: 0.5vw;
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-menus li {
+        padding: 3px;
+        cursor: pointer;
+    }
+
+    .dropdown-menus li:hover {
+        background-color: #f4f4f4;
+    }
+
+</style>
+
+<div class=" w-70 table-container-general">
+
+    <div class="table-control ">
+        <div class="p">
+            Manage User Roles
+        </div>
+
+        <button onclick="AcceptContestants()" class="make-payment-button">Add Employee</button>
+    </div>
+
+
+    <div class="table-responsive ">
+        <table data-ordering="false" id="example" class="table " style="width:100%; background-color: white;">
+            <thead>
+                <tr>
+                    <th class="reports_s_n">S/N</th>
+                    <th class="reports_row1">User Name</th>
+                    <th class="reports_row1">IPPIS No.</th>
+                    <th class="reports_row1">status</th>
+                    <th class="reports_row1">Actions</th>
+
+                </tr>
+            </thead>
+
+            <tbody class="pl-3">
+                @{
+                    int rowNo = 0;
+                }
+
+                @foreach (var user in Model)
+                {
+                <tr class="td">
+                    <td class="reports_s_n">@(rowNo += 1)</td>
+                        <td class="reports_row1">
+                            
+                                @user.FirstName @user.LastName
+                            
+                        </td>
+                    <td class="reports_row1">@user.Email</td>
+                        @if (user.IsActive)
+                        {
+                            <td class="reports_row1">Active</td>
+                            
+                        }
+                        else
+                        {
+                            <td class="reports_row1">Deactivated</td>
+
+                        }
+
+                    <td class="reports_row1" id="date_row">
+                            
+
+                            <div class="dropdowns">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="dropdown-menus">
+
+                                    <li data-value="delete" data-id="" role="button" data-toggle="modal" data-target="#centralModalInfo" class='editAction' id="deleteDepartment">
+                                        <a style='margin-right:16px' asp-controller="userroles" asp-action="Index" asp-route-userId="@user.Id" class="dropdown-item">
+                                            <i class="fas fa-user-gear"></i> Manage Roles
+                                        </a>
+                                    </li>
+
+                                    <li data-value="delete" data-id="" role="button" data-toggle="modal" data-target="#centralModalInfo" class='editAction' id="deleteDepartment">
+                                        <a style='margin-right:16px' asp-controller="Users" asp-action="DeleteUser" asp-route-userId="@user.Id" class="dropdown-item">
+                                            <i class="fas fa-user-gear"></i> Delete
+                                        </a>
+                                    </li>
+
+
+                                    @if(user.IsActive)
+                                    {
+                                        <li data-value="delete" data-id="" role="button" data-toggle="modal" data-target="#centralModalInfo" class='editAction' id="deleteDepartment">
+                                            <a style='margin-right:16px' asp-controller="Users" asp-action="ActivateDeactivate" asp-route-userId="@user.Id" class="dropdown-item">
+                                                <i class="fa fa-user-slash"></i> Deactivate
+                                            </a>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li data-value="delete" data-id="" role="button" data-toggle="modal" data-target="#centralModalInfo" class='editAction' id="deleteDepartment">
+                                            <a style='margin-right:16px' asp-controller="Users" asp-action="ActivateDeactivate" asp-route-userId="@user.Id" class="dropdown-item">
+                                                <i class="fas fa-user"></i> Activate
+                                            </a>
+                                        </li>
+                                    }
+                                   
+
+
+                                </ul>
+                            </div>
+                            
+                    </td>
+
+
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+    

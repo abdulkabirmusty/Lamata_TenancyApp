@@ -1,0 +1,19 @@
+﻿@model Tenant_App.Models.DTOs.ServiceChargeDto
+
+<form id="paymentForm">
+    @Html.AntiForgeryToken() 
+
+    <div class="form-group">
+        <label>Service Charge Details</label>
+        <p><strong>Service Type:</strong> @Model.ServiceDescription</p>
+        <p><strong>Amount:</strong> @Model.Amount.ToString("C")</p>
+
+        <!-- Corrected field values -->
+        <input type="hidden" name="serviceChargeId" value="@Model.Id" />
+        <input type="hidden" name="userId" value="@Model.UserId" />
+        <input type="hidden" name="propertyId" value="@Model.PropertyTypeId" />
+        <input type="hidden" name="frequencyId" value="@Model.FrequencyId" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Initiate Payment</button>
+</form>

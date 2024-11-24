@@ -1,0 +1,498 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+    <link rel="stylesheet" href="~/TenancyAsset/css/bootstrap.css">
+    <link rel="stylesheet" href="~/TenancyAsset/css/style.css" type="text/css" media="all" />
+    <link href="~/TenancyAsset/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+        @* New Asset css *@
+        <link rel="stylesheet" href="~/assets/css/style-starter.css">
+
+        <!-- google fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+    </head>
+
+@* <body style="display: flex; flex-direction: column; background-image: url(../../weApproveAsset/assets/dashboard_bg2.jpg); background-size: 100%;"> *@
+<body class="sidebar-menu-collapsed">
+    <div class="se-pre-con"></div>
+    <section>
+        <!-- sidebar menu start -->
+        <div class="sidebar-menu sticky-sidebar-menu">
+            <partial name="_SecuredMenu" />
+        </div>
+
+        <div class="header sticky-header">
+            <partial name="_SecuredHeader" />
+        </div>
+
+        <!-- main content start -->
+        <div class="main-content">
+            @await Component.InvokeAsync("NToastNotify")
+
+            @RenderBody()
+        </div>
+    </section>
+
+    <footer class="dashboard">
+        <!-- <p>&copy 2020 collective. all rights reserved | design by <a href="https://w3layouts.com/" target="_blank" -->
+        <!-- class="text-primary">w3layouts.</a></p> -->
+    </footer>
+    <button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top">
+        <span class="fa fa-angle-up"></span>
+    </button>
+
+        @* <div style="display: flex;">
+            <!-- navbar -->
+            <partial name="_SecuredMenu" />
+
+            @*<!-- Dropdown menu -->*@
+            @* <partial name="_SecuredHeader" /> *@
+
+            @* @await Component.InvokeAsync("NToastNotify") *@
+
+            @* @RenderBody() *@
+        @* </div> *@
+
+        @* <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                crossorigin="anonymous"></script>
+
+        
+        <script src=" https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap5.min.js"></script>
+        <script src="~/weApproveAsset/js/layout.js"></script>
+        <script src="~/weApproveAsset/js/manageDept.js"></script>
+        <script src="~/weApproveAsset/js/formValidation.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script> *@
+
+
+    <script>
+        $(document).ready(function () {
+            // Initialize DataTable with your options
+            var table = $('#example').DataTable({
+                dom: 'lfrtip',
+                buttons: [] 
+            });
+
+            // Use event delegation to handle click event for the dropdown icons
+            $('#example tbody').on('click', '.fa-ellipsis-vertical', function () {
+                var parent = $(this).parent();
+                var dropdown = parent.find('.dropdown-menus');
+                dropdown.toggle();
+            });
+
+            // Use event delegation for edit action
+            $('#example tbody').on('click', '.dropdown-menus li[data-value="edit"]', function () {
+                var id = $(this).data('id');
+                Edit(id);
+            });
+
+            // Use event delegation for delete action
+            $('#example tbody').on('click', '.dropdown-menus li[data-value="delete"]', function () {
+                var id = $(this).data('id');
+                Delete(id);
+            });
+
+            // Use event delegation for status change action
+            $('#example tbody').on('click', '.dropdown-menus li[data-value="status"]', function () {
+                var id = $(this).data('id');
+                changeStatus(id);
+            });
+
+            // Hide dropdowns when clicking outside
+            $(document).on('click', function (event) {
+                var target = $(event.target);
+                if (!target.closest('.dropdowns').length) {
+                    $('.dropdown-menus').hide();
+                }
+            });
+
+            // Get the search input field
+            var searchInput = $('#example_filter input');
+
+            // Add event listener for input event
+            searchInput.on('input', function () {
+                // Get the current input value
+                var inputValue = $(this).val();
+
+                // Remove any non-letter characters
+                var filteredValue = inputValue.replace(/[^a-zA-Z]/g, '');
+
+                // Update the search input field value with the filtered value
+                $(this).val(filteredValue);
+
+                // Perform the search on the DataTable
+                table.search(filteredValue).draw();
+            });
+
+            // CSV button functionality is removed as buttons are disabled
+        });
+    </script>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- /move top -->
+
+
+    <script src="~/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="~/assets/js/jquery-1.10.2.min.js"></script>
+
+    <!-- chart js -->
+    <script src="~/assets/js/Chart.min.js"></script>
+    <script src="~/assets/js/utils.js"></script>
+    <!-- //chart js -->
+    <!-- Different scripts of charts.  Ex.Barchart, Linechart -->
+    <script src="~/assets/js/bar.js"></script>
+    <script src="~/assets/js/linechart.js"></script>
+    <!-- //Different scripts of charts.  Ex.Barchart, Linechart -->
+
+
+    <script src="~/assets/js/jquery.nicescroll.js"></script>
+    <script src="~/assets/js/scripts.js"></script>
+
+    <!-- close script -->
+    <script>
+        var closebtns = document.getElementsByClassName("close-grid");
+        var i;
+
+        for (i = 0; i < closebtns.length; i++) {
+            closebtns[i].addEventListener("click", function () {
+                this.parentElement.style.display = 'none';
+            });
+        }
+    </script>
+    <!-- //close script -->
+    <!-- disable body scroll when navbar is in active -->
+    <script>
+        $(function () {
+            $('.sidebar-menu-collapsed').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- disable body scroll when navbar is in active -->
+    <!-- loading-gif Js -->
+    <script src="assets/js/modernizr.js"></script>
+    <script>
+        $(window).load(function () {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+        });
+    </script>
+    <!--// loading-gif Js -->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+        
+
+        
+
+        @*Handle form validation with javascript*@
+        <script>
+
+            // Validate form before submission
+            function submitForm(form, id) {
+                const formData = getFormData(form);
+                const isEmpty = validateForm(formData, "", "cannot be empty.");
+
+                if (isEmpty === false) {
+                    console.log("xxxx");
+                    $.ajax({
+                        type: 'POST',
+                        url: "@Url.Action("Validate", $"{ViewBag.ControllerName}", new { area = "Admin" })",
+                        data: {
+                            formData: formData,
+                            id: id
+                        },
+                        dataType: 'json',
+                        success: function (response) {
+
+                            if (validateForm(response, true, "already exist.") === true) {
+                                return false;
+                            } else {
+                                form.submit();
+                            }
+                        },
+                        error: function () {
+                            console.log('An error occurred during the AJAX request.');
+                        }
+                    });
+                } else {
+                    return false;
+                }
+            }
+
+            // Validates form input fields
+            function validateForm(formData, validationString, validationMessage) {
+
+                let isValid = false;
+                let labelElement = "";
+
+                for (var key in formData) {
+                
+                    if (key.charAt(0) === '_') {
+                        key = key.slice(1);
+                        labelElement = $("select[name='" + key + "']").prev("label").text();
+                    } else {
+                        labelElement = $("input[name='" + key + "']").prev("label").text();;
+                    }
+
+                    if ((formData.hasOwnProperty(key) || formData.hasOwnProperty("_" + key)) && 
+                        (formData[key] === validationString || formData["_" + key] === validationString))
+                    {
+                        if (isValid === false) {
+                            isValid = true;
+                        }
+
+                        validationSelector = "#" + key + 'Validation';
+                        $(validationSelector).text(labelElement + " " + validationMessage);
+                    } 
+                    else 
+                    {
+                        validationSelector = "#" + key + 'Validation';
+                        $(validationSelector).text('');
+                    }
+                }
+
+                return isValid;
+            }
+
+            // Gets form data from form
+            function getFormData(form) {
+
+                const formData = {};
+            
+                // Validate input elements
+                var inputElements = form.querySelectorAll('input');
+
+                for (var i = 0; i < inputElements.length; i++) {
+                    var input = inputElements[i];
+
+                    if (input.type !== 'submit' && input.type !== 'reset' && input.type !== 'button' && input.type !== 'hidden') {
+                        formData[input.name] = input.value;
+                    }
+                }
+
+                // Validate select elements
+                var selectElements = form.querySelectorAll('select');
+
+                for (var i = 0; i < selectElements.length; i++) {
+                    var selectName = selectElements[i].name;
+                    var selectValue = selectElements[i].value;
+
+                    if (selectName.includes("Role") || selectName.includes("Department") || selectName == 'Stage') {
+                        formData["_" + selectName] = selectValue;
+                    }
+                }
+
+                return formData;
+            }
+
+            function CloseModal() {
+                $("#inlineForm").hide();
+                $("#bodycontentPartial").hide();
+            }
+
+        </script>
+    
+        @*Activation, Deactivation and Deletion*@
+        <script>
+
+            // ###
+            $(document).ready(function () {
+                $('.fa-ellipsis-vertical').click(function () {
+                    var parent = $(this).parent();
+                    var dropdown = parent.find('.dropdown-menus');
+                    dropdown.toggle();
+                });
+
+                $('.dropdown-menus li[data-value="edit"]').click(function () {
+                    var id = $(this).data('id');
+                    Edit(id);
+                });
+
+
+                // Delete
+                $('.dropdown-menus li[data-value="delete"]').click(function () {
+                    var id = $(this).data('id');
+
+                    Delete(id);
+                });
+
+                // Activation and Deactivation
+                $('.dropdown-menus li[data-value="status"]').click(function () {
+                    var id = $(this).data('id');
+
+                    changeStatus(id);
+                });
+
+                $(document).on('click', function (event) {
+                var target = $(event.target);
+                if (!target.closest('.dropdowns').length) {
+                    $('.dropdown-menus').hide();
+                }
+                });
+
+                $(document).on('click', function (event) {
+                    var target = $(event.target);
+                    if (!target.closest('.dropdown').length) {
+                        $('.dropdown-menu').hide();
+                    }
+                });
+            });
+
+            
+
+            // Activation and Deactivation
+            function changeStatus(id) {
+                $("#inlineForm").hide();
+                $("#bodycontentPartial").show();
+
+                $.ajax({
+                    type: 'GET',
+                    url: "@Url.Action("Status", $"{ViewBag.ControllerName}", new { area = "Admin" })",
+                    data: { id: id },
+                    success: function (content) {
+                        $("#inlineForm").show();
+                        $("#bodycontentPartial").html(content);
+                    }
+                });
+            }
+        </script>
+
+        @* Filter *@
+        <script>
+
+            function filter(event, col_index) {
+                const table = $('#example').DataTable();
+                var currentUserRoleName = '@ViewBag.currentUserRoleName';
+
+                const datePickerElement = document.getElementById("datePickerElement");
+                const staffPickerElement = document.getElementById("staffPickerElement");
+                const departmentPickerElement = document.getElementById("departmentPickerElement");
+                const statusPickerElement = document.getElementById("statusPickerElement");
+
+                let chosenDate = datePickerElement ? datePickerElement.value : "";
+                let chosenStaff = staffPickerElement ? staffPickerElement.value : "";
+                let chosenDepartment = departmentPickerElement ? departmentPickerElement.value : "";
+                let chosenStatus = statusPickerElement ? statusPickerElement.value : "";
+
+                table.columns().search('');
+
+                if (chosenDepartment != "All") {
+                    table.column(2).search(chosenDepartment);
+                }
+                if (chosenStaff != "All")
+                {
+                    table.column(3).search(chosenStaff);
+                }
+                if (chosenStatus != "All")
+                {
+                    table.column(4).search(chosenStatus);
+                }
+                if (chosenDate != "")
+                {
+                    table.column(5).search(chosenDate);
+                }
+
+                resetSerialNumbers(table);
+            }
+
+            function resetSerialNumbers(table) {
+                let i = 1;
+
+                table.rows({ search: 'applied' }).every(function () {
+                    const row = this.node();
+                    if (row.style.display != "none") {
+                        row.querySelector("td:nth-child(1)").innerHTML = i;
+                        i++;
+                    }
+                });
+
+                table.draw();
+            }
+
+            function ClearFilters() {
+                const table = $('#example').DataTable();
+                const datePickerElement = document.getElementById("datePickerElement");
+                const staffPickerElement = document.getElementById("staffPickerElement");
+                const departmentPickerElement = document.getElementById("departmentPickerElement");
+                const statusPickerElement = document.getElementById("statusPickerElement");
+
+                if (datePickerElement) {
+                    datePickerElement.value = "All";
+                }
+
+                if (staffPickerElement) {
+                    staffPickerElement.value = "All";
+                }
+
+                if (departmentPickerElement) {
+                    departmentPickerElement.value = "All";
+                }
+
+                if (statusPickerElement) {
+                    statusPickerElement.value = "All";
+                }
+                
+                table.columns().search('');
+                resetSerialNumbers(table);
+            }
+
+        </script>
+
+        <script>
+        const myButton = document.querySelector('.dt-button.buttons-csv.buttons-html5');
+
+        </script>
+
+        @section scripts {
+            <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $("#toast").show();
+
+                });
+            </script>
+        }
+    </body>
+</html>

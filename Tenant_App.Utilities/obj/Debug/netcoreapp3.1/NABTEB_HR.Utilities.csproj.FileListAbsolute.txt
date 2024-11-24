@@ -1,0 +1,13 @@
+C:\Users\AbdulkabirAbdulwasiu\source\repos\Nabteb_HR_Project\NABTEB_HR.Utilities\bin\Debug\netcoreapp3.1\NABTEB_HR.Utilities.deps.json
+C:\Users\AbdulkabirAbdulwasiu\source\repos\Nabteb_HR_Project\NABTEB_HR.Utilities\bin\Debug\netcoreapp3.1\NABTEB_HR.Utilities.runtimeconfig.json
+C:\Users\AbdulkabirAbdulwasiu\source\repos\Nabteb_HR_Project\NABTEB_HR.Utilities\bin\Debug\netcoreapp3.1\NABTEB_HR.Utilities.runtimeconfig.dev.json
+C:\Users\AbdulkabirAbdulwasiu\source\repos\Nabteb_HR_Project\NABTEB_HR.Utilities\bin\Debug\netcoreapp3.1\NABTEB_HR.Utilities.dll
+C:\Users\AbdulkabirAbdulwasiu\source\repos\Nabteb_HR_Project\NABTEB_HR.Utilities\bin\Debug\netcoreapp3.1\NABTEB_HR.Utilities.pdb
+C:\Users\AbdulkabirAbdulwasiu\source\repos\Nabteb_HR_Project\NABTEB_HR.Utilities\obj\Debug\netcoreapp3.1\NABTEB_HR.Utilities.csproj.AssemblyReference.cache
+C:\Users\AbdulkabirAbdulwasiu\source\repos\Nabteb_HR_Project\NABTEB_HR.Utilities\obj\Debug\netcoreapp3.1\NABTEB_HR.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AbdulkabirAbdulwasiu\source\repos\Nabteb_HR_Project\NABTEB_HR.Utilities\obj\Debug\netcoreapp3.1\NABTEB_HR.Utilities.AssemblyInfoInputs.cache
+C:\Users\AbdulkabirAbdulwasiu\source\repos\Nabteb_HR_Project\NABTEB_HR.Utilities\obj\Debug\netcoreapp3.1\NABTEB_HR.Utilities.AssemblyInfo.cs
+C:\Users\AbdulkabirAbdulwasiu\source\repos\Nabteb_HR_Project\NABTEB_HR.Utilities\obj\Debug\netcoreapp3.1\NABTEB_HR.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\AbdulkabirAbdulwasiu\source\repos\Nabteb_HR_Project\NABTEB_HR.Utilities\obj\Debug\netcoreapp3.1\NABTEB_HR.Utilities.dll
+C:\Users\AbdulkabirAbdulwasiu\source\repos\Nabteb_HR_Project\NABTEB_HR.Utilities\obj\Debug\netcoreapp3.1\NABTEB_HR.Utilities.pdb
+C:\Users\AbdulkabirAbdulwasiu\source\repos\Nabteb_HR_Project\NABTEB_HR.Utilities\obj\Debug\netcoreapp3.1\NABTEB_HR.Utilities.genruntimeconfig.cache

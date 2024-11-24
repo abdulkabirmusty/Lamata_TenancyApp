@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Daxline Pro';
+    src: local('Daxline Pro Regular'), local('Daxline-Pro-Regular'),
+        url('DaxlinePro-Regular.woff2') format('woff2'),
+        url('DaxlinePro-Regular.woff') format('woff'),
+        url('DaxlinePro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

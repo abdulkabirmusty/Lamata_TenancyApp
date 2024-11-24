@@ -1,0 +1,565 @@
+﻿@model Tenant_App.Models.DataObjects.Account.IndividualTenantRegDto
+@* @using Evoting.Models.DataObjects.DocumentDTOs; *@
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@* @using Evoting.Utilities.Document; *@
+@{
+	ViewData["Title"] = "TenantRegister";
+    Layout = "~/Views/Shared/_contestantReg.cshtml";
+}
+
+<div Class="container">
+	<h2 id="heading">Applicant Registration</h2>
+	<p>Fill all form field to go to next step</p>
+	<div class="container-fluid">
+		<button class="cancel-button" onclick="cancelRegistration()">
+			<i class="fas fa-times"></i>
+		</button>
+		<div class="row justify-content-center">
+			<div class="card " style="width: 72vw;">
+				<form id="msform" method="post" asp-controller="CustomAccount" asp-action="TenantRegister" enctype="multipart/form-data">
+					<div asp-validation-summary="All" class="text-danger"></div>
+				<!-- progress bar -->
+					<ul id="progressbar">
+						<li class="active" id="personal"><strong>Personal Details</strong></li>
+						<li id="account"><strong>Next of Kin Details</strong></li>
+						<li id="payment"><strong>Previous Rental History</strong></li>
+						<li id="confirm"><strong>Referee</strong></li>
+					</ul>
+                    <div class="progress">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div> <br>
+
+					<!-- fieldsets -->
+                    <fieldset>
+						<div class="form-card">
+							<div class="row">
+								<div class="col-7">
+								  <h2 class="fs-title">Personal Information:</h2>
+								</div>
+								<div class="col-5">
+								  <h2 class="steps">Step 1 - 4</h2>
+								</div>
+							</div> 
+
+							<div>
+								<div>
+									<label class="fieldlabels">Upload Passport</label><br />
+									<img id="Passport-preview" src="~/NabtebHrAsset/images/user.png" width="120" height="150" alt="">
+								</div>
+								
+								<input type="file" id="Passport" asp-for="Passport" name="Passport" style="width: 35%;" accept=".jpg,.jpeg,.png" onchange="previewImage(this)" />
+							</div>
+
+							<div>
+								<label class="fieldlabels">First Name: *</label>
+								<input type="text" placeholder="Enter First Name" asp-for="FirstName" required />
+								<span asp-validation-for="FirstName" class="text-danger"></span>
+							</div>
+
+							<div>
+								<label class="fieldlabels">Last Name: *</label>
+								<input type="text" placeholder="Enter Last Name" asp-for="LastName" required />
+								<span asp-validation-for="LastName" class="text-danger"></span>
+							</div>
+
+							<div>
+								<label class="fieldlabels">Current Address: *</label>
+								<input type="text" placeholder="Enter Current Address" asp-for="CurrentAddress" required />
+								<span asp-validation-for="CurrentAddress" class="text-danger"></span>
+							</div>
+							
+							<div>
+								<label class="fieldlabels">Home Phone Number: *</label>
+								<input type="text" placeholder="Enter Home Phone Number" asp-for="HomePhoneNo" required />
+								<span asp-validation-for="HomePhoneNo" class="text-danger"></span>
+							</div>
+
+							<div>
+								<label class="fieldlabels">Work Phone Number: *</label>
+								<input type="text" placeholder="Enter Work Phone Number" asp-for="WorkPhoneNo" required />
+								<span asp-validation-for="WorkPhoneNo" class="text-danger"></span>
+							</div>
+
+							<div>
+								<label class="fieldlabels">Email: *</label>
+								<input type="email" placeholder="Enter Email" asp-for="Email" required />
+								<span asp-validation-for="Email" class="text-danger"></span>
+							</div>
+							
+							<div>
+								<label class="fieldlabels">Date of Birth: *</label>
+								<input type="date" asp-for="DOB" required />
+								<span asp-validation-for="DOB" class="text-danger"></span>
+							</div>
+
+							<div>
+								<label class="fieldlabels">Select Identity Type: *</label>
+								<select asp-for="IdentityType" name="IdentityType" required>
+									<option>--Select Identity Type--</option>
+									<option value="International Passport">International Passport</option>
+									<option value="National Identity Card">National Identity Card</option>
+									<option value="Permanent Voter's Card">Permanent Voter's Card</option>
+									<option value="Driver's License">Driver's License</option>
+								</select>
+								<span asp-validation-for="IdentityType" class="text-danger"></span>
+							</div>
+							<div>
+								
+								<div>
+									<label class="fieldlabels">Upload Identity Card</label><br />
+									<img id="Doc-preview" src="~/NabtebHrAsset/images/idcard.png" width="300" height="200" alt="">
+								</div>
+								<input type="file" id="Identity" asp-for="Identityfile" name="Identityfile" accept=".jpg,.jpeg,.png" onchange="previewDoc(this)" />
+							</div>
+							
+							<div>
+								
+								<div>
+									<label class="fieldlabels">Upload Signature</label><br />
+									<img id="Sign-preview" src="~/NabtebHrAsset/images/sign.png" width="70" height="70" alt="">
+								</div>
+								<input type="file" id="Signature" asp-for="Signature" name="Signature" accept=".jpg,.jpeg,.png" onchange="previewSign(this)" />
+							</div>
+
+							<div>
+								<label class="fieldlabels">Sex of Applicant: *</label>
+								<select asp-for="Sex">
+									<option value="0">--Select Gender--</option>
+									<option value="Male">Male</option>
+									<option value="Female">Female</option>
+								</select>
+								<span asp-validation-for="Sex" class="text-danger"></span>
+							</div>
+							
+							<div>
+								<label class="fieldlabels">Rent Duration: *</label>
+								<input type="text" placeholder="Enter rent duration" asp-for="RentDuration" required />
+								<span asp-validation-for="RentDuration" class="text-danger"></span>
+							</div>
+
+							<div>
+								<label class="fieldlabels">Type of Business: *</label>
+								<input type="text" placeholder="Enter Type of Business" asp-for="TypeOfBusiness" required />
+								<span asp-validation-for="TypeOfBusiness" class="text-danger"></span>
+							</div>
+
+							<div>
+								<label class="fieldlabels">Nationality: *</label>
+								<input type="text" placeholder="Enter Nationality" asp-for="Nationality" required />
+								<span asp-validation-for="Nationality" class="text-danger"></span>
+							</div>
+							<div>
+								<label class="fieldlabels">State Of Origin: *</label>
+								<input type="text" placeholder="Enter State of Origin" asp-for="StateOfOrigin" required />
+								<span asp-validation-for="StateOfOrigin" class="text-danger"></span>
+							</div>
+							
+						</div> 
+
+						<input type="button" name="next" class="next action-button" value="Next" />
+						<a type="button" name="previous" class="previous action-button-previous" asp-controller="Home" asp-action="Index" >Cancel</a>
+
+					</fieldset>
+
+					<fieldset>
+						<div class="form-card">
+							<div class="row">
+								<div class="col-7">
+								<h2 class="fs-title">Next Of Kin Details:</h2>
+							</div>
+							<div class="col-5">
+								<h2 class="steps">Step 2 - 4</h2>
+								</div>
+							 </div>
+
+							<div>
+								<label class="fieldlabels">Next Of Kin Fullname: *</label>
+								<input type="text" placeholder="Enter Next Of Kin Name" asp-for="nextOfKinFullName" required />
+								<span asp-validation-for="nextOfKinFullName" class="text-danger"></span>
+							</div>
+							 <div>
+								<label class="fieldlabels">Relationship: *</label>
+								<select asp-for="Relationship" name="PositionId" required>
+									<option value="0"> -- Select Relationship -- </option>
+									<option value="Spouse">Spouse</option>
+									<option value="Parent">Parent</option>
+									<option value="Child">Child</option>
+									<option value="Sibling">Sibling</option>
+									<option value="Guardian">Guardian</option>
+									<option value="Aunt/Uncle">Aunt/Uncle</option>
+									<option value="Cousin">Cousin</option>
+									<option value="Niece/Nephew">Niece/Nephew</option>
+									<option value="Friend">Friend</option>
+									<option value="Others">Others</option>
+
+								</select><br />
+								<span id="selectSpan" asp-validation-for="Relationship" class="text-danger"></span>
+							 </div>
+							<div>
+								<label class="fieldlabels">Next Of Kin Address: *</label>
+								<input type="text" placeholder="Enter Next Of Kin Address" asp-for="NextOfKinAddress" required />
+								<span asp-validation-for="NextOfKinAddress" class="text-danger"></span>
+							</div>
+							<div>
+								<label class="fieldlabels">Next Of Kin Email: *</label>
+								<input type="email" placeholder="Enter Next Of Kin Email" asp-for="NextOfKinEmail" required />
+								<span asp-validation-for="NextOfKinEmail" class="text-danger"></span>
+							</div>
+							<div>
+								<label class="fieldlabels">Next Of Kin Phone Number: *</label>
+								<input type="text" placeholder="Enter Next Of Kin Phone Number" asp-for="NextOfKinMobilePhoneNo" required />
+								<span asp-validation-for="NextOfKinMobilePhoneNo" class="text-danger"></span>
+							</div>
+							<div>
+								<label class="fieldlabels">Next Of Kin Work Phone Number: *</label>
+								<input type="text" placeholder="Enter Next Of Kin Work Phone Number" asp-for="NextOfKinWorkPhoneNo" required />
+								<span asp-validation-for="NextOfKinWorkPhoneNo" class="text-danger"></span>
+							</div>
+
+						</div>
+
+						<input type="button" name="next" class="next action-button" value="Next" />
+						<input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+					</fieldset>
+
+					@* Upload Documents *@
+					<fieldset>
+						<div class="form-card">
+							<div class="row">
+								<div class="col-7">
+									<h2 class="fs-title">Previous Rental History and Bank Details:</h2>
+								</div>
+								<div class="col-5">
+									<h2 class="steps">Step 3 - 4</h2>
+								</div>
+							</div>
+
+							<div>
+								<label class="fieldlabels">Previous Address:</label>
+								<input type="text" placeholder="Enter Previous Address" asp-for="PreviousAddress" required>
+								<span asp-validation-for="PreviousAddress" class="text-danger"></span>
+							</div>
+							<div>
+								<label class="fieldlabels">Length of Time at Previous Address:</label>
+								<input type="text" placeholder="Enter Previous Address" asp-for="LengthOfTime" required>
+								<span asp-validation-for="LengthOfTime" class="text-danger"></span>
+							</div>
+
+							<h4>Bank Details</h4>
+
+							<div>
+								<label class="fieldlabels">Bank Name:</label>
+								<select class="form-select" id="specificSizeSelect" asp-for="BankName">
+									<option value="">Select Bank</option>
+									@foreach (var bankName in ViewBag.BankNames as List<string>)
+									{
+										<option value="@bankName.TrimStart('\"').TrimEnd('\"')">@bankName.TrimStart('\"').TrimEnd('\"')</option>
+									}
+								</select>
+							</div>
+
+							<div>
+								<label class="fieldlabels">Account Number:</label>
+								<input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '');" placeholder="Enter Account Number" asp-for="BankAccountNo" required>
+								<span asp-validation-for="BankAccountNo" class="text-danger"></span>
+							</div>
+
+							<div>
+								<label class="fieldlabels">Account Name:</label>
+								<input type="text" placeholder="Enter Account Name" asp-for="AccountName" required>
+								<span asp-validation-for="AccountName" class="text-danger"></span>
+							</div>
+					
+						</div> 
+						
+						<input type="button" name="next" class="next action-button" value="Next" />
+						<input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+					</fieldset>
+
+					<fieldset>
+						<div class="form-card">
+							<div class="row">
+								<div class="col-7">
+									<h2 class="fs-title">Referee:</h2>
+								</div>
+								<div class="col-5">
+									<h2 class="steps">Step 4 - 4</h2>
+								</div>
+							</div> 
+
+							<div id="refereeTableContainer">
+								<table id="refereeTable" class="table">
+									<thead>
+										<tr>
+											<th>Full Name</th>
+											<th>Relationship</th>
+											<th>Phone Number</th>
+											<th>Signature</th>
+										</tr>
+									</thead>
+									<tbody>
+										<!-- Existing rows or leave it empty -->
+									</tbody>
+								</table>
+							</div>
+
+							<div>
+								<!-- Add referee input fields here -->
+								<label class="fieldlabels">Referee Full Name: *</label>
+								<input type="text" id="refereeFullName" asp-for="Refereees[0].FullName" name="Refereees[0].FullName" placeholder="Enter Referee Full Name" />
+
+								<label class="fieldlabels">Referee Relationship: *</label>
+								<input type="text" id="refereeRelationship" asp-for="Refereees[0].Relationship" name="Refereees[0].Relationship" placeholder="Enter Referee Relationship" />
+
+								<label class="fieldlabels">Referee Phone Number: *</label>
+								<input type="text" id="refereeMobileNo" asp-for="Refereees[0].MobileNo" name="Refereees[0].MobileNo" placeholder="Enter Referee Phone number" />
+
+								<label class="fieldlabels">Referee Signature: *</label>
+								<input type="file" id="refereeSignaturePath" asp-for="Refereees[0].Signature" name="Refereees[0].Signature" accept=".jpg,.jpeg,.png" onchange="previewRefSign(this)" />
+
+								<button type="button" id="addRefereeBtn">Add Referee</button>
+							</div>
+
+							<br />
+							<br />
+							<div class="form-group consent">
+								<p>
+									By submitting this form, you agree to our Terms and Conditions and Privacy Policy. <br />
+									We respect your privacy and will handle your personal information as described in our Privacy Policy.
+								</p>
+
+								<p> <input type="checkbox" style="width: 50px;" class="bxs-checkbox" name="IsConsent" asp-for="IsConsent" required> &nbsp; &nbsp; I consent to the processing of my personal data in accordance with the Terms and Conditions and Privacy Policy.</p>
+								<span class="text-danger" asp-validation-for="IsConsent"></span>
+							</div>
+
+							<input type="submit" name="submit" class="next action-button" value="Submit" />
+							<input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+						</div>
+					</fieldset>
+				</form>
+				
+			</div>
+		 </div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="guidelinesModal" tabindex="-1" role="dialog" aria-labelledby="guidelinesModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="guidelinesModalLabel">Applicant Registration Guidelines</h5>
+				<button type="button" class="close" data-dismiss="modal" id="closeModalBtnn" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<!-- Insert your guidelines message here -->
+				<p>Guidelines for Applicant Registration:</p>
+				<p>
+					<strong>Step 1 - Personal Information:</strong><br />
+					Fill in your first name, last name, and other personal details accurately.<br />
+					Provide your contact information, including email and phone number.
+
+					<br />
+					<strong>Step 2 - Next of Kin Details:</strong>
+					<br />
+					Fill in details about the Next of kin, including phone number, address and type of property.
+					<br />
+					<strong>Step 3 - Previous Rental History:</strong>
+					<br />
+					Fill in the details about the previous rental history.
+					<br />
+					<strong>Step 4 - Referee:</strong>
+					<br />
+					You are expected to input information for two referees to conclude the registration
+					Click the "Submit" button to complete your registration.
+					<br />
+					<strong>Note:</strong>
+					<br />
+					Ensure all information is accurate and up-to-date.
+					Follow the guidelines, and be prepared to make the registration fee payment at the end of the process.
+					If you have any questions, contact our support team for assistance.
+					Thank you for choosing our services!
+				</p>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" id="closeModalBtn" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+	var individualTenantDto = @Html.Raw(Json.Serialize(Model));
+	$(document).ready(function () {
+		$("#addRefereeBtn").on("click", function () {
+			// Capture referee information
+			var fullName = $("#refereeFullName").val();
+			var relationship = $("#refereeRelationship").val();
+			var mobileNo = $("#refereeMobileNo").val();
+			var signaturePath = $("#refereeSignaturePath").val();
+
+			// Create RefereeeDto object
+			var refereeDto = {
+				FullName: fullName,
+				Relationship: relationship,
+				MobileNo: mobileNo,
+				Signature: signaturePath
+			};
+
+			// Add RefereeeDto to the Refereees list in the main DTO
+			individualTenantDto.Refereees.push(refereeDto);
+
+			// Add row to the table
+			var newRow = "<tr><td>" + fullName + "</td><td>" + relationship + "</td><td>" + mobileNo + "</td><td>" + signaturePath + "</td></tr>";
+			$("#refereeTable tbody").append(newRow);
+
+			// Clear input fields
+			$("#refereeFullName").val("");
+			$("#refereeRelationship").val("");
+			$("#refereeMobileNo").val("");
+			$("#refereeSignaturePath").val("");
+		});
+	});
+
+</script>
+@* <script>
+	$(document).ready(function () {
+		// Counter to keep track of added referees
+		var refereeCounter = 0;
+
+		$("#addRefereeBtn").on("click", function () {
+			// Capture referee information
+			var fullName = $("#refereeFullName").val();
+			var relationship = $("#refereeRelationship").val();
+			var mobileNo = $("#refereeMobileNo").val();
+			var signaturePath = $("#refereeSignaturePath").val();
+
+			// Update input field names with the current counter
+			$("#refereeFullName").attr("name", "Referees[" + refereeCounter + "].FullName");
+			$("#refereeRelationship").attr("name", "Referees[" + refereeCounter + "].Relationship");
+			$("#refereeMobileNo").attr("name", "Referees[" + refereeCounter + "].MobileNo");
+			$("#refereeSignaturePath").attr("name", "Referees[" + refereeCounter + "].Signature");
+
+			// Add row to the table
+			var newRow = "<tr><td>" + fullName + "</td><td>" + relationship + "</td><td>" + mobileNo + "</td><td>" + signaturePath + "</td></tr>";
+			$("#refereeTable tbody").append(newRow);
+
+			// Clear input fields
+			$("#refereeFullName").val("");
+			$("#refereeRelationship").val("");
+			$("#refereeMobileNo").val("");
+			$("#refereeSignaturePath").val("");
+
+			// Increment the counter for the next referee
+			refereeCounter++;
+		});
+	});
+</script> *@
+
+@* <script>
+	$(document).ready(function () {
+		$("#addRefereeBtn").on("click", function () {
+			// Capture referee information
+			var fullName = $("#refereeFullName").val();
+			var relationship = $("#refereeRelationship").val();
+			var mobileNo = $("#refereeMobileNo").val();
+			var signaturePath = $("#refereeSignaturePath").val();
+
+			// Add row to the table
+			var newRow = "<tr><td>" + fullName + "</td><td>" + relationship + "</td><td>" + mobileNo + "</td><td>" + signaturePath + "</td></tr>";
+			$("#refereeTable tbody").append(newRow);
+
+			// Clear input fields
+			$("#refereeFullName").val("");
+			$("#refereeRelationship").val("");
+			$("#refereeMobileNo").val("");
+			$("#refereeSignaturePath").val("");
+		});
+	});
+</script>
+ *@
+<script>
+	function previewImage(input) {
+		var preview = document.getElementById('Passport-preview');
+		var file = input.files[0];
+		var reader = new FileReader();
+
+		reader.onloadend = function () {
+			preview.src = reader.result;
+		}
+
+		if (file) {
+			reader.readAsDataURL(file);
+		} else {
+			preview.src = "~/NabtebHrAsset/images/user.png";
+		}
+	}
+
+	function previewDoc(input) {
+		var preview = document.getElementById('Doc-preview');
+		var file = input.files[0];
+		var reader = new FileReader();
+
+		reader.onloadend = function () {
+			preview.src = reader.result;
+		}
+
+		if (file) {
+			reader.readAsDataURL(file);
+		} else {
+			preview.src = "~/NabtebHrAsset/images/idcard.png";
+		}
+	}
+
+	function previewSign(input) {
+		var preview = document.getElementById('Sign-preview');
+		var file = input.files[0];
+		var reader = new FileReader();
+
+		reader.onloadend = function () {
+			preview.src = reader.result;
+		}
+
+		if (file) {
+			reader.readAsDataURL(file);
+		} else {
+			preview.src = "~/NabtebHrAsset/images/sign.png";
+		}
+	}
+</script>
+
+<!-- Button to trigger modal -->
+<button type="button" class="btn btn-primary" hidden data-toggle="modal" data-target="#guidelinesModal">
+	View Guidelines
+</button>
+
+<script>
+	$(document).ready(function () {
+		$('#guidelinesModal').modal('show');
+	});
+</script>
+
+<script>
+	$(document).ready(function () {
+		$('#closeModalBtn').on('click', function () {
+			$('#guidelinesModal').modal('hide');
+		});
+	});
+</script>
+<script>
+	$(document).ready(function () {
+		$('#closeModalBtnn').on('click', function () {
+			$('#guidelinesModal').modal('hide');
+		});
+	});
+</script>
+
+
+
+

@@ -1,0 +1,41 @@
+2024-02-07 10:02:00,796 [11] WARN Microsoft.AspNetCore.Identity.RoleManager - Role dd87aeef-5c15-483f-ae98-c29d3b6b8e74 validation failed: DuplicateRoleName.
+2024-02-07 10:02:00,934 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@TenantDb'
+2024-02-07 10:02:01,322 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-02-07 10:02:01,518 [8] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 6eff61f0-38c2-4d4a-9aa6-7813ee4f6431 validation failed: DuplicateRoleName.
+2024-02-07 10:02:01,506 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-02-07 10:02:01,975 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-02-07 10:02:02,079 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-02-07 10:02:02,115 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\lamata\Tenant_App\Tenant_App.Web
+2024-02-07 10:02:02,697 [10] WARN Microsoft.AspNetCore.Identity.UserManager - User 77904db0-b439-41de-add4-dd99c78e5419 validation failed: DuplicateUserName.
+2024-02-07 10:02:05,650 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:29052:20664f2d successfully announced in 2795.7003 ms
+2024-02-07 10:02:07,585 [10] WARN Microsoft.AspNetCore.Identity.UserManager - User 77904db0-b439-41de-add4-dd99c78e5419 validation failed: DuplicateUserName.
+2024-02-07 10:02:08,213 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:29052:20664f2d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-02-07 10:02:10,983 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-02-07 10:02:11,450 [24] WARN Microsoft.AspNetCore.Identity.UserManager - User a573c9ca-c660-488c-9927-ad540dc7a5b3 validation failed: DuplicateUserName.
+2024-02-07 10:02:11,849 [23] WARN Microsoft.AspNetCore.Identity.UserManager - User a573c9ca-c660-488c-9927-ad540dc7a5b3 validation failed: DuplicateUserName.
+2024-02-07 10:02:12,781 [23] WARN Microsoft.AspNetCore.Identity.UserManager - User a573c9ca-c660-488c-9927-ad540dc7a5b3 validation failed: DuplicateUserName.
+2024-02-07 10:02:13,154 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:29052:20664f2d all the dispatchers started
+2024-02-07 11:56:31,466 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@TenantDb'
+2024-02-07 11:56:31,514 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-02-07 11:56:31,527 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-02-07 11:56:31,540 [5] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 5b16623d-e0a3-42d2-a592-3b87ae2eb8ac validation failed: DuplicateRoleName.
+2024-02-07 11:56:31,568 [5] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 812bc34b-b054-46ad-b1e7-befa8c971c4c validation failed: DuplicateRoleName.
+2024-02-07 11:56:31,613 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-02-07 11:56:31,618 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-02-07 11:56:31,836 [11] WARN Microsoft.AspNetCore.Identity.UserManager - User 83fc6a32-01ea-40e2-a0fc-0a1b700d0c81 validation failed: DuplicateUserName.
+2024-02-07 11:56:32,010 [19] WARN Microsoft.AspNetCore.Identity.UserManager - User 83fc6a32-01ea-40e2-a0fc-0a1b700d0c81 validation failed: DuplicateUserName.
+2024-02-07 11:56:32,046 [23] WARN Microsoft.AspNetCore.Identity.UserManager - User d5f89c5b-5206-4d9e-8b8c-a600e42869d0 validation failed: DuplicateUserName.
+2024-02-07 11:56:32,074 [20] WARN Microsoft.AspNetCore.Identity.UserManager - User d5f89c5b-5206-4d9e-8b8c-a600e42869d0 validation failed: DuplicateUserName.
+2024-02-07 11:56:32,075 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:40440:458b6026 successfully announced in 441.3511 ms
+2024-02-07 11:56:32,097 [23] WARN Microsoft.AspNetCore.Identity.UserManager - User d5f89c5b-5206-4d9e-8b8c-a600e42869d0 validation failed: DuplicateUserName.
+2024-02-07 11:56:32,126 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:40440:458b6026 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-02-07 11:56:33,895 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:40440:458b6026 all the dispatchers started
+2024-02-07 12:01:32,232 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout

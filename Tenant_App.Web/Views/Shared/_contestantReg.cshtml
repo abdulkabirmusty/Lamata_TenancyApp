@@ -1,0 +1,183 @@
+﻿@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="~/weApproveAsset/css/contestantReg.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdpn.io/cpe/boomboom/pen.js?key=pen.js-e58bccc8-4702-f690-99f7-afe1a374ba03" crossorigin=""></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+        <link href="~/weApproveAsset/css/hover.css" rel="stylesheet">
+        <link rel="stylesheet" href="~/weApproveAsset/css/Index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" href="~/niesv.ico" />
+        <title>E-voting | Contestant Registration</title>
+
+    </head>
+    <body>
+    
+        @await Component.InvokeAsync("NToastNotify")
+        @RenderBody()
+    
+
+        <script>
+            document.getElementById('aboutweapproveFreeTrialButton2').addEventListener('click', () => {
+                window.location.replace('/html/register.html')
+            })
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script src="https://kit.fontawesome.com/bade0d0075.js" crossorigin="anonymous"></script>
+        <script> 
+            $(document).ready(function() {
+
+                var current_fs, next_fs, previous_fs;
+                var opacity;
+                var current = 1;
+                var steps = $("fieldset").length;
+                console.log("ready");
+                setProgressBar(current);
+
+                $(".next").click(function() {
+                    console.log("here");
+                    current_fs = $(this).parent();
+                    next_fs = $(this).parent().next();
+
+                    if (validate_fs()) {
+                        console.log("Valid");
+                        $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+                        next_fs.show();                        
+                        current_fs.animate(
+                            { opacity: 0 },
+                            {
+                                step: function (now) {
+                                    opacity = 1 - now;
+
+                                    current_fs.css({
+                                        display: "none",
+                                        position: "relative"
+                                    });
+                                    next_fs.css({ opacity: opacity });
+                                },
+                                duration: 500
+                            }
+                        );
+                        setProgressBar(++current);
+                    }
+                    else {
+                        console.log("invalid");
+                    }
+                });
+
+                $(".previous").click(function () {
+                    current_fs = $(this).parent();
+                    previous_fs = $(this).parent().prev();
+
+                    $("#progressbar li")
+                        .eq($("fieldset").index(current_fs))
+                        .removeClass("active");
+
+                    previous_fs.show();
+
+                    current_fs.animate(
+                        { opacity: 0 },
+                        {
+                            step: function (now) {
+                                opacity = 1 - now;
+
+                                current_fs.css({
+                                    display: "none",
+                                    position: "relative"
+                                });
+                                previous_fs.css({ opacity: opacity });
+                            },
+                            duration: 500
+                        }
+                    );
+                    setProgressBar(--current);
+                });
+
+                function setProgressBar(curStep) {
+                    var percent = parseFloat(100 / steps) * curStep;
+                    percent = percent.toFixed();
+                    $(".progress-bar").css("width", percent + "%");
+                }
+
+                $(".submit").click(function () {
+                    return false;
+                });
+
+
+                function validate_fs() {
+                    var isValid = false;
+                    var inputElements = current_fs.find('input[required]');
+                    var selectElements = current_fs.find('select[required]');
+                    var textareaElements = current_fs.find('textarea[required]');
+
+                    if (inputElements.length != 0) {
+                        isValid = check_elements(inputElements);
+                    }
+                    else {
+
+                        if (check_elements(selectElements)) {
+                            isValid = check_elements(textareaElements);
+
+                        } else {
+                            isValid = false;
+                        }
+                    }
+
+                    if (inputElements.length != 0) {
+                        isValid = check_elements(inputElements);
+                    }
+                    
+                    return isValid;
+
+                    
+                }
+
+                function check_elements(elements) {
+                    elements.each(function () {
+
+                        if (!$(this).val() || $(this).val() == "--Select Position--") {
+                            isValid = false;
+                            var label = $(this).prev.text;
+
+                            if ($(this).val() == "--Select Position--") {
+                                $("#selectSpan").text('This field is required.');
+                            } else {
+                                $(this).next('.text-danger').text('This field is required.');
+                            }
+                        }
+                        else
+                        {
+                            isValid = true;
+
+                            if ($(this).val() == "--Select Position--") {
+                                $("#selectSpan").text('');
+                            } else {
+                                $(this).next('.text-danger').text('');
+                            } 
+                        }
+                    });
+
+                    return isValid;
+                }
+            });
+
+        </script>
+    </body>
+</html>

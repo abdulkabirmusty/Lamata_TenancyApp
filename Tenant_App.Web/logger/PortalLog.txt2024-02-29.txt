@@ -1,0 +1,262 @@
+2024-02-29 01:27:22,387 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-02-29 01:27:22,400 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-02-29 01:27:22,424 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-02-29 01:27:22,426 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-02-29 01:27:22,429 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-02-29 01:27:22,454 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-02-29 01:27:22,457 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-02-29 01:27:22,459 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-02-29 01:27:22,674 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+2024-02-29 01:27:37,709 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:00:15.0292139 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:27:52,744 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:00:30.0626378 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:28:07,774 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:00:45.0935684 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:28:22,802 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:01:00.1237406 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:28:37,828 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:01:15.1479600 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:28:52,852 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:01:30.1728351 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:29:07,878 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:01:45.1983455 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:29:22,914 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:02:00.2304956 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:29:37,939 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:02:15.2594458 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:29:52,963 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:02:30.2848418 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:30:07,981 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:02:45.3031601 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:30:23,003 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:03:00.3250525 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:30:38,020 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:03:15.3412679 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:30:53,051 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:03:30.3726225 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:31:08,081 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:03:45.4022606 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:31:23,106 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:04:00.4281038 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:31:38,146 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:04:15.4560486 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:31:53,170 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:04:30.4923497 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:32:08,202 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:04:45.5232383 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:32:30,324 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:05:07.6456024 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:32:30,324 [30] ERROR Tenant_App.Services.Handler.EmailMessaging.EmailMessagingServices - Object reference not set to an instance of an object.
+2024-02-29 01:32:45,355 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:05:22.6753527 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:33:00,385 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:05:37.7071426 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:33:15,420 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:05:52.7423981 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:33:30,439 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:06:07.7582793 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:33:45,466 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:06:22.7854739 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:34:00,495 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:06:37.8171450 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:34:15,524 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:06:52.8406968 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:34:30,548 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:07:07.8702317 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:34:45,584 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:07:22.9004344 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:35:00,609 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:07:37.9307333 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:35:15,629 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:07:52.9487190 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:35:30,654 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:08:07.9763951 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:35:45,675 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:08:22.9940305 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:36:00,693 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:08:38.0139114 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:36:16,893 [58] ERROR Tenant_App.Services.Handler.EmailMessaging.EmailMessagingServices - Object reference not set to an instance of an object.
+2024-02-29 01:36:16,896 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:08:54.2176930 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:36:31,927 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:09:09.2457668 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:36:46,944 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:09:24.2653066 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:37:01,977 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:09:39.2989277 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:37:17,012 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:09:54.3328219 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:37:32,030 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:10:09.3522597 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:37:47,059 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:10:24.3744660 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:38:02,072 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:10:39.3937272 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:38:17,101 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:10:54.4212423 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:38:32,135 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:11:09.4546272 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:38:47,162 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:11:24.4838293 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:39:02,180 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:11:39.5012641 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:39:17,206 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:11:54.5243008 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:39:32,231 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:12:09.5534835 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:39:47,259 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:12:24.5813631 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:40:02,265 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:12:39.5876298 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:40:17,296 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:12:54.6158146 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:40:32,327 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:13:09.6454626 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:40:47,357 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:13:24.6750667 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:41:02,378 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:13:39.7003555 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:41:17,396 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:13:54.7180698 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:41:32,410 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:14:09.7244035 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:41:47,423 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:14:24.7450057 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:42:24,304 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:15:01.6234684 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:42:39,335 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:15:16.6536512 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:42:54,369 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:15:31.6872590 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:43:09,392 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:15:46.7135221 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:43:24,408 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:16:01.7299923 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:43:39,432 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:16:16.7508191 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:43:54,444 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:16:31.7669739 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:44:09,465 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:16:46.7870984 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:44:24,477 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:17:01.7984100 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:44:39,492 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:17:16.8139487 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:45:13,884 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:17:42.2667345 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:45:32,098 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:18:08.5640064 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:46:07,507 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:18:25.4379514 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:46:27,772 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:19:05.0414250 due to an exception, will be retried no more than in 00:00:15
+2024-02-29 01:49:35,063 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 602fcfd3-f515-485b-8ff3-eab69c8d83d0 validation failed: DuplicateRoleName.
+2024-02-29 01:49:35,091 [4] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 8d057583-b902-45b6-b5dc-b7e57c29baef validation failed: DuplicateRoleName.
+2024-02-29 01:49:35,126 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-02-29 01:49:35,129 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-02-29 01:49:35,155 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-02-29 01:49:35,158 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-02-29 01:49:35,161 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-02-29 01:49:35,193 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-02-29 01:49:35,195 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-02-29 01:49:35,197 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-02-29 01:49:35,373 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:32832:95111c42 successfully announced in 173.1137 ms
+2024-02-29 01:49:35,384 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:32832:95111c42 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-02-29 01:49:35,515 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:32832:95111c42 all the dispatchers started
+2024-02-29 01:53:46,130 [9] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 90e9e208-fdfc-454e-8167-c75e57eb353f validation failed: DuplicateRoleName.
+2024-02-29 01:53:46,147 [4] WARN Microsoft.AspNetCore.Identity.RoleManager - Role cae2abfa-c863-42c4-9e22-656ec6ec93d3 validation failed: DuplicateRoleName.
+2024-02-29 01:53:46,314 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-02-29 01:53:46,316 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-02-29 01:53:46,331 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-02-29 01:53:46,334 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-02-29 01:53:46,336 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-02-29 01:53:46,359 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-02-29 01:53:46,362 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-02-29 01:53:46,364 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-02-29 01:53:46,481 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:34768:d5880870 successfully announced in 113.447 ms
+2024-02-29 01:53:46,520 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:34768:d5880870 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-02-29 01:53:46,615 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:34768:d5880870 all the dispatchers started
+2024-02-29 02:00:08,648 [9] WARN Microsoft.AspNetCore.Identity.RoleManager - Role b6da8b64-d754-4d93-9c33-088a2cc1210e validation failed: DuplicateRoleName.
+2024-02-29 02:00:08,667 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 95ef71bb-6c3c-4452-bed0-8a2c89d3a549 validation failed: DuplicateRoleName.
+2024-02-29 02:00:08,692 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-02-29 02:00:08,694 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-02-29 02:00:08,712 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-02-29 02:00:08,716 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-02-29 02:00:08,723 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-02-29 02:00:08,766 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-02-29 02:00:08,779 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-02-29 02:00:08,784 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-02-29 02:00:09,150 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:22304:96288db3 successfully announced in 324.1099 ms
+2024-02-29 02:00:09,170 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:22304:96288db3 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-02-29 02:00:09,243 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-02-29 02:00:10,084 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:22304:96288db3 all the dispatchers started
+2024-02-29 02:04:27,648 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role abe887c8-aad1-4d82-b80a-e759bc07e451 validation failed: DuplicateRoleName.
+2024-02-29 02:04:27,702 [9] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 3d395c44-f600-4dd4-b95e-888ae94aff3c validation failed: DuplicateRoleName.
+2024-02-29 02:04:27,727 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-02-29 02:04:27,738 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-02-29 02:04:27,797 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-02-29 02:04:27,807 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-02-29 02:04:27,813 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-02-29 02:04:27,870 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-02-29 02:04:27,877 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-02-29 02:04:27,883 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-02-29 02:04:28,510 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:10368:f2772c86 successfully announced in 614.8472 ms
+2024-02-29 02:04:28,856 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:10368:f2772c86 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-02-29 02:04:29,046 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-02-29 02:04:30,229 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:10368:f2772c86 all the dispatchers started
+2024-02-29 02:08:56,522 [11] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 89321fdd-a2b2-48b3-8733-d3febf5b9eb1 validation failed: DuplicateRoleName.
+2024-02-29 02:08:56,555 [5] WARN Microsoft.AspNetCore.Identity.RoleManager - Role a5019b1a-a860-4218-8224-b95933ab7846 validation failed: DuplicateRoleName.
+2024-02-29 02:08:57,169 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-02-29 02:08:57,174 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-02-29 02:08:57,211 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-02-29 02:08:57,216 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-02-29 02:08:57,221 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-02-29 02:08:57,266 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-02-29 02:08:57,271 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-02-29 02:08:57,277 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-02-29 02:08:57,709 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:30484:9037494e successfully announced in 421.9774 ms
+2024-02-29 02:08:57,748 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:30484:9037494e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-02-29 02:08:57,860 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-02-29 02:08:58,769 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:30484:9037494e all the dispatchers started
+2024-02-29 02:13:14,039 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role a1ffa267-2ff0-4e69-af33-82be1f1d7a24 validation failed: DuplicateRoleName.
+2024-02-29 02:13:14,084 [4] WARN Microsoft.AspNetCore.Identity.RoleManager - Role c1cae33e-4773-40f6-8547-6841347c71ad validation failed: DuplicateRoleName.
+2024-02-29 02:13:14,189 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-02-29 02:13:14,202 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-02-29 02:13:14,280 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-02-29 02:13:14,299 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-02-29 02:13:14,376 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-02-29 02:13:14,589 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-02-29 02:13:14,620 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-02-29 02:13:14,626 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-02-29 02:13:15,420 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:23548:2d3c3e90 successfully announced in 598.398 ms
+2024-02-29 02:13:15,473 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:23548:2d3c3e90 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-02-29 02:13:15,602 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-02-29 02:13:16,872 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:23548:2d3c3e90 all the dispatchers started
+2024-02-29 02:17:31,819 [4] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 3f6a7d48-4b04-4db2-b8f5-5e64b0902007 validation failed: DuplicateRoleName.
+2024-02-29 02:17:31,922 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-02-29 02:17:31,923 [5] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 847a4e17-93e3-40ef-b8da-c02c78c99a0c validation failed: DuplicateRoleName.
+2024-02-29 02:17:31,929 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-02-29 02:17:32,043 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-02-29 02:17:32,065 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-02-29 02:17:32,097 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-02-29 02:17:32,355 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-02-29 02:17:32,380 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-02-29 02:17:32,396 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-02-29 02:17:33,240 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:34120:c3a43158 successfully announced in 708.5311 ms
+2024-02-29 02:17:33,432 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:34120:c3a43158 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-02-29 02:17:33,489 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-02-29 02:17:34,780 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:34120:c3a43158 all the dispatchers started
+2024-02-29 02:20:05,612 [5] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 7d59e4e2-646b-4ac5-b4e8-ba4979046a38 validation failed: DuplicateRoleName.
+2024-02-29 02:20:05,648 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role eca42c75-f7c3-4e66-ac55-a4352744663b validation failed: DuplicateRoleName.
+2024-02-29 02:20:05,743 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-02-29 02:20:05,749 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-02-29 02:20:05,801 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-02-29 02:20:05,807 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-02-29 02:20:05,814 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-02-29 02:20:05,993 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-02-29 02:20:05,998 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-02-29 02:20:06,003 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-02-29 02:20:06,409 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:29620:aae6915a successfully announced in 398.7824 ms
+2024-02-29 02:20:06,435 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:29620:aae6915a is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-02-29 02:20:06,510 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-02-29 02:20:07,251 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:29620:aae6915a all the dispatchers started
+2024-02-29 02:25:05,766 [4] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 0c0e937f-0c73-4f5d-8f09-bacdc8aea679 validation failed: DuplicateRoleName.
+2024-02-29 02:26:38,068 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-02-29 02:26:38,074 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-02-29 02:26:57,882 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role fae6f57a-e31c-4c41-a20d-f3d1cacaf6cb validation failed: DuplicateRoleName.
+2024-02-29 02:26:57,930 [5] WARN Microsoft.AspNetCore.Identity.RoleManager - Role d157cce7-fdb3-49b0-ad87-4a17c8f5f634 validation failed: DuplicateRoleName.
+2024-02-29 02:26:57,985 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-02-29 02:26:57,992 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-02-29 02:26:58,061 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@Tenant_AppDB'
+2024-02-29 02:26:58,071 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-02-29 02:26:58,079 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-02-29 02:29:11,319 [11] WARN Microsoft.AspNetCore.Identity.RoleManager - Role abf3444a-ac7a-49ab-8012-a61c550873de validation failed: DuplicateRoleName.
+2024-02-29 02:29:11,356 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role f2c8a93e-0bde-4011-9ab2-ef791e8f3980 validation failed: DuplicateRoleName.
+2024-02-29 02:29:11,504 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-02-29 02:29:11,514 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-02-29 02:29:11,597 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-02-29 02:29:11,738 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-02-29 02:29:11,763 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-02-29 02:29:11,923 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-02-29 02:29:12,051 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-02-29 02:29:12,060 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-02-29 02:29:13,034 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:7772:88d1fcd7 successfully announced in 789.2184 ms
+2024-02-29 02:29:13,124 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:7772:88d1fcd7 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-02-29 02:29:13,853 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 2 servers were removed due to timeout
+2024-02-29 02:29:14,462 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:7772:88d1fcd7 all the dispatchers started
+2024-02-29 02:32:31,611 [16] ERROR Tenant_App.Services.Handler.EmailMessaging.EmailMessagingServices - Object reference not set to an instance of an object.
+2024-02-29 02:34:28,347 [72] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.

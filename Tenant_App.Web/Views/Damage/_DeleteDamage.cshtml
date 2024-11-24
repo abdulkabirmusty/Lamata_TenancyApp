@@ -1,0 +1,33 @@
+﻿@model Tenant_App.Models.DataObjects.DamageDtos.FetchDamageDto
+
+<div class="modal-header">
+    <div class="modal-title" id="myModalLabel">Delete Damage Report</div>
+    <a onclick="CloseModal()">
+        <i   class="fa-solid fa-circle-xmark newdepartmentdropdowncanclebtn" id="addDeptClose"></i>
+    </a>
+</div>
+
+<form asp-controller="Damage" asp-action="Delete" method="post">
+
+     <input type="hidden" asp-for="Id" />
+
+    <div class="modal-body" style="padding-left:50px;padding-right:50px;">
+
+        <h5>Do you really want to remove this record ?</h5>
+    </div>
+    <div class="modal-footer">
+        <button id="submitButton" type="submit" class="btn btn-success" asp-route-Id="@Model.Id"><span>Yes</span></button>
+        <button type="button" class="btn btn-danger" onclick="CloseModal()">No</button>
+    </div>
+
+</form>
+
+<script>
+
+    function CloseModal() {
+        $("#viewMemomodalcontainer").css("filter", "blur(0)");
+        $("#inlineForm").hide();
+        $("#bodycontentPartial").hide();
+    }
+
+</script>

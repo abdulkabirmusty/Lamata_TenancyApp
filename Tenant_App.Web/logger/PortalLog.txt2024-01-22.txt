@@ -1,0 +1,14 @@
+2024-01-22 16:06:47,564 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@NabtebHr'
+2024-01-22 16:06:47,625 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-22 16:06:47,638 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-22 16:06:47,658 [10] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 54c3e338-527d-4a53-bf20-66ec8b8834b8 validation failed: DuplicateRoleName.
+2024-01-22 16:06:47,745 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-01-22 16:06:47,755 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-01-22 16:06:47,760 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\Source\Repos\Nabteb_HR_Project\NABTEB_HR.Web
+2024-01-22 16:06:47,826 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:50412:90607df4 successfully announced in 56.5677 ms
+2024-01-22 16:06:47,927 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-01-22 16:25:50,993 [142] WARN Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware - Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.

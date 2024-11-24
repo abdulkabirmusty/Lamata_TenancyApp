@@ -1,0 +1,53 @@
+.freetrialreg {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.freetrialtxt {
+    color: #E2E2E2;
+    margin-top: 5%;
+    font-weight: 800px;
+    margin-left: 18%;
+    font-family: "Inter", sans-serif;
+    /* letter-spacing: 3px; */
+}
+.freetrialregcontainer {
+
+    border: 1px solid #e2e2e2;
+    width: 30vw;
+    height: 18vw;
+    background-color: white;
+}
+span {
+    position: relative;
+    top: 10px;
+    right: -70.5px;
+}
+a {
+    text-decoration: none;
+    position: absolute;
+    top: 43%;
+    left: 43.5%;
+    letter-spacing: 3px;
+    color: #D7B321;
+}
+.fa-check-double {
+    color: #D7B321;
+    margin-left: 47%;
+    margin-top: 10%;
+}
+/* Freetrialreg */

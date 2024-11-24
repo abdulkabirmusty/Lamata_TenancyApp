@@ -1,0 +1,160 @@
+﻿@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+    <!-- Footer Start -->
+    <footer id="rs-footer" class="rs-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 footer-widget">
+                        <div class="X">
+                            <p><img src="~/ekiti/images/ekitiundp.png" alt=""></p>
+                        
+                        </div>
+                        <div class="textwidget pb-30">
+                            <p>Ekiti State is situated entirely within the tropics. It is located between longitudes 40°51′ and 50°451′ East of the Greenwich meridian and latitudes 70°151′ and 80°51′ north of the Equator</p>
+                        </div>
+                        <ul class="footer-social md-mb-30">
+                            <li>
+                                <a href="@Configuration["facebookURL"]" target="_blank"><span><i class="fab fa-facebook"></i></span></a>
+                            </li>
+                            
+                            <li><a href="@Configuration["twiterURL"]" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                     
+                            @*<li><a href="@Configuration["instagramURL"]" target="_blank"><i class="fab fa-instagram"></i></a></li>*@
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 pl-45 md-pl-15 md-mb-30">
+                        <h3 class="widget-title">Our Partners</h3>
+                        <ul class="site-map">
+                            <li><a href="#">Police Force</a></li>
+                            <li><a href="#">Navy</a></li>
+                            <li><a href="#">Department of State Services</a></li>
+                            <li><a href="#">Nigeria Security and Civil Defense Corps</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 md-mb-30">
+                        <h3 class="widget-title">Contact Info</h3>
+                        <ul class="address-widget">
+                            <li>
+                                <i class="flaticon-location"></i>
+                                <div class="desc">Government of Ekiti State, Nigeria</div>
+                            </li>
+                            <li>
+                                <i class="flaticon-call"></i>
+                                <div class="desc">
+                                    <a href="tel:@Configuration["TelephoneNumber"]"> @Configuration["TelephoneNumber"]</a>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="flaticon-email"></i>
+                                <div class="desc">
+                                    <a href="mailto:@Configuration["ReportAlertEmail"]" target="_blank">@Configuration["ReportAlertEmail"]</a>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="flaticon-clock-1"></i>
+                                <div class="desc">
+                                    Opening Hours: 24Hrs
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row y-middle">
+                    <div class="col-lg-5 text-right md-mb-10 order-last">
+                        <ul class="copy-right-menu">
+                            @*<li><a href="#ek-banner">Home</a></li>
+                            <li>
+                                <a href="#ek-about">About</a>
+                            
+                            </li>
+                            <li>
+
+                                <a href="#ek-report">Report Cases</a>
+
+                            </li>*@
+                            <li>
+                                <a asp-action="Privacy" asp-controller="Home" class="quote-btn">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                          
+                        </ul>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="copyright">
+                            <p>@DateTime.Now.Year.ToString() © All rights reserved by @Configuration["FooterPortalName"]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- start scrollUp  -->
+    <div id="scrollUp" class="orange-color">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <!-- End scrollUp  -->
+    <!--<footer class="site-footer" id="getalert">
+
+        <img src="web/images/shapes/footer-bg-1-1.png" class="site-footer__shape-1" alt="">
+        <img src="web/images/shapes/footer-bg-1-2.png" class="site-footer__shape-2" alt="">
+        <img src="web/images/shapes/footer-bg-1-3.png" class="site-footer__shape-3" alt="">
+        <div class="site-footer__upper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <div class="footer-widget footer-widget__about">
+                            <a href="index.html" class="footer-widget__logo">
+                                <img src="web/images/logo.png" alt="">
+                            </a>
+
+                            <p> Government House, Ado-Ekiti,<br>Ekiti State,<br> Nigeria</p>
+                            <p><span>Open Hours: </span></p>
+                            <p>Mon - Sat: 8 am - 5 pm, <br> Sunday: CLOSED</p>
+                        </div>-->
+    <!-- /.footer-widget -->
+    <!--</div>--><!-- /.col-lg-3 col-md-12 -->
+    <!--<div class="col-lg-5 col-md-12">
+        <div class="footer-widget footer-widget__links">
+            <h3 class="footer-widget__title"><span>Our Partners</span></h3>-->
+    <!-- /.footer-widget__title -->
+    <!--<ul class="list-unstyled text-white" style="color:white">
+        <li style="color:#FFF !important">Police Force</li>
+        <li style="color:#FFF !important">Navy</li>
+        <li style="color:#FFF !important">Department of State Services</li>
+        <li style="color:#FFF !important">Nigeria Security and Civil Defense Corps</li>
+    </ul>-->
+    <!-- /.list-unstyled footer-widget__links-list -->
+    <!--</div>--><!-- /.footer-widget -->
+    <!--</div>--><!-- /.col-lg-5 col-md-12 -->
+    <!-- /.col-lg-5 col-md-12 -->
+    <!--<div class="col-lg-4 col-md-12">
+        <div class="footer-widget footer-widget__newsletter">
+            <h3 class="footer-widget__title"><span>Contact Us</span></h3>-->
+    <!-- /.footer-widget__title -->
+    <!--<div class="footer-widget__social">
+        <a href="@Configuration["facebookURL"]" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="@Configuration["twiterURL"]" target="_blank"><i class="fab fa-twitter"></i></a>
+
+    </div>-->
+    <!-- /.footer-widget__social -->
+    <!--</div>--><!-- /.footer-widget -->
+    <!--</div>--><!-- /.col-lg-4 -->
+    <!--</div>--><!-- /.row -->
+    <!--</div>--><!-- /.container -->
+    <!--</div>--><!-- /.site-footer__upper -->
+    <!--<div class="site-footer__bottom">
+        <div class="container text-center">
+            <p>@DateTime.Now.Year.ToString() © All rights reserved by <a href="#">@Configuration["SMSPortalName"]</a></p>
+        </div>-->
+    <!-- /.container -->
+    <!--</div>--><!-- /.site-footer__bottom -->
+    <!--</footer>--><!-- /.site-footer -->

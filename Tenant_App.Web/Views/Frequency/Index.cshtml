@@ -1,0 +1,161 @@
+﻿@model IEnumerable<Tenant_App.Models.DTOs.FrequencyDto>
+
+@{
+    ViewData["Title"] = "Frequencies";
+    Layout = "~/Views/Shared/_Secured.cshtml";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-datatables@latest/vanilla-dataTables.min.css">
+<script src="https://cdn.jsdelivr.net/npm/vanilla-datatables@latest/vanilla-dataTables.min.js"></script>
+
+<style>
+    .dropdown-menus {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 0rem;
+        margin: 0rem;
+        list-style: none;
+        z-index: 999;
+        min-width: 100%;
+    }
+
+    .dropdowns {
+        width: 11.5vw;
+        height: 0.5vw;
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-menus li {
+        padding: 3px;
+        cursor: pointer;
+    }
+
+        .dropdown-menus li:hover {
+            background-color: #f4f4f4;
+        }
+</style>
+
+<div class="container-fluid content-top-gap">
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb my-breadcrumb">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Dashboard", new { area = "" })">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Frequency", new { area = "" })">Setup</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Manage Frequencies</li>
+        </ol>
+    </nav>
+
+    <div class="cards__heading">
+        <h3>Manage Frequencies</h3>
+    </div>
+
+    <div class="card card_border p-lg-5 p-3 mb-4">
+        <div class="card-body py-3 p-0">
+            <div>
+                <button id="openCreateModalButton" role="button" class="btn btn-primary btn-style mt-4">
+                    <i class="fa-solid fa-plus"></i> Add Frequency
+                </button>
+            </div>
+            <br /><br />
+            <div class="row">
+                <div class="table-responsive">
+                    <table data-ordering="false" id="frequencyTable" class="table" style="width:100%; background-color: white;">
+                        <thead>
+                            <tr>
+                                <th class="sn">S/N</th>
+                                <th>Frequency Type</th>
+                                <th>Modified On</th>
+                                <th>Is Active</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null)
+                            {
+                                int rowNo = 0;
+                                foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@(++rowNo)</td>
+                                        @* <td>@item.FrequencyDesc</td> *@
+                                        <td>@item.FrequencyTypeName</td>
+                                        <td>@item.CreatedDate.ToShortDateString()</td>
+                                        <td>@(item.IsActive ? "Yes" : "No")</td>
+
+                                        <td>
+                                            <div class="dropdowns">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                <ul class="dropdown-menus">
+                                                    <li data-value="edit" data-id="@item.Id" role="button" data-toggle="modal" data-target="#createFrequencyModal" class="editAction" onclick="editFrequency(@item.Id)">
+                                                        <i class="fa fa-edit"></i> Edit
+                                                    </li>
+                                                    <li data-value="delete" data-id="@item.Id" role="button" data-toggle="modal" data-target="#deleteFrequencyModal" class="deleteAction" onclick="deleteFrequency(@item.Id)">
+                                                        <i class="fa fa-trash"></i> Delete
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Create Frequency -->
+<div class="modal fade" id="createFrequencyModal" tabindex="-1" role="dialog" aria-labelledby="createFrequencyLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="createFrequencyLabel">Add Frequency</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="createFrequencyModalBody">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#openCreateModalButton').click(function () {
+            $.ajax({
+                url: '@Url.Action("Create", "Frequency")',
+                type: 'GET',
+                success: function (data) {
+                    $('#createFrequencyModalBody').html(data); 
+                    $('#createFrequencyModal').modal('show'); 
+                }
+            });
+        });
+
+        $(document).on('submit', '#addFrequencyForm', function (e) {
+            e.preventDefault();
+
+            var form = $(this);
+            $.ajax({
+                url: '@Url.Action("Create", "Frequency")',
+                type: 'POST',
+                data: form.serialize(),
+                success: function (response) {
+                    $('#createFrequencyModal').modal('hide'); 
+                    window.location.reload(); 
+                },
+                error: function () {
+                    alert('An error occurred while saving the frequency.');
+                }
+            });
+        });
+    });
+</script>

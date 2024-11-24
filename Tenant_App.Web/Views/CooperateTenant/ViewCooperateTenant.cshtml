@@ -1,0 +1,167 @@
+﻿@model Tenant_App.Models.DataObjects.CooperateTenantDtos.CooperateTenantDto
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+ 
+    Layout = "~/Views/Shared/_Secured.cshtml";
+}
+
+<style>
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* space between the buttons */
+        margin-top: 30px;
+    }
+</style>
+
+<h2 class="text-center">@ViewData["Title"]</h2>
+
+<div class="container-fluid content-top-gap">
+
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb my-breadcrumb">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Dashboard", new { area = "" })">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "CooperateTenant", new { area = "" })">Manage Agents</a></li>
+            <li class="breadcrumb-item active" aria-current="page">View Agent</li>
+        </ol>
+    </nav>
+
+    <div class="cards__heading">
+        <h3>Agents Detail</h3>
+    </div>
+    <div>
+        <a href="@Url.Action("Index", "CooperateTenant", new { area = "" })"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
+    </div>
+    <br />
+
+    <section class="forms">
+        <div class="card card_border py-2 mb-4">
+            <div class="card-body">
+                <h4>Personal Detail</h4>
+                <hr />
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Agent Name:</label>
+                        <input type="text" value="@Model.CompanyName" class="form-control input-style" placeholder="Agent Name" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Email:</label>
+                        <input type="text" value="@Model.CooperateEmail" class="form-control input-style" placeholder="Email" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Address</label>
+                        <input type="email" value="@Model.Address" class="form-control input-style" id="inputEmail4" placeholder="Address" readonly>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Mobile PhoneNo:</label>
+                        <input type="text" value="@Model.MobilePhoneNo" class="form-control input-style" placeholder="Mobile PhoneNo" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Personal Contact:</label>
+                        <input type="text" value="@Model.PersonalContact" class="form-control input-style" placeholder="Personal Contact" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4" class="input__label">Status</label>
+                        <input type="text" value="@(Model.Status.HasValue && Model.Status.Value ? "Active" : "Inactive")" class="form-control input-style" id="inputEmail4" readonly>
+                    </div>
+                </div>
+                
+                <br />
+                <h4>Documents</h4>
+                <hr />
+                <div class="form-row">
+                    <ul>
+                        <li><a asp-controller="CooperateTenant" asp-action="DownloadFile" asp-route-filePath="@Model.DocumentPath">Download Form C07</a></li>
+                        <li><a asp-controller="CooperateTenant" asp-action="DownloadFile" asp-route-filePath="@Model.DocumentPathRef">Download Bank Reference</a></li>
+                        <li><a asp-controller="CooperateTenant" asp-action="DownloadFile" asp-route-filePath="@Model.DocumentPathRefDir">Download Director Profile</a></li>
+                    </ul>
+                </div>
+                <br />
+
+                <div class="button-container">
+                    @if (ViewBag.IsDeskOfficer == true && ViewBag.Status == 0)
+                    {
+                        <form asp-action="AcceptTenant" asp-controller="CooperateTenant" method="post" asp-route-id="@Model.Id">
+                            <input type="hidden" asp-for="Id" value="@Model.Id" />
+                            <button id="acceptButton" type="submit" class="btn btn-success"><span>Accept</span></button>
+                        </form>
+
+                        <form asp-action="RejectTenant" asp-controller="CooperateTenant" method="post" asp-route-id="@Model.Id">
+                            <input type="hidden" asp-for="Id" value="@Model.Id" />
+                            <button id="rejectButton" type="submit" class="btn btn-danger"><span>Reject</span></button>
+                        </form>
+                    }
+                    @if (ViewBag.IsAdmin == true && ViewBag.Status == 1)
+                    {
+                        <form asp-action="AcceptTenant" asp-controller="CooperateTenant" method="post" asp-route-id="@Model.Id">
+                            <input type="hidden" asp-for="Id" value="@Model.Id" />
+                            <button id="acceptButton" type="submit" class="btn btn-success"><span>Accept</span></button>
+                        </form>
+
+                        <form asp-action="RejectTenant" asp-controller="CooperateTenant" method="post" asp-route-id="@Model.Id">
+                            <input type="hidden" asp-for="Id" value="@Model.Id" />
+                            <button id="rejectButton" type="submit" class="btn btn-danger"><span>Reject</span></button>
+                        </form>
+                    }
+                    else
+                    {
+
+                    }
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+<style>
+    .invoice-box {
+        max-width: 800px;
+        margin: auto;
+        padding: 30px;
+        border: 1px solid #eee;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+        color: #555;
+    }
+
+    .invoice-box h3 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .invoice-box h4 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .invoice-box p {
+        margin: 0;
+    }
+
+    .invoice-header, .invoice-body {
+        padding-bottom: 20px;
+    }
+
+    .invoice-header {
+        border-bottom: 2px solid #eee;
+        margin-bottom: 20px;
+    }
+
+    .mb-4 {
+        margin-bottom: 1.5rem;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+</style>

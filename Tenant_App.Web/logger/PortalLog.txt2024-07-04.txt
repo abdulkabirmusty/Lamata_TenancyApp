@@ -1,0 +1,20 @@
+2024-07-04 20:34:36,102 [8] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 8d5591d1-d0eb-468e-bdde-900027ea4e47 validation failed: DuplicateRoleName.
+2024-07-04 20:34:36,116 [11] WARN Microsoft.AspNetCore.Identity.RoleManager - Role 68b30213-afb6-44aa-b1aa-8fd6f9324c01 validation failed: DuplicateRoleName.
+2024-07-04 20:34:36,282 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5002
+2024-07-04 20:34:36,285 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2024-07-04 20:34:36,306 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV7\GDANIEL@TenantDb'
+2024-07-04 20:34:36,309 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-07-04 20:34:36,312 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-07-04 20:34:36,352 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-04 20:34:36,355 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-04 20:34:36,358 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\VatebraProject\LamAssetmgr\lamata\Tenant_App\Tenant_App.Web
+2024-07-04 20:34:36,732 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:35276:c154c2ff successfully announced in 371.8547 ms
+2024-07-04 20:34:36,744 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:35276:c154c2ff is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-07-04 20:34:36,787 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2024-07-04 20:34:36,859 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev7:35276:c154c2ff all the dispatchers started
+2024-07-04 20:49:00,585 [68] ERROR Tenant_App.Services.Handler.EmailMessaging.EmailMessagingServices - Object reference not set to an instance of an object.
+2024-07-04 20:53:14,794 [87] ERROR Tenant_App.Services.Handler.EmailMessaging.EmailMessagingServices - Object reference not set to an instance of an object.

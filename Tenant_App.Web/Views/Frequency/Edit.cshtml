@@ -1,0 +1,26 @@
+﻿@model Tenant_App.Models.DTOs.FrequencyDto
+
+@{
+    ViewData["Title"] = "Edit Frequency";
+    Layout = "~/Views/Shared/_Secured.cshtml";
+}
+
+<h2>Edit Frequency</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="FrequencyDesc" class="control-label"></label>
+        <input asp-for="FrequencyDesc" class="form-control" />
+        <span asp-validation-for="FrequencyDesc" class="text-danger"></span>
+    </div>
+    <div class="form-group form-check">
+        <input asp-for="IsActive" class="form-check-input" />
+        <label asp-for="IsActive" class="form-check-label">Is Active</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

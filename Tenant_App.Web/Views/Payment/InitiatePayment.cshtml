@@ -1,0 +1,169 @@
+﻿@model Tenant_App.Models.Domains.Payment.RemitaSplitPaymentSummary
+
+@{
+    ViewData["Title"] = ViewBag.ProjectTitle + "::  " + "Payment";
+
+    Layout = "~/Views/Shared/_Secured.cshtml";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style type="text/css">
+    .button {
+        background-color: #1CA78B;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    input {
+        max-width: 30%;
+    }
+</style>
+
+<div class="container-fluid content-top-gap">
+
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb my-breadcrumb">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Dashboard", new { area = "" })">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Properties", new { area = "" })">Hostel</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Make payment</li>
+        </ol>
+    </nav>
+
+    <div class="cards__heading">
+        <h3>Remita Payment details</h3>
+    </div>
+
+    <div class="card card_border p-lg-5 p-3 mb-4">
+        <div class="card-body py-3 p-0">
+            @* <div>
+            <button onclick="Create()" role="button" data-toggle="modal" data-target="#centralModalInfo" id="addDeptModalOpen" class="btn btn-primary btn-style mt-4">
+            <i class="fa-solid fa-plus"></i> Add Hostel
+            </button>
+            </div> *@
+            <div class="row">
+                <div>
+                    <a href="@Url.Action("Index", "Properties", new { area = "" })"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
+                </div>
+                <br />
+
+                <section class="forms">
+                    <div class="card card_border py-2 mb-4">
+                        <div class="card-body">
+                            <h5>Confirm your details before making registartion payment</h5>
+                            <hr />
+                            <div class="row justify-content-center">
+                                <div class="card " style="width: 72vw;">
+                                    <div class=&#x27;preserveHtml&#x27; class=&#x27;preserveHtml&#x27; class=&#x27;preserveHtml&#x27; class=&#x27;preserveHtml&#x27; class=&#x27;preserveHtml&#x27; class=&#x27;preserveHtml&#x27; class=&#x27;preserveHtml&#x27; class=&#x27;preserveHtml&#x27; class=&#x27;preserveHtml&#x27; class=&#x27;preserveHtml&#x27; class="container mt-3">
+                                       <form onsubmit="makePayment()" id="payment-form">
+                                            <div class=&#x27;preserveHtml&#x27; class=&#x27;preserveHtml&#x27; class=&#x27;preserveHtml&#x27; class=&#x27;preserveHtml&#x27; class=&#x27;preserveHtml&#x27; class=&#x27;preserveHtml&#x27; class=&#x27;preserveHtml&#x27; class=&#x27;preserveHtml&#x27; class=&#x27;preserveHtml&#x27; class=&#x27;preserveHtml&#x27; class="form-floating mb-3 mt-3">
+                                                <label for="rrr">RRR</label>
+                                                <input type="text" asp-for="RRR" class="form-control" id="js-firstName" placeholder="Enter RRR" name="rrr">
+                                                <label for="rrr">Email</label>
+                                                <input type="text" asp-for="Email" class="form-control" id="js-firstName" placeholder="Enter email" name="email">
+                                                <label for="rrr">FirstName</label>
+                                                <input type="text" asp-for="FirstName" class="form-control" id="js-firstName" placeholder="Enter first name" name="firstName">
+                                                <label for="rrr">LastName</label>
+                                                <input type="text" asp-for="FirstName" class="form-control" id="js-firstName" placeholder="Enter lasr name" name="lastName">
+                                                <label for="rrr">Naration</label>
+                                                <input type="text" asp-for="Narration" class="form-control" id="js-firstName" placeholder="Enter Naration" name="narration">
+
+                                                <label for="rrr">Amount</label>
+                                                <input type="text" asp-for="Amount" class="form-control" id="js-firstName" placeholder="Enter Amount" name="amount">
+                                                <label for="rrr">Technology Fee</label>
+                                                <input type="text" asp-for="TechnologyFee" class="form-control" id="js-firstName" placeholder="Enter Technology Fee" name="technologyFee">
+                                                <input type="text" asp-for="PublicKey" type="hidden" name="publicKey">
+                                                <input type="text" asp-for="UserId" type="hidden" name="userId">
+                                                <input type="text" asp-for="OrderId" type="hidden" name="orderId">
+                                            </div>
+                                            <input type="button" onclick="makePayment()" value="Submit" button class="button" />
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://remitademo.net/payment/v1/remita-pay-inline.bundle.js"></script>
+
+<script>
+    function makePayment() {
+        debugger
+        var form = document.querySelector("#payment-form");
+        var paymentEngine = RmPaymentEngine.init({
+            key: form.querySelector('input[name="publicKey"]').value,
+            customerId: form.querySelector('input[name="email"]').value,
+            firstName: form.querySelector('input[name="firstName"]').value,
+            lastName: form.querySelector('input[name="lastName"]').value,
+            email: form.querySelector('input[name="email"]').value,
+            amount: form.querySelector('input[name="amount"]').value,
+            narration: form.querySelector('input[name="narration"]').value,
+            transactionId: form.querySelector('input[name="orderId"]').value,
+            channel: "CARD,USSD,QR,IBANK",
+            onSuccess: function (response) {
+                debugger
+                console.log('callback Successful Response', response);
+
+                var userId = form.querySelector('input[name="userId"]').value;
+                var amount = form.querySelector('input[name="amount"]').value;
+                var rrr = form.querySelector('input[name="rrr"]').value;
+
+                ConfirmPayment(userId, amount, rrr, true);
+            },
+            onError: function (response) {
+                console.log('callback Error Response', response);
+
+                var userId = form.querySelector('input[name="userId"]').value;
+                var amount = form.querySelector('input[name="amount"]').value;
+                var rrr = form.querySelector('input[name="rrr"]').value;
+
+                ConfirmPayment(userId, amount, rrr, false);
+
+            },
+            onClose: function () {
+                console.log(response)
+                console.log("closed");
+            }
+        });
+        paymentEngine.showPaymentWidget();
+    }
+
+    function ConfirmPayment(userId, amount, rrr, isSuccessful) {
+        debugger;
+        return $.ajax({
+            type: 'POST',
+            url: '@Url.Action("ConfirmPayment", "Payment")',
+            data: {
+                userId: userId,
+                amount: amount,
+                rrr: rrr,
+                isSuccessful: isSuccessful
+            },
+            success: function (content) {
+                console.log(content);
+                location.replace('@Url.Action("Index", "Payments")');
+                 
+            }
+        });
+    }
+
+</script>

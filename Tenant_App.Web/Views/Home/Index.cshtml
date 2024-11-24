@@ -1,0 +1,171 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_landing.cshtml";
+}
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+<!-- mian-content -->
+<div class="main-content" id="home">
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <!-- nav -->
+            <nav class="pb-3">
+                <div id="logo">
+                    <h1>
+                        <a class="navbar-brand" href="index.html"><img src="~/TenancyAsset/images/lamata.png" alt="" style="max-width: 100%; max-height: 70px;" /></a>
+                    </h1>
+                </div>
+
+                <label for="drop" class="toggle">Menu</label>
+                <input type="checkbox" id="drop" />
+                <ul class="menu mt-2">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    </li>
+                    <li class="header-right">
+                        <a asp-controller="CustomAccount" asp-action="Login" class="contact"> <span class="fa fa-user"></span> Login</a>
+                    </li>
+                </ul>
+
+
+            </nav>
+            <!-- //nav -->
+        </div>
+    </header>
+    <!-- //header -->
+    <!-- banner -->
+    <section class="banner">
+        <div class="container">
+            <div class="row banner-grids">
+                <div class="col-lg-6 banner-info-w3ls">
+                    <h2>
+                        A Vision For Your Life
+                    </h2>
+                    <h3 class="mb-3">Find Your Perfect Space</h3>
+                    <p class="mb-4"> Asset management software designed to streamline your operations by facilitating online rent collection, advertising available rental units, and conducting thorough tenant screening processes. </p>
+                    <a asp-controller="Home" asp-action="TenantType" class="btn">Fill expression of interest</a>
+                </div>
+                <div class="col-lg-6 banner-image">
+                    <div class="img-effect">
+                        <img src="~/TenancyAsset/images/img.jpg" alt="" class="img-fluid image1" style="height: 65vh;">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //banner -->
+</div>
+<!--/ab -->
+@* <section class="about py-lg-5 py-md-5 py-5">
+    <div class="container">
+        <div class="inner-sec-w3pvt py-lg-5 py-3">
+            <h3 class="tittle text-center mb-lg-5 mb-3 px-lg-5"><span class="sub-tittle">About.</span>Get everything you need to pick the right Property.</h3>
+            <div class="feature-grids row mt-3 mb-lg-5 mb-3 text-center" id="about">
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="bottom-gd px-3">
+                        <span class="fa fa-building" aria-hidden="true"></span>
+                        <h3 class="my-4"> Modern Residence</h3>
+                        <p>Elevate your living experience with our modern residences, featuring contemporary designs and top-notch amenities for a lifestyle that meets your expectations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="bottom-gd2-active px-3">
+                        <span class="fa fa-cogs" aria-hidden="true"></span>
+                        <h3 class="my-4"> Development Services</h3>
+                        <p>Explore seamless property development services tailored to your needs. From concept to completion, we provide comprehensive solutions that bring your vision to life.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="bottom-gd px-3">
+                        <span class="fa fa-key" aria-hidden="true"></span>
+                        <h3 class="my-4">Property Management</h3>
+                        <p>Simplify property ownership with our efficient property management services. We handle the complexities, ensuring your investment runs smoothly and your tenants are satisfied.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- services -->
+            <div class="fetured-info pt-lg-5" id="features">
+                <h3 class="tittle  text-center my-lg-5 my-3"><span class="sub-tittle">What we do</span> Our Featured Services</h3>
+                <div class="row fetured-sec mt-lg-5 mt-3">
+                    <div class="col-lg-6 p-0">
+                        <div class="img-effect">
+                            <img src="~/TenancyAsset/images/img1.jpg" alt="" class="img-fluid image1" style="height: 65vh;">
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 serv_bottom feature-grids pl-lg-5">
+                        <div class="featured-left text-left">
+                            <div class="bottom-gd px-3">
+                                <span class="fa fa-bank" aria-hidden="true"></span>
+                                <h3 class="my-4"> Automated Rent Payment Processing</h3>
+                                <p>Enable tenants to set up automated rent application through the system and Integrate with various payment gateways for seamless transactions.</p>
+                            </div>
+                            <div class="bottom-gd fea active p-4" data-aos="fade-left">
+                                <span class="fa fa-key" aria-hidden="true"></span>
+                                <h3 class="my-3 ">Maintenance Request Management</h3>
+                                <p>Allow tenants to submit maintenance requests through the system and Provide a platform for landlords or property managers to track, prioritize, and assign maintenance tasks</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <!-- //services -->
+</section>
+
+<!-- middle section -->
+<div class="middle-tem-insidel pt-lg-5" id="services">
+    <div class="progress-info">
+
+        <!-- slides images -->
+        <div class="slide-img" id="masthead">
+        </div>
+        <!-- //slides images -->
+
+        <div class="left-build-main-temps">
+            <h3 class="tittle  text-left my-lg-5 my-3"><span class="sub-tittle">What we do</span> Our Services</h3>
+            <ul class="tic-info list-unstyled">
+                <li class="progress-tittle">
+
+                    <span class="fa fa-bell-o"></span> Tenant Screening
+
+                </li>
+                <li class="progress-tittle">
+
+                    <span class="fa fa-database"></span> Rent Collection & Online Payments
+
+                </li>
+                <li class="progress-tittle">
+
+                    <span class="fa fa-bullhorn"></span> Property Maintenance
+
+                </li>
+                <li class="progress-tittle">
+
+                    <span class="fa fa-diamond"></span> Good Previews
+
+                </li>
+            </ul>
+
+
+
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div> *@
+
+

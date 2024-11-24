@@ -1,0 +1,154 @@
+<<<<<<< HEAD
+2023-11-28 01:37:17,335 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-28 01:37:17,413 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-28 01:37:17,454 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+=======
+2023-11-28 01:33:23,673 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-28 01:33:23,698 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-28 01:33:23,710 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+>>>>>>> origin/Abdulkabir
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+<<<<<<< HEAD
+2023-11-28 01:37:17,955 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-28 01:37:18,063 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+2023-11-28 01:37:18,167 [5] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-28 01:37:49,416 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:00:29.9543214 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:38:20,566 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:01:02.4172328 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:38:35,694 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:01:17.5658514 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:39:05,020 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:01:46.8914866 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:39:20,117 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:02:01.9924698 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:39:35,198 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:02:17.0740278 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:40:03,771 [15] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-28 01:40:04,543 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:02:46.4215224 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:40:08,943 [15] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-28 01:40:15,163 [42] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-28 01:40:19,617 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:03:01.4921913 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:40:34,690 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:03:16.5694246 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:40:41,695 [18] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-28 01:40:49,762 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:03:31.6389204 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:41:19,111 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:04:00.9900667 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:41:34,180 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:04:16.0410762 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:41:49,253 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:04:31.1325122 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:42:04,314 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:04:46.1912047 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:42:33,675 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:05:15.5467722 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:43:03,108 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:05:44.9854933 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:43:35,975 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:06:17.8573653 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:44:08,853 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:06:50.7312617 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:44:41,683 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:07:23.5611679 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:45:14,585 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:07:56.4676394 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:45:47,446 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:08:29.3268208 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:46:20,326 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:09:02.2034369 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:46:53,225 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:09:35.0963961 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:47:26,134 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:10:07.9981514 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:47:59,003 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:10:40.8753629 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:48:31,863 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:11:13.7417737 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:49:04,728 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:11:46.6037478 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:49:37,566 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:12:19.4452861 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 01:50:10,464 [BackgroundServerProcess #1] ERROR Hangfire.Processing.BackgroundExecution - Execution BackgroundServerProcess is still in the Failed state for 00:12:52.3066070 due to an exception, will be retried no more than in 00:00:15
+2023-11-28 22:57:52,022 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-28 22:57:52,290 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-28 22:57:52,320 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+=======
+2023-11-28 01:33:23,878 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-28 01:33:23,885 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-28 01:33:23,893 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-28 01:33:24,561 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:31548:c41ed0bc successfully announced in 667.5002 ms
+2023-11-28 01:33:24,606 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:31548:c41ed0bc is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-28 01:33:24,768 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-28 01:33:25,048 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:31548:c41ed0bc all the dispatchers started
+2023-11-28 20:44:53,814 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-28 20:44:53,975 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-28 20:44:54,002 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+>>>>>>> origin/Abdulkabir
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+<<<<<<< HEAD
+2023-11-28 22:57:52,719 [10] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-28 22:57:52,950 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:50580:7951e814 successfully announced in 493.2507 ms
+2023-11-28 22:57:53,002 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:50580:7951e814 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-28 22:57:53,252 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-28 22:57:53,437 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:50580:7951e814 all the dispatchers started
+2023-11-28 22:58:40,242 [7] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-28 23:01:52,523 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-28 23:01:52,831 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-28 23:01:52,901 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+=======
+2023-11-28 20:44:54,368 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-28 20:44:54,582 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-28 20:44:54,606 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-28 20:44:55,247 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:18424:12995d0e successfully announced in 1032.2259 ms
+2023-11-28 20:44:55,362 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:18424:12995d0e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-28 20:44:55,563 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-28 20:44:56,896 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:18424:12995d0e all the dispatchers started
+2023-11-28 21:42:50,844 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV18@E-VotingDB'
+2023-11-28 21:42:50,852 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-28 21:42:50,859 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+>>>>>>> origin/Abdulkabir
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+<<<<<<< HEAD
+2023-11-28 23:07:01,719 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-28 23:07:01,775 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-28 23:07:01,825 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-28 23:07:02,022 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-28 23:07:02,062 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdullateefOdufeso\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-28 23:07:02,488 [9] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-28 23:07:02,887 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:56096:4aeb0393 successfully announced in 874.9869 ms
+2023-11-28 23:07:02,973 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:56096:4aeb0393 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-28 23:07:11,365 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-28 23:07:15,832 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:56096:4aeb0393 all the dispatchers started
+2023-11-28 23:08:18,935 [45] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-28 23:08:42,761 [63] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-28 23:09:15,327 [63] WARN Microsoft.AspNetCore.Identity.UserManager - Invalid password for user 82285130-8bb4-410c-9bc8-fd3fe4c8e1d9.
+2023-11-28 23:09:59,469 [79] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-28 23:10:24,603 [79] WARN Microsoft.AspNetCore.Identity.UserManager - Invalid password for user 82285130-8bb4-410c-9bc8-fd3fe4c8e1d9.
+2023-11-28 23:10:33,154 [79] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-28 23:37:01,851 [1] INFO Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: VAT-L-DEV17@E-VotingDB'
+2023-11-28 23:37:01,931 [1] INFO Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-11-28 23:37:01,956 [1] INFO Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-11-28 23:37:02,098 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-28 23:37:02,136 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-28 23:37:02,159 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdullateefOdufeso\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-28 23:37:02,291 [8] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-28 23:37:02,524 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:28132:4b8ced61 successfully announced in 422.8086 ms
+2023-11-28 23:37:02,562 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:28132:4b8ced61 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-28 23:37:02,662 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-28 23:37:02,850 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev17:28132:4b8ced61 all the dispatchers started
+2023-11-28 23:37:52,354 [15] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-28 23:38:06,983 [70] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-28 23:38:33,488 [79] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-28 23:39:03,307 [79] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+2023-11-28 23:39:20,392 [79] WARN Microsoft.AspNetCore.Session.SessionMiddleware - Error unprotecting the session cookie.
+=======
+2023-11-28 21:42:50,901 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-11-28 21:42:50,910 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-11-28 21:42:50,913 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Web
+2023-11-28 21:42:51,062 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:27076:8b323aea successfully announced in 156.6392 ms
+2023-11-28 21:42:51,076 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:27076:8b323aea is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-28 21:42:51,180 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:27076:8b323aea all the dispatchers started
+2023-11-28 21:47:51,144 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-28 22:25:56,009 [ServerWatchdog #1] INFO Hangfire.Server.ServerWatchdog - 1 servers were removed due to timeout
+2023-11-28 22:25:57,171 [ServerHeartbeatProcess #1] WARN Hangfire.Server.ServerHeartbeatProcess - Server vat-l-dev18:27076:8b323aea was considered dead by other servers, restarting...
+2023-11-28 22:25:57,196 [ServerHeartbeatProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:27076:8b323aea caught restart signal...
+2023-11-28 22:25:57,286 [BackgroundServerProcess #1] WARN Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:27076:8b323aea stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2023-11-28 22:25:57,444 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:27076:8b323aea successfully reported itself as stopped in 4.8758 ms
+2023-11-28 22:25:57,452 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:27076:8b323aea has been stopped in total 199.3652 ms
+2023-11-28 22:25:57,471 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:27076:4c565c7e successfully announced in 10.3438 ms
+2023-11-28 22:25:57,486 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:27076:4c565c7e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-11-28 22:25:57,831 [BackgroundServerProcess #1] INFO Hangfire.Server.BackgroundServerProcess - Server vat-l-dev18:27076:4c565c7e all the dispatchers started
+>>>>>>> origin/Abdulkabir

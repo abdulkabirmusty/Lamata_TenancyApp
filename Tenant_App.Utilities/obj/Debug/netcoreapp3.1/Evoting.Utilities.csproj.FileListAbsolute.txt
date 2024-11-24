@@ -1,0 +1,13 @@
+C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Utilities\bin\Debug\netcoreapp3.1\Evoting.Utilities.deps.json
+C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Utilities\bin\Debug\netcoreapp3.1\Evoting.Utilities.runtimeconfig.json
+C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Utilities\bin\Debug\netcoreapp3.1\Evoting.Utilities.runtimeconfig.dev.json
+C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Utilities\bin\Debug\netcoreapp3.1\Evoting.Utilities.dll
+C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Utilities\bin\Debug\netcoreapp3.1\Evoting.Utilities.pdb
+C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Utilities\obj\Debug\netcoreapp3.1\Evoting.Utilities.csproj.AssemblyReference.cache
+C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Utilities\obj\Debug\netcoreapp3.1\Evoting.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Utilities\obj\Debug\netcoreapp3.1\Evoting.Utilities.AssemblyInfoInputs.cache
+C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Utilities\obj\Debug\netcoreapp3.1\Evoting.Utilities.AssemblyInfo.cs
+C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Utilities\obj\Debug\netcoreapp3.1\Evoting.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Utilities\obj\Debug\netcoreapp3.1\Evoting.Utilities.dll
+C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Utilities\obj\Debug\netcoreapp3.1\Evoting.Utilities.pdb
+C:\Users\AbdulkabirAbdulwasiu\source\repos\NIESV-eVoting\Evoting.Utilities\obj\Debug\netcoreapp3.1\Evoting.Utilities.genruntimeconfig.cache

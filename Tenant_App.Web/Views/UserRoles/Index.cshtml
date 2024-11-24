@@ -1,0 +1,64 @@
+﻿@model Tenant_App.Models.RoleAndPermissionViewModels.ManageUserRolesViewModel
+@{
+    ViewData["Title"] = ViewBag.ProjectTitle + "::  " + "User Management";
+
+    Layout = "~/Views/Shared/_Secured.cshtml";
+}
+
+<div class=" w-70 table-container-general">
+
+    <div class="table-control ">
+        <div class="p" style="width: 50% !important;">
+            Manage Roles for @Model.UserName
+        </div>
+
+        
+    </div>
+
+    <div id="viewAll" class="card-body table-responsive">
+        <form asp-controller="userroles" method="post" asp-action="update" asp-route-id="@Model.UserId" class="d-inline">
+            <input asp-for="@Model.UserId" type="hidden" />
+            <table data-ordering="false" id="example" class="table " style="width:100%; background-color: white;">
+                <thead>
+                    <tr>
+                        <th class="reports_s_n">S/N</th>
+                        <th class="reports_row1">Role</th>
+                        <th class="reports_row1">Status</th>
+                    </tr>
+                </thead>
+
+                <tbody class="pl-3">
+                    @{
+                        int rowNo = 0;
+                    }
+
+                    @for (int i = 0; i < Model.UserRoles.Count(); i++)
+                    {
+                        <tr class="td">
+                            <td class="reports_s_n">@(rowNo += 1)</td>
+                            <td class="reports_row1">
+                                <input asp-for="@Model.UserRoles[i].RoleName" type="hidden" />
+                                @Model.UserRoles[i].RoleName
+                            </td>
+                            <td class="reports_row1">
+                                <div class="form-check m-1">
+                                    <input asp-for="@Model.UserRoles[i].Selected" class="form-check-input" />
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <div class="col-sm-12" style=" padding: 20px 20px 0px 0px">
+                <button type="submit" id="save" class="btn btn-success" style="margin: 20px;">
+                    <i class="fa fa-check"></i>
+                    Save
+                </button>
+            </div>
+        </form>
+    </div>
+    
+
+</div>
+

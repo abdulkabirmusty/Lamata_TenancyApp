@@ -1,0 +1,52 @@
+﻿@model Tenant_App.Models.DataObjects.ContractTypeDtos.ContractTypeDto
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+
+
+<div class="modal-content" style="height:auto; width: 30vw; padding-bottom:4vh;">
+    <div style="height:7vh; background-color:#d3d3d3; display:flex;gap:15rem; padding: 1rem; margin-bottom:1vh">
+        <div class="newdepartmentmodaltitle" id="myModalLabel33"><strong>Add Contract Type</strong></div>
+        <a onclick="CloseModal()">
+            <i class="fa-solid fa-circle-xmark newdepartmentdropdowncanclebtn" id="addDeptClose"></i>
+        </a>
+    </div>
+    
+
+    <section class="input-validation">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" style="border:none">
+
+                    <div class="card-content">
+                        <div class="card-body">
+                            <form asp-controller="ContractType" asp-action="Create" enctype="multipart/form-data">
+                                
+                                <div class="row">
+                                    <div class="col-md-12">
+
+                                        <div class="nameDiv" style="padding-bottom: 1vh;">
+                                            <label class="newdepartmentmodaltitle">Contract Type</label>
+                                            <input type="text" asp-for="Name" name="Name" placeholder="Enter Contract Type" class="form-control" required>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="modal-footer">
+                                    <button id="submitButton" type="submit" class="btn btn-success"><span>Submit</span></button>
+                                   
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script src="~/app-assets/js/scripts/forms/form-tooltip-valid.js"></script>
+<script src="~/app-assets/vendors/js/forms/validation/jqBootstrapValidation.js"></script>
+<script src="~/app-assets/js/scripts/forms/validation/form-validation.js"></script>
+<script src="~/app-assets/js/scripts/modal/components-modal.js"></script>

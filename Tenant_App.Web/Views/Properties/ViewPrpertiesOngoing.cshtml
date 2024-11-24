@@ -1,0 +1,203 @@
+﻿@model List<Tenant_App.Models.Domains.PropertyDomain.PropertyTenant>
+@{
+    Layout = "~/Views/Shared/_Secured.cshtml";
+}
+
+
+<div class="container-fluid content-top-gap">
+
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb my-breadcrumb">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Dashboard", new { area = "" })">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Properties", new { area = "" })">View Registered Properties</a></li>
+        </ol>
+    </nav>
+
+    <div class="cards__heading">
+        <h3>Manage Registered Properties</h3>
+    </div>
+
+    <div class="card card_border p-lg-5 p-3 mb-4">
+        <div class="card-body py-3 p-0">
+            
+            <div class="row mb-3">
+                <div class="col-md-3">
+                    <label for="startDate">Start Date</label>
+                    <input type="date" id="startDate" class="form-control" placeholder="Start Date" />
+                </div>
+                <div class="col-md-3">
+                    <label for="expireDate">Expiry Date</label>
+                    <input type="date" id="expireDate" class="form-control" placeholder="Expiry Date" />
+                </div>
+                <div class="col-md-3">
+                    <label for="status">Status</label>
+                    <select id="status" class="form-control">
+                        <option value="">All</option>
+                        <option value="1">Approved</option>
+                        <option value="2">Rejected</option>
+                        <option value="0">Pending</option>
+                    </select>
+                </div>
+                <div class="col-md-3 d-flex align-items-end">
+                    <button id="filterButton" class="btn btn-primary">Filter</button>
+                </div>
+            </div>
+
+
+                <div class="table-responsive ">
+                    <table data-ordering="false" id="example" class="table " style="width:100%; background-color: white;">
+                        <thead>
+                            <tr>
+                                <th>Property Name</th>
+                                <th>Address</th>
+                                <th>Duration</th>
+                                <th>Amount</th>
+                                <th>Name</th>
+                                <th>Size</th>
+                                <th>Start Date</th>
+                                <th>Expiry Date</th>
+                                <th>Status</th>
+                                @if (ViewBag.IsAdmin)
+                                {
+                                    <th>Actions</th>
+                                }
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var tenant in Model)
+                            {
+                                <form asp-action="UpdateApproval" method="post">
+                                <tr>
+                                    <td>@tenant.PropertiesName</td>
+                                    <td>@tenant.PropertiesAddress</td>
+                                    <td>@tenant.PropertiesDuration</td>
+                                    @* <td>@tenant.Amount</td> *@
+                                    <td>
+                                        @if(tenant.Amount != 0)
+                                        {
+                                            @tenant.Amount
+                                        }
+                                        else
+                                        {
+                                            @if (ViewBag.IsAdmin)
+                                            {
+                                                <textarea name="Amount" placeholder="Enter your Amount here" required></textarea>
+
+                                                <br />
+
+                                            }
+                                            
+                                        }
+                                    </td>
+                                    <td>@tenant.CompanyName</td>
+                                    <td>@tenant.Size</td>
+                                    <td>@tenant.startDate.ToShortDateString()</td>
+                                    <td>@tenant.expiryDate.ToShortDateString()</td>
+                                    <td>
+                                        @if (tenant.ApprovalStatus == 1)
+                                        {
+                                            <span class="text-success">Approved</span>
+                                        }
+                                        else if (tenant.ApprovalStatus == 2)
+                                        {
+                                            <span class="text-danger">Rejected</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="text-warning">Pending</span>
+                                        }
+                                    </td>
+                                    @if (ViewBag.IsAdmin)
+                                    {
+                                        <td>
+                                            @if (tenant.ApprovalStatus == 1 || tenant.ApprovalStatus == 2)
+                                            {
+
+                                            }
+                                            else
+                                            {
+
+                                                @* <form asp-action="UpdateApproval" method="post"> *@
+                                                    <input type="hidden" name="Id" value="@tenant.Id" />
+                                                    <textarea name="Comment" placeholder="Enter your comment here" required></textarea><br />
+                                                    <button type="submit" name="ApprovalStatus" value="1" class="btn btn-success">Approve</button>
+                                                    <button type="submit" name="ApprovalStatus" value="2" class="btn btn-danger">Reject</button>
+                                                @* </form> *@
+                                            }
+                                        </td>
+                                    }
+                                    
+                                </tr>
+                            </form>
+                            }
+                        </tbody>
+
+                    </table>
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+                    <script>
+                        $(document).ready(function () {
+                            $('#propertyTenantsTable').DataTable();
+                        });
+                    </script>
+
+                    <style>
+                        #propertyTenantsTable_wrapper {
+                            padding: 20px;
+                        }
+
+                        #propertyTenantsTable th, #propertyTenantsTable td {
+                            padding: 8px;
+                        }
+                    </style>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var table = $('#example').DataTable();
+
+        $('#filterButton').on('click', function () {
+            var startDate = $('#startDate').val();
+            var expireDate = $('#expireDate').val();
+            var status = $('#status').val();
+
+            // Custom filtering
+            $.fn.dataTable.ext.search.push(
+                function (settings, data, dataIndex) {
+                    var rowStartDate = new Date(data[5]); // Start Date is in 6th column
+                    var rowExpireDate = new Date(data[6]); // Expiry Date is in 7th column
+                    var rowStatus = parseInt(data[7]); // Status is in 8th column
+
+                    // Check date filters
+                    if (startDate && rowStartDate < new Date(startDate)) return false;
+                    if (expireDate && rowExpireDate > new Date(expireDate)) return false;
+
+                    // Check status filter
+                    if (status && rowStatus !== parseInt(status)) return false;
+
+                    return true;
+                }
+            );
+
+            table.draw();
+        });
+    });
+</script>
+
+<style>
+    #example_wrapper {
+        padding: 20px;
+    }
+
+    #example th, #example td {
+        padding: 8px;
+    }
+</style>
